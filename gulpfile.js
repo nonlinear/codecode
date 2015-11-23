@@ -20,7 +20,10 @@ svgSprite = require('gulp-svg-sprites'),
 filter = require('gulp-filter'),
 svg2png = require('gulp-svg2png'),
 rename = require('gulp-rename'),
-todo = require('gulp-todo');
+todo = require('gulp-todo'),
+path = require('path'),
+template = require('lodash.template'),
+through = require('through2');
 
 
 // Custom Plumber function for catching errors
@@ -218,9 +221,22 @@ gulp.task('uncss', function () {
 // Consolidates TODO comments at TODO.md
 
 gulp.task('todo', function() {
-    gulp.src('./app/**/*.+(js|html|sass|scss)', { base: './' })
+    gulp.src('./app/**/*.+(js|html|sass|scss)')
         .pipe(todo())
-        .pipe(gulp.dest('./'));
+        .pipe(through.obj(function (file, enc, cb) {
+            //read and interpolate template
+            var newContents = template(fs.readFileSync('./README.template.md', 'utf8'), {
+                marker: file.contents.toString()
+            });
+            //change file name
+            file.path = path.join(file.base, 'README-new.md');
+            //replace old contents
+            file.contents = new Buffer(newContents, 'utf8');
+            //push new file
+            this.push(file);
+            cb();
+        }))
+       .pipe(gulp.dest('./'));
 });
 
 // moves dist to gh-pages
