@@ -3,7 +3,6 @@
 |:------|:------:|:------
 | js/scripts.js | 1 | testing this shit
 | pages/images.html | 22 | create patterns
-| sass/style.sass | 7 | shit
 | js/vendors/jquery.js | 3741 | Now that all calls to _data and _removeData have been replaced
 | js/vendors/modernizr.js | 56 | : make the prefixes more granular
 | js/vendors/modernizr.js | 223 | : Add flag for hasownprop ? didn't last time

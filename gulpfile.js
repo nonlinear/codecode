@@ -14,6 +14,7 @@ jscs = require('gulp-jscs'),
 data = require('gulp-data'),
 fs = require('fs'),
 imagemin = require('gulp-imagemin'),
+pngquant = require('imagemin-pngquant'),
 cache = require('gulp-cache'),
 ghPages = require('gulp-gh-pages'),
 svgSprite = require('gulp-svg-sprites'),
@@ -131,7 +132,7 @@ gulp.task('clean', function(callback){
 gulp.task('default', function(callback) {
   runSequence(
     'clean',
-    ['svgSprite', 'lint:js'],
+    ['svgSprite', 'lint:js', 'imagemin'],
     ['svgfile', 'font', 'js', 'todo'],
     ['sass', 'nunjucks'],
     ['browserSync', 'watch'],
@@ -164,12 +165,12 @@ gulp.task('lint:js', function(){
 // OPTIMIZING
 // =================
 
-gulp.task('images', function(){
+gulp.task('imagemin', function(){
   return gulp.src('./app/images/**/*.+(png|jpg|jpeg|gif|svg)')
   .pipe(cache(imagemin({
     progressive: true,
-    optimizationLevels: 5,
-    multipass: true
+    svgoPlugins: [{removeViewBox: false}],
+    use: [pngquant()]
   })))
   .pipe(gulp.dest('./dist/images'))
 });
@@ -218,9 +219,9 @@ gulp.task('uncss', function () {
 // Consolidates TODO comments at TODO.md
 
 gulp.task('todo', function() {
-    gulp.src('./app/**/*.+(js|html|sass|scss)')
-        .pipe(todo())
-        .pipe(gulp.dest('./'));
+  gulp.src('./app/**/*.+(js|html|sass|scss)')
+  .pipe(todo())
+  .pipe(gulp.dest('./'));
 });
 
 // moves dist to gh-pages
@@ -257,17 +258,17 @@ gulp.task('flush1', function(callback){
 gulp.task('flush2', function(){
   return gulp.src('app/flush/index.html')
   .pipe(gulp.dest('./app/pages/'))
-  });
+});
 gulp.task('flush3', function(){
-    return gulp.src('app/flush/layout.html')
+  return gulp.src('app/flush/layout.html')
   .pipe(gulp.dest('./app/templates'))
 });
 gulp.task('flush4', function(){
-    return gulp.src('app/flush/layout.sass')
+  return gulp.src('app/flush/layout.sass')
   .pipe(gulp.dest('./app/sass'))
 });
 gulp.task('flush5', function(){
-    return gulp.src('app/flush/style.sass')
+  return gulp.src('app/flush/style.sass')
   .pipe(gulp.dest('./app/sass'))
 });
 gulp.task('flush6', function(callback){
