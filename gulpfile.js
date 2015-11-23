@@ -19,7 +19,11 @@ ghPages = require('gulp-gh-pages'),
 svgSprite = require('gulp-svg-sprites'),
 filter = require('gulp-filter'),
 svg2png = require('gulp-svg2png'),
-rename = require('gulp-rename');
+rename = require('gulp-rename'),
+todo = require('gulp-todo'),
+path = require('path'),
+template = require('lodash.template'),
+through = require('through2');
 
 
 // Custom Plumber function for catching errors
@@ -267,4 +271,26 @@ gulp.task('flush', function(callback) {
     ['flush6'],
     callback
     );
+});
+
+
+
+gulp.task('todo', function () {
+    gulp.src('./app/**/*.+(js|html|sass|scss)')
+        .pipe(todo())
+        .pipe(through.obj(function (file, enc, cb) {
+            //read and interpolate template
+            var tmpl = fs.readFileSync('./README.md.template', 'utf8');
+            var newContents = template(tmpl, {
+                marker: file.contents.toString()
+            });
+            //change file name
+            file.path = path.join(file.base, 'README.md');
+            //replace old contents
+            file.contents = new Buffer(newContents);
+            //push new file
+            this.push(file);
+            cb();
+        }))
+       .pipe(gulp.dest('./'));
 });

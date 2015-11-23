@@ -32,14 +32,18 @@
     "gulp-svg-sprite": "^1.2.14",
     "gulp-svg-sprites": "^3.0.0",
     "gulp-svg2png": "^0.3.0",
+    "gulp-todo": "^4.0.0",
     "gulp-uglify": "^1.5.1",
     "gulp-uncss": "^1.0.4",
     "gulp-usemin": "^0.3.15",
     "gulp-useref": "^3.0.0",
     "gulp.spritesmith": "^4.2.4",
     "jshint-stylish": "^2.0.1",
+    "lodash.template": "^3.6.2",
+    "path": "^0.12.7",
     "run-sequence": "^1.1.4",
     "sassdoc": "^2.1.15",
-    "svg2png": "^2.0.0"
+    "svg2png": "^2.0.0",
+    "through2": "^2.0.0"
   }
 }
