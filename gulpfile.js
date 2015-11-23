@@ -20,10 +20,7 @@ svgSprite = require('gulp-svg-sprites'),
 filter = require('gulp-filter'),
 svg2png = require('gulp-svg2png'),
 rename = require('gulp-rename'),
-todo = require('gulp-todo'),
-path = require('path'),
-template = require('lodash.template'),
-through = require('through2');
+todo = require('gulp-todo');
 
 
 // Custom Plumber function for catching errors
@@ -135,7 +132,7 @@ gulp.task('default', function(callback) {
   runSequence(
     'clean',
     ['svgSprite', 'lint:js'],
-    ['svgfile', 'font', 'js'],
+    ['svgfile', 'font', 'js', 'todo'],
     ['sass', 'nunjucks'],
     ['browserSync', 'watch'],
     callback
@@ -205,13 +202,10 @@ gulp.task('js', function () {
 // PUBLISH
 // =======
 
-// moves dist to gh-pages
-gulp.task('gh-pages', function() {
-  return gulp.src('./dist/**/*')
-  .pipe(ghPages());
-});
+
 
 // Clean unused CSS rules
+
 gulp.task('uncss', function () {
   return gulp.src('./dist/css/style.css')
   .pipe(uncss({
@@ -221,9 +215,25 @@ gulp.task('uncss', function () {
   .pipe(gulp.dest('./dist/css'));
 });
 
+// Consolidates TODO comments at TODO.md
+
+gulp.task('todo', function() {
+    gulp.src('./app/**/*.+(js|html|sass|scss)', { base: './' })
+        .pipe(todo())
+        .pipe(gulp.dest('./'));
+});
+
+// moves dist to gh-pages
+
+gulp.task('gh-pages', function() {
+  return gulp.src('./dist/**/*')
+  .pipe(ghPages());
+});
+
 
 gulp.task('publish', function(callback) {
   runSequence(
+    ['todo'],
     ['uncss'],
     ['gh-pages'],
     callback
@@ -271,26 +281,4 @@ gulp.task('flush', function(callback) {
     ['flush6'],
     callback
     );
-});
-
-
-
-gulp.task('todo', function () {
-    gulp.src('./app/**/*.+(js|html|sass|scss)')
-        .pipe(todo())
-        .pipe(through.obj(function (file, enc, cb) {
-            //read and interpolate template
-            var tmpl = fs.readFileSync('./README.md.template', 'utf8');
-            var newContents = template(tmpl, {
-                marker: file.contents.toString()
-            });
-            //change file name
-            file.path = path.join(file.base, 'README.md');
-            //replace old contents
-            file.contents = new Buffer(newContents);
-            //push new file
-            this.push(file);
-            cb();
-        }))
-       .pipe(gulp.dest('./'));
 });
