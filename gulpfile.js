@@ -197,16 +197,15 @@ gulp.task('js', function () {
 });
 
 
+// =======
+// PUBLISH
+// =======
 
 // moves dist to gh-pages
 gulp.task('gh-pages', function() {
   return gulp.src('./dist/**/*')
   .pipe(ghPages());
 });
-
-// =======
-// PUBLISH
-// =======
 
 // Clean unused CSS rules
 gulp.task('uncss', function () {
