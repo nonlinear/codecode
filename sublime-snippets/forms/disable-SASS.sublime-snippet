@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++disable(${1:link|drag|select})
+]]>
+  </content>
+  <tabTrigger>disable</tabTrigger>
+  <description>disable SASS rules</description>
+</snippet>

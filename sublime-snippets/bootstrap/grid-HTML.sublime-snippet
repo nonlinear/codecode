@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+<div class="container">
+  <div class="row">
+    <div class="col-${1:xs|md|lg}-${4:4}">${7:Column 1 content}</div>
+    <div class="col-${2:xs|md|lg}-${5:4}">${8:Column 2 content}</div>
+    <div class="col-${3:xs|md|lg}-${6:4}">${9:Column 3 content}</div>
+  </div>
+</div>
+]]></content>
+  <tabTrigger>grid</tabTrigger>
+  <description>Grid HTML bootstrap</description>
+</snippet>

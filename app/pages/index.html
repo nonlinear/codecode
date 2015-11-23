@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container index">
+  <header class="header">
+    <a href="index.html" class="logo">CodeCode/</a>
+  </header>
+  <div class="row">
+    <div class="col-md-2 quote">
+      <h1>Rapid, Rapid Clickable Prototypes</h1>
+      <h2>so you can focus on design, not code</h2>
+    </div>
+    <div class="col-md-10 content">
+      <div class="row">
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus distinctio quis sint placeat nihil qui quas esse, voluptate consectetur mollitia?</p>
+        </div>
+        <div class="col-md-4">
+          <h2>What's inside</h2>
+          <ol class="tutorial">
+           <li>BrowserSync</li>
+           <li>SASS</li>
+           <li>Bootstrap</li>
+           <li>FontAwesome</li>
+           <li>Modernizr + Detectizr</li>
+           <li>Nunjucks</li>
+           <li>unCSS</li>
+           <li>gh-pages</li>
+           <li>SVG-ready</li>
+         </ol>
+       </div>
+       <div class="col-md-4">
+         <h2>Requirements</h2>
+         <ol class="tutorial">
+           <li><a href="https://nodejs.org">Node</a></li>
+           <li><a href="http://gulpjs.com">Gulp</a></li>
+           <li><a href="https://desktop.github.com">GitHub Desktop</a></li>
+           <li><a href="http://www.sublimetext.com">Sublime Text</a></li>
+         </ol>
+         <a href="install.html" class="btn btn-block">Install</a>
+       </div>
+     </div>
+   </div>
+ </div>
+ {% import 'macros/nav.html' as nav %}
+ {{nav.active('index')}}
+</div>
+
+{% endblock %}

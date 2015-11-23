@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+lighten(${1:color}, 20%)
+]]>
+  </content>
+  <tabTrigger>lighten</tabTrigger>
+  <description>lighten 20% SCSS</description>
+</snippet>

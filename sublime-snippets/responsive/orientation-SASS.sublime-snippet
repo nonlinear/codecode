@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
++orientation(${1:portrait|landscape}) {
+  ${2:specific orientation rules here.}
+}
+]]>
+  </content>
+  <tabTrigger>orientation</tabTrigger>
+  <description>orientation SCSS mixin</description>
+</snippet>

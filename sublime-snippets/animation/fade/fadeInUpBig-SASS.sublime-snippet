@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++fadeInUpBig
+]]>
+  </content>
+  <tabTrigger>fadeInUpBig</tabTrigger>
+  <description>fadeInUpBig SASS animation</description>
+</snippet>

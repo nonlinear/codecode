@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+<![CDATA[
++placeholder
+  $1
+]]>
+	</content>
+	<tabTrigger>placeholder</tabTrigger>
+	<description>placeholder SASS rules</description>
+</snippet>

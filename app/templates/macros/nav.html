@@ -1,0 +1,66 @@
+{% macro active(activePage='index') %}
+<nav class="menu row">
+  <div class="col-md-2 social">
+    <p>Made by Nicholas Frota, standing on the shoulder of Open Source giants.</p>
+  <a href="mailto:info@nicholasfrota.com">
+    <i class="fa fa-envelope"></i>
+  </a>
+    <a href="http://twitter.com/nonlinear">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <a href="http://github.com/nonlinear">
+    <i class="fa fa-github"></i>
+  </a>
+  <a href="http://instagram.com/nonlinear">
+    <i class="fa fa-instagram"></i>
+  </a>
+    <a href=" http://nonlinear.nyc">
+    <i class="fa fa-globe"></i>
+  </a>
+  <a href="http://linkedin.com/in/nicholasfrota">
+    <i class="fa fa-linkedin"></i>
+  </a>
+</div>
+<div class="col-md-10"><ul>
+   <li class="{%if activePage == 'index' %} active {% endif %}">
+  <a href="index.html">about</a>
+</li><li class="{%if activePage == 'install' %} active {% endif %}">
+  <a href="install.html">install</a>
+</li><li class="pending
+  {%if activePage == 'partials' %} active {% endif %}">
+  <a href="partials.html">partials</a>
+</li><li class="
+{%if activePage == 'symbols' %} active {% endif %}">
+<a href="symbols.html">symbols</a>
+</li><li class="
+{%if activePage == 'animation' %} active {% endif %}">
+<a href="animation.html">animation</i></a>
+</li><li class="pending
+{%if activePage == 'images' %} active {% endif %}">
+<a href="images.html">images</a>
+</li><li class="
+{%if activePage == 'typography' %} active {% endif %}">
+<a href="typography.html">typography</a>
+</li><li class="
+{%if activePage == 'forms' %} active {% endif %}">
+<a href="forms.html">forms</i></a>
+</li><li class="
+{%if activePage == 'responsive' %} active {% endif %}">
+<a href="responsive.html">responsive</i></a>
+</li><li class="pending
+{%if activePage == 'data' %} active {% endif %}">
+<a href="data.html">data</i></a>
+</li><li class="
+{%if activePage == 'frameworks' %} active {% endif %}">
+<a href="frameworks.html">frameworks</a>
+</li><li class="
+{%if activePage == 'social' %} active {% endif %}">
+<a href="social.html">social</i></a>
+</li><li>
+<a href="https://gitter.im/nonlinear/codecode?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank"><img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat at https://gitter.im/nonlinear/codecode" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"></a>
+</li>
+</ul></div>
+</nav>
+{% endmacro %}
+
+

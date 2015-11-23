@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++rotate(${1:0})
+]]>
+  </content>
+  <tabTrigger>rotate</tabTrigger>
+  <description>rotate SASS transform</description>
+</snippet>

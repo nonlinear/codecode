@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++tada
+]]>
+  </content>
+  <tabTrigger>tada</tabTrigger>
+  <description>tada SASS animation</description>
+</snippet>

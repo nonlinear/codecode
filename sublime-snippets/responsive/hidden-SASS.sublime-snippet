@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${2:// needs modernizr to operate.
+}@extend .hidden-${1:mac|linux|safari|etc}
+]]>
+  </content>
+  <tabTrigger>hidden</tabTrigger>
+  <description>hidden SASS extend</description>
+</snippet>

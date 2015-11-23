@@ -1,0 +1,12 @@
+<snippet>
+  <content>
+<![CDATA[
+ <a href="http://www.reddit.com/submit/?url=${1:http://www.nicholasfrota.com}"
+   target="_blank">
+  ${2:<i class="fa fa-reddit"></i>}
+ </a>
+]]>
+  </content>
+  <tabTrigger>reddit</tabTrigger>
+  <description>Reddit share HTML link</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+adjust-hue(${1:color}, -45deg)
+]]>
+  </content>
+  <tabTrigger>analogous</tabTrigger>
+  <description>analogous 2 SASS color</description>
+</snippet>

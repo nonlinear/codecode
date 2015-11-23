@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container partials">
+  <header class="header">
+    <a href="index.html" class="logo">CodeCode/</a>
+    <h2>partials</h2>
+  </header>
+  <div class="row">
+    <div class="col-md-2 quote">
+      <h1>modularize your project for easy updates</h1>
+  </div>
+    <div class="col-md-10 content">
+     <h3 class="todo">explain nunjucks</h3>
+   </div>
+ </div>
+  {% import 'macros/nav.html' as nav %}
+     {{nav.active('partials')}}
+</div>
+{% endblock %}

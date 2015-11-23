@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++shake
+]]>
+  </content>
+  <tabTrigger>shake</tabTrigger>
+  <description>shake SASS animation</description>
+</snippet>

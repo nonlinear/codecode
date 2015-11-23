@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++rotateInDownLeft
+]]>
+  </content>
+  <tabTrigger>rotateInDownLeft</tabTrigger>
+  <description>rotateInDownLeft SASS animation</description>
+</snippet>

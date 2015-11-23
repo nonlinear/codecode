@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+adjust-hue(${1:color}, 210deg)
+]]>
+  </content>
+  <tabTrigger>split</tabTrigger>
+  <description>split 2 SASS color</description>
+</snippet>

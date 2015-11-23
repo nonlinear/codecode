@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++prefixer(${1:property}, ${2:value}, ${3:webkit moz spec})
+]]>
+  </content>
+  <tabTrigger>prefixer</tabTrigger>
+  <description>prefixer SASS mixin</description>
+</snippet>

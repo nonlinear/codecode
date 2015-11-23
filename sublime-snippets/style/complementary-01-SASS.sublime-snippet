@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+complement(${1:color})
+]]>
+  </content>
+  <tabTrigger>complementary</tabTrigger>
+  <description>complementary 1 SASS color</description>
+</snippet>

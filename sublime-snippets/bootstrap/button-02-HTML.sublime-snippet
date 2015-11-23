@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+${2:<!-- Options:
+position: replace .btn-group with .btn-group-vertical
+size: .btn-group-lg, .btn-group-sm, or .btn-group-xs
+checkbox, radio:
+1. add data-toggle="buttons" on div
+2. checkbox button: <label class="btn btn-primary"><input type="checkbox">[Title]</label>
+3. radio button: <label class="btn btn-primary"><input type="radio">[Title]</label>
+ -->
+}<div class="btn-group">
+  ${1:buttons here}
+</div>
+]]></content>
+  <tabTrigger>button</tabTrigger>
+  <description>Button group HTML bootstrap</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+{% import 'macros/${1:nav}.html' as ${1:nav} %}
+{{${1:nav}.${2:active}('${3:home}')}}
+]]>
+  </content>
+  <tabTrigger>import</tabTrigger>
+  <description>nunjucks import</description>
+</snippet>

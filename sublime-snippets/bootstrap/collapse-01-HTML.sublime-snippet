@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<div class="panel">
+  <a data-toggle="collapse" data-parent="#${1:collapse}" href="#${2:collapseOne}" class="collapse-trigger">
+    ${3:Panel 1 title}
+  </a>
+  <div id="${2:collapseOne}" class="collapse in">
+    ${4:Panel 1 content}
+  </div>
+</div>
+]]></content>
+  <tabTrigger>collapse</tabTrigger>
+  <description>Collapse panel HTML bootstrap</description>
+</snippet>

@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container typography">
+  <header class="header">
+    <a href="index.html" class="logo">CodeCode/</a>
+    <h2>typography</h2>
+  </header>
+  <div class="row">
+    <div class="col-md-2 quote">
+      <h1>Another quote here</h1>
+  </div>
+    <div class="col-md-10 content">
+      <h2>sample fonts</h2>
+      <div class="row">
+        <div class="col-md-4 col-xs-6">
+          <code class="snippet">sans</code>
+          <p>sans-serif fonts sample</p>
+          <p>web: Century Gothic, Futura, Helvetica Neue, Palatino, Lucida, Gill Sans</p>
+          <p class="todo">google font sample, pending</p>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <code class="snippet">slab</code>
+          <p>slab-serif fonts sample</p>
+          <p>web: Rockwell</p>
+          <p class="todo">google font sample, pending</p>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <code class="snippet">serif</code>
+          <p>serif fonts sample</p>
+          <p>web: Baskerville, Georgia, Didot, Garamond</p>
+          <p class="todo">google font sample, pending</p>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <code class="snippet">monospace</code>
+          <p>monospaced fonts sample</p>
+          <p>web: Courier New</p>
+          <p class="todo">google font sample, pending</p>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <code class="snippet">font-face</code>
+          <ol class="tutorial mini">
+           <li>have your font file (find cool and free ones at <a href="http://www.dafont.com" target="_blank">dafont</a>)</li>
+           <li>generate webfont at <a href="http://www.fontsquirrel.com/tools/webfont-generator">fontsquirrel</a></li>
+           <li>move resulting webfonts to <code class="path">assets/fonts</code></li>
+           <li>font-face variable should match font filename (minus extensions)</li>
+         </ol>
+
+       </div>
+     </div>
+     <h2>typography snippets</h2>
+     <div class="row">
+      <div class="col-md-4 col-xs-6">
+        <code class="snippet">word-wrap</code>
+        <p>forces text to flow</p>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <code class="snippet">ellipsis</code>
+        <p>hides overflow text, adds "..."</p>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <code class="snippet">hide-text</code>
+        <p>hide object text, visually only.</p>
+      </div>
+    </div>
+
+
+   </div>
+ </div>
+       {% import 'macros/nav.html' as nav %}
+     {{nav.active('typography')}}
+</div>
+{% endblock %}

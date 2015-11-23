@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++bounceOutDown
+]]>
+  </content>
+  <tabTrigger>bounceOutDown</tabTrigger>
+  <description>bounceOutDown SASS animation</description>
+</snippet>

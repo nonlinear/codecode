@@ -1,0 +1,12 @@
+<snippet>
+  <content>
+<![CDATA[
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=${1:http://www.nicholasfrota.com}&title=${2:Nicholas Frota}&source=${3:http://www.nicholasfrota.com}&summary=${4:Short Summary}
+  target="_blank">
+  ${5:<i class="fa fa-linkedin"></i>}
+ </a>
+]]>
+  </content>
+  <tabTrigger>linkedin</tabTrigger>
+  <description>LinkedIn share HTML link</description>
+</snippet>

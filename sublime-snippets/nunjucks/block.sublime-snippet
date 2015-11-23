@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+{% block content %}
+${1}
+{% endblock %}
+]]>
+  </content>
+  <tabTrigger>block</tabTrigger>
+  <description>Nunjucks block</description>
+</snippet>

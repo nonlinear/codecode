@@ -1,0 +1,19 @@
+.avatar
+  +clearfix
+  padding-top: $gap
+  border-top: solid 1px #ccc
+  margin-top: $gap
+  ul
+    +reset(all)
+    +reset(list)
+    float: left
+  li
+    text-transform: capitalize
+    &.title
+      font-size: 120%
+  .image
+    +size(square, 100px)
+    +radius(normal, 50%)
+    background-size: contain
+    float: left
+    margin-right: $gap

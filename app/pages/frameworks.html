@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container frameworks">
+  <header class="header">
+    <a href="index.html" class="logo">CodeCode/</a>
+    <h2>frameworks</h2>
+  </header>
+  <div class="row">
+    <div class="col-md-2 quote">
+      <h1>extending common frameworks</h1>
+  </div>
+    <div class="col-md-10 content">
+<div class="row">
+     <div class="col-md-4">
+      <h2>Bootstrap Snippets</h2>
+           <code class="snippet">alert</code>
+        <code class="snippet">badge</code>
+        <code class="snippet">button</code>
+        <code class="snippet">collapse</code>
+        <code class="snippet">dropdown</code>
+        <code class="snippet">grid</code>
+        <code class="snippet">label</code>
+        <code class="snippet">modal</code>
+        <code class="snippet">popover</code>
+        <code class="snippet">tabs</code>
+        <code class="snippet">tooltip</code>
+    </div>
+    <div class="col-md-4">
+       <h2><a href="http://modernizr.com" target="_blank">modernizr</a> + <a href="http://barisaydinoglu.github.io/Detectizr/" target="_blank">detectizr</a> snippets</h2>
+      most popular detections:<br>
+          <code class="code">mac</code>, <code class="code">windows</code>, <code class="code">linux</code>, <code class="code">ios</code>, <code class="code">android</code>, <code class="code">firefox</code>, <code class="code">chrome</code>, <code class="code">ie</code>, <code class="code">safari</code>, <code class="code">touch</code>
+
+          <code class="snippet">hidden</code>, <code class="snippet">visible</code>
+          <p>class extend to hide or show objects.</p>
+
+
+          <code class="snippet">only</code>
+          <p>rules <strong>only</strong> for variable.</p>
+          <code class="snippet">except</code>
+          <p>rules <strong>except</strong> variable.</p>
+
+    </div>
+   <div class="col-md-4">
+   </div>
+      </div>
+
+
+   </div>
+ </div>
+  {% import 'macros/nav.html' as nav %}
+     {{nav.active('frameworks')}}
+</div>
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container social">
+  <header class="header">
+    <a href="index.html" class="logo">CodeCode/</a>
+    <h2>social</h2>
+  </header>
+  <div class="row">
+    <div class="col-md-2 quote">
+      <h1>play well with others: code to integrate with other systems</h1>
+  </div>
+    <div class="col-md-10 content">
+      <h2>Snippets</h2>
+      <div class="row">
+        <div class="col-md-4">
+        <code class="snippet">analytics</code>
+        <p>google analytics HTML code<br>
+          add code right before <code class="doc">&lt;/body&gt;</code><br>
+          replace <code class="doc">UA-XXXXX-X</code> with your site ID</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">email</code>
+          <p>email HTML link</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">facebook</code>
+          <p>facebook share HTML link</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">google</code>
+          <p>G+ share HTML link</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">linkedin</code>
+          <p>linkedin share HTML link</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">pinterest</code>
+          <p>pinterest share HTML link</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">reddit</code>
+          <p>reddit share HTML link</p>
+        </div>
+        <div class="col-md-4">
+          <code class="snippet">twitter</code>
+          <p>twitter share HTML link</p>
+        </div>
+      </div>
+
+
+   </div>
+ </div>
+  {% import 'macros/nav.html' as nav %}
+     {{nav.active('social')}}
+</div>
+{% endblock %}

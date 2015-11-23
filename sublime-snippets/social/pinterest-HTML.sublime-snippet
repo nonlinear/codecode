@@ -1,0 +1,12 @@
+<snippet>
+  <content>
+<![CDATA[
+ <a href="https://www.pinterest.com/pin/create/button/?url=${1:http://www.nicholasfrota.com}&media=${2:image URL}&description=${3:Short description}&hashtags=${4:tag,tag}"
+   target="_blank">
+  ${5:<i class="fa fa-pinterest"></i>}
+ </a>
+]]>
+  </content>
+  <tabTrigger>pinterest</tabTrigger>
+  <description>Pinterest share HTML link</description>
+</snippet>

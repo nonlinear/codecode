@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container install">
+  <header class="header">
+    <a href="index.html" class="logo">CodeCode/</a>
+    <h2>Install</h2>
+  </header>
+  <div class="row">
+    <div class="col-md-2 quote">
+      <h1>Another quote here</h1>
+  </div>
+    <div class="col-md-10 content">
+      <div class="row">
+
+       <div class="col-md-8">
+         <h2>Installation</h2>
+         <ol class="tutorial">
+           <li>Go to where you want your project to be in terminal, and type
+            <code class="terminal">git clone https://github.com/nonlinear/codecode</code></li>
+            <li>Rename <code class="folder">codecode</code> folder to your project name.</li>
+            <li>Go to your project folder on terminal and type
+              <code class="terminal">npm install</code>
+              <p class="sig">It will take a while.</p></li>
+              <li>Create a new repository on github, copy the HTTPS: url, then type:
+               <code class="terminal">git remote rename origin upstream</code>
+               <code class="terminal">git remote add origin (paste HTTPS here)</code>
+               <code class="terminal">git push origin master</code>
+             </li>
+             <li> Clean up code with
+               <code class="terminal">gulp flush</code>
+               <p class="sig">Important: do it once per project.</p>
+             </li>
+             <li>Move <code class="folder">sublime-snippets</code> folder to <code class="folder">Library/Application Support/Sublime Text 2 (or 3)/Packages</code>.</li>
+           </ol>
+         </div>
+         <div class="col-md-4">
+           <h2>Usage</h2>
+           <ol class="tutorial">
+             <li>On terminal, go to project and type <code class="terminal">gulp</code>
+              <p class="sig">A browser window will open, and refresh anytime your files are edited.</p></li>
+             <li>Files are on <code class="folder">app/pages</code></li>
+             <li>Templates are on <code class="folder">app/templates</code></li>
+             <li>Personalize base variables at <code class="doc">app/sass/style.sass</code></li>
+             <li>Edit project CSS rules at <code class="doc">app/sass/project/layout.sass</code></li>
+             <li>Push your changes at will, and when you're ready to publish it, type <code class="terminal">gulp publish</code>
+              <p class="sig">unCSS will remove unused rules, and gh-pages will publish it at  www.<em>your-github-username</em>.github.io/<em>project-name</em></p></li>
+           </ol>
+         </div>
+
+</div>
+    </div>
+  </div>
+ {% import 'macros/nav.html' as nav %}
+ {{nav.active('install')}}
+</div>
+
+{% endblock %}

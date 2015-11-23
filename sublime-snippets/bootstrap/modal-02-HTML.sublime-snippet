@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+    <div id="${1:myModal}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="${1:myModal}Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            ${2:<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            }<h4 class="modal-title" id="${1:myModal}Label">${3:Modal title}</h4>
+          </div>
+          <div class="modal-body">
+            ${4:Modal body}
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-default pull-left" data-dismiss="modal">${5:Cancel}</a>
+            <a href="${7:#}" class="btn btn-primary">${6:Save}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    ]]></content>
+    <tabTrigger>modal</tabTrigger>
+    <description>Modal window HTML bootstrap</description>
+  </snippet>

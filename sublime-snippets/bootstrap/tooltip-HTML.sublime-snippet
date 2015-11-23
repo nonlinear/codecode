@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+<a href="#" data-toggle="tooltip" title="${1:Tooltip Content}"${3: data-html="true"}${4: data-placement="${5:top|bottom|left|right}"}>${2:Tooltip trigger}</a>
+]]></content>
+  <tabTrigger>tooltip</tabTrigger>
+  <description>Tooltip HTML bootstrap</description>
+</snippet>

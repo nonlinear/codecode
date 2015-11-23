@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+{{ ${1:project} | translate }}
+]]>
+  </content>
+  <tabTrigger>lang</tabTrigger>
+  <description>lang code</description>
+</snippet>

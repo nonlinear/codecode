@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+'Palatino Linotype', 'Book Antiqua', Palatino, serif
+]]>
+  </content>
+  <tabTrigger>sans</tabTrigger>
+  <source>source.sass</source>
+  <description>Palatino web font, SASS</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+]]>
+  </content>
+  <tabTrigger>viewport</tabTrigger>
+  <description>viewport HTML function</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
++size(${1:square|other}, ${2:5px}, ${3:5px})
+]]>
+  </content>
+  <tabTrigger>size</tabTrigger>
+  <source>source.sass</source>
+  <description>size SASS mixin</description>
+</snippet>

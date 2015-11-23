@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+<script src="https://gist.github.com/${1:username}/${2:token}.js"></script>
+<a class="hidden" href="https://gist.github.com/${1:username}/${2:token}">Check this gist</a>
+]]>
+  </content>
+  <tabTrigger>gist</tabTrigger>
+  <description>responsive Gist link</description>
+</snippet>

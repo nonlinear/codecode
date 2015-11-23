@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++flipOutY
+]]>
+  </content>
+  <tabTrigger>flipOutY</tabTrigger>
+  <description>flipOutY SASS animation</description>
+</snippet>

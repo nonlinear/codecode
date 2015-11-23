@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++slideOutUp
+]]>
+  </content>
+  <tabTrigger>slideOutUp</tabTrigger>
+  <description>slideOutUp SASS animation</description>
+</snippet>

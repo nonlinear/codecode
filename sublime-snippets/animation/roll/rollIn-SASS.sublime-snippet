@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++rollIn
+]]>
+  </content>
+  <tabTrigger>rollIn</tabTrigger>
+  <description>rollIn SASS animation</description>
+</snippet>

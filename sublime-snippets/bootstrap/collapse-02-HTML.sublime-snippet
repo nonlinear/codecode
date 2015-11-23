@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<div class="panel-group" id="${1:collapse}">
+${2:collapse panels here}
+</div>
+]]></content>
+  <tabTrigger>collapse</tabTrigger>
+  <description>Collapse group HTML bootstrap</description>
+</snippet>

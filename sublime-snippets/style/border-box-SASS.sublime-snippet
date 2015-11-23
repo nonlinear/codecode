@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
++border-box
+]]>
+  </content>
+  <tabTrigger>border-box</tabTrigger>
+  <source>source.sass</source>
+  <description>border-box SASS mixin</description>
+</snippet>

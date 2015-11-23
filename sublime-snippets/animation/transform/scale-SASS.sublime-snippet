@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++scale(${1:0})
+]]>
+  </content>
+  <tabTrigger>scale</tabTrigger>
+  <description>scale SASS transform</description>
+</snippet>

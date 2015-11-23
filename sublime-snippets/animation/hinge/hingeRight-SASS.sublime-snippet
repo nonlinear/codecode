@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++hingeRight
+]]>
+  </content>
+  <tabTrigger>hingeRight</tabTrigger>
+  <description>hingeRight SASS animation</description>
+</snippet>
