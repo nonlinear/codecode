@@ -191,47 +191,7 @@ gulp.task('js', function () {
 });
 
 
-// =======
-// PUBLISH
-// =======
 
-
-
-// Clean unused CSS rules
-
-gulp.task('uncss', function () {
-  return gulp.src('./dist/css/style.css')
-  .pipe(uncss({
-    html: ['./dist/**/*.html'],
-    ignore: [/.chosen/, /.flex/]
-  }))
-  .pipe(gulp.dest('./dist/css'));
-});
-
-// Consolidates TODO comments at TODO.md
-
-gulp.task('todo', function() {
-  gulp.src('./app/**/*.+(js|html|sass|scss)')
-  .pipe(todo())
-  .pipe(gulp.dest('./'));
-});
-
-// moves dist to gh-pages
-
-gulp.task('gh-pages', function() {
-  return gulp.src('./dist/**/*')
-  .pipe(ghPages());
-});
-
-
-gulp.task('publish', function(callback) {
-  runSequence(
-    ['todo'],
-    ['uncss'],
-    ['gh-pages'],
-    callback
-    );
-});
 
 // ======================
 // FLUSHING SPECIFIC DATA
