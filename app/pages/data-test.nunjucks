@@ -1,9 +1,16 @@
+---
+data: ['data/about.json']
+---
+
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
   <div class="row">
+    <h1>Test 1 here: {{test1}}</h1>
+    <h1>Test 2 here: {{test1}}</h1>
+    <h2>{{siteTitle}}</h2>
    <div class="col-md-10 content">
-  {% for user in users %}
+       {% for user in users %}
   <div class="avatar">
     <div class="image" style="background-image: url({{user.image}});"></div>
     <ul>

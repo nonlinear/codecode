@@ -96,9 +96,10 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
     './app/templates/**/*',
     './app/pages/**/*.*'
     // ,
-    // './app/data.json'
+    // './app/data/data.json'
     ], ['nunjucks']);
 });
+
 
 // Templating
 gulp.task('nunjucks', function(){
@@ -106,7 +107,7 @@ gulp.task('nunjucks', function(){
   return gulp.src('./app/pages/**/*.*')
   .pipe(customPlumber('Error Running Nunjucks'))
   .pipe(data(function() {
-    return JSON.parse(fs.readFileSync('./app/data.json'))
+    return JSON.parse(fs.readFileSync('./app/data/data.json'))
   }))
   .pipe(nunjucksRender())
   .pipe(gulp.dest('./dist'))
@@ -117,7 +118,7 @@ gulp.task('nunjucks', function(){
 
 // Data places
 gulp.task('data', function(){
-  return JSON.parse(fs.readFileSync('./app/data.json'))
+  return JSON.parse(fs.readFileSync('./app/data/data.json'))
 });
 
 
