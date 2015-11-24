@@ -1,13 +1,13 @@
 ---
-data: ['data/about.json']
+data: ['./app/data/about.json']
 ---
 
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
   <div class="row">
-    <h1>Test 1 here: {{test1}}</h1>
-    <h1>Test 2 here: {{test1}}</h1>
+    <h1>1 is: {{test1}}</h1>
+    <h1>2 is: {{test2}}</h1>
     <h2>{{project.title}}</h2>
    <div class="col-md-10 content">
        {% for user in users %}
