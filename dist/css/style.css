@@ -9793,7 +9793,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     background: radial-gradient(circle, rgba(168, 223, 193, 0.4) 70%, #c4b7c8);
     mix-blend-mode: overlay; }
 
-/* */
 .aden:before, .inkwell:before, .perpetua:before, .reyes:before, .gingham:before, .toaster:before, .walden:before, .hudson:before, .earlybird:before, .mayfair:before, .lofi:before, ._1977:before, .brooklyn:before, .xpro2:before, .nashville:before, .lark:before, .moon:before, .aden:after, .inkwell:after, .perpetua:after, .reyes:after, .gingham:after, .toaster:after, .walden:after, .hudson:after, .earlybird:after, .mayfair:after, .lofi:after, ._1977:after, .brooklyn:after, .xpro2:after, .nashville:after, .lark:after, .moon:after {
   content: '';
   display: block;
@@ -9825,7 +9824,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     background: radial-gradient(circle, #E6E7E0 40%, rgba(43, 42, 161, 0.6) 110%);
     mix-blend-mode: color-burn; }
 
-/* */
 .aden:before, .inkwell:before, .perpetua:before, .reyes:before, .gingham:before, .toaster:before, .walden:before, .hudson:before, .earlybird:before, .mayfair:before, .lofi:before, ._1977:before, .brooklyn:before, .xpro2:before, .nashville:before, .lark:before, .moon:before, .aden:after, .inkwell:after, .perpetua:after, .reyes:after, .gingham:after, .toaster:after, .walden:after, .hudson:after, .earlybird:after, .mayfair:after, .lofi:after, ._1977:after, .brooklyn:after, .xpro2:after, .nashville:after, .lark:after, .moon:after {
   content: '';
   display: block;
@@ -9859,7 +9857,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     background: rgba(247, 176, 153, 0.56);
     mix-blend-mode: darken; }
 
-/* */
 .aden:before, .inkwell:before, .perpetua:before, .reyes:before, .gingham:before, .toaster:before, .walden:before, .hudson:before, .earlybird:before, .mayfair:before, .lofi:before, ._1977:before, .brooklyn:before, .xpro2:before, .nashville:before, .lark:before, .moon:before, .aden:after, .inkwell:after, .perpetua:after, .reyes:after, .gingham:after, .toaster:after, .walden:after, .hudson:after, .earlybird:after, .mayfair:after, .lofi:after, ._1977:after, .brooklyn:after, .xpro2:after, .nashville:after, .lark:after, .moon:after {
   content: '';
   display: block;
@@ -9893,7 +9890,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     background: #22253f;
     mix-blend-mode: color-dodge; }
 
-/* */
 .aden:before, .inkwell:before, .perpetua:before, .reyes:before, .gingham:before, .toaster:before, .walden:before, .hudson:before, .earlybird:before, .mayfair:before, .lofi:before, ._1977:before, .brooklyn:before, .xpro2:before, .nashville:before, .lark:before, .moon:before, .aden:after, .inkwell:after, .perpetua:after, .reyes:after, .gingham:after, .toaster:after, .walden:after, .hudson:after, .earlybird:after, .mayfair:after, .lofi:after, ._1977:after, .brooklyn:after, .xpro2:after, .nashville:after, .lark:after, .moon:after {
   content: '';
   display: block;
@@ -10422,7 +10418,6 @@ a.logo {
             padding-left: 0;
             float: none; } }
 
-.test {
+.filter {
   width: 200px;
-  height: 200px;
-  background-image: url("../../app/images/pass.png"); }
+  height: 200px; }
