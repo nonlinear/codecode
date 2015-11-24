@@ -1,13 +1,17 @@
 {
-  "siteTitle": "CodeCode/",
-  "siteUrl": "http://nonlinear.nyc/codecode",
-  "siteDescription": "This is my site description",
-  "siteAnalytics": "UA-57576127-1",
-  "authorName": "Nicholas Frota",
-  "authorEmail": "info@nicholasfrota.com",
-  "authorTwitter": "nonlinear",
-  "authorGithub": "nonlinear",
-  "authorInstagram": "nonlinear",
+  "project": {
+    "title": "CodeCode/",
+    "url": "http://nonlinear.nyc/codecode",
+    "description": "This is my description",
+    "analytics": "UA-57576127-1"
+  },
+  "author": {
+    "name": "Nicholas Frota",
+    "email": "info@nicholasfrota.com",
+    "twitter": "nonlinear",
+    "github": "nonlinear",
+    "instagram": "nonlinear"
+  },
   "images": [{
     "src": "image-two.png",
     "alt": "Image two aaa text"
