@@ -9246,7 +9246,7 @@ a:not(.btn) {
   a:not(.btn):hover {
     color: #b3b3b3; }
 
-.sig, .soon li, .social p {
+.sig, .soon li, .menu .social p {
   font-size: 80%;
   line-height: 115%;
   padding: 5px 0;
@@ -9947,16 +9947,16 @@ code, textarea.code, input.code {
   .quote {
     text-align: right; } }
 
-.social p {
+.menu .social p {
   margin-bottom: 5px; }
 
-.social a {
+.menu .social a {
   text-decoration: none !important; }
-  .social a:not(:first-of-type):before {
+  .menu .social a:not(:first-of-type):before {
     content: "/"; }
 
 @media screen and (max-width: 770px) {
-  .social {
+  .menu .social {
     display: none; } }
 
 a:hover {
@@ -10192,8 +10192,22 @@ form {
   background-color: #eee;
   padding: 3px 10px 3px 0; }
 
-body, header .logo {
-  background-image: url("../images/patterns/noise-white-100.png"); }
+ul.pattern {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none;
+  background: transparent;
+  list-style: none; }
+  ul.pattern li {
+    height: 50px; }
+    ul.pattern li:nth-of-type(1) {
+      background-color: white; }
+    ul.pattern li:nth-of-type(2) {
+      background-color: #333; }
+  ul.pattern.noise li:nth-of-type(1) {
+    background-image: url("../images/patterns/noise-black-30.png"); }
+  ul.pattern.noise li:nth-of-type(2) {
+    background-image: url("../images/patterns/noise-white-30.png"); }
 
 header.header {
   height: 120px;
@@ -10282,7 +10296,7 @@ a.logo {
   border: none;
   background: transparent;
   counter-reset: step; }
-  .tutorial p.sig, .tutorial .social p, .social .tutorial p {
+  .tutorial p.sig, .tutorial .menu .social p, .menu .social .tutorial p {
     padding: 10px 0 0 0 !important; }
   .tutorial img {
     max-width: 100%;

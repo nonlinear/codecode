@@ -65,7 +65,7 @@ code, textarea.code, input.code
   +media($bp, min)
     text-align: right
 
-.social
+.menu .social
   p
     @extend .sig
     margin-bottom: 5px
@@ -256,7 +256,21 @@ form
   background-color: $color-bg
   padding: 3px 10px 3px 0
 
-body, header .logo
-  +pattern(noise, white, 100)
+ul.pattern
+  +reset(all)
+  +reset(list)
+  li
+    height: 50px
+    &:nth-of-type(1)
+      background-color: white
+    &:nth-of-type(2)
+      background-color: #333
+  &.noise
+    li:nth-of-type(1)
+      +pattern(noise, black, 30)
+    li:nth-of-type(2)
+      +pattern(noise, white, 30)
+
+
 
 
