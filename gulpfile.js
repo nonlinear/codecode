@@ -92,21 +92,6 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
 });
 
 
-// Templating
-gulp.task('nunjucks', function(){
-  nunjucksRender.nunjucks.configure(['./app/templates/'], {watch: false});
-  return gulp.src('./app/pages/**/*.*')
-  .pipe(customPlumber('Error Running Nunjucks'))
-  .pipe(data(function() {
-    return JSON.parse(fs.readFileSync('./app/data/data.json'))
-  }))
-  .pipe(nunjucksRender())
-  .pipe(gulp.dest('./dist'))
-  .pipe(browserSync.reload({
-    stream:true
-  }));
-});
-
 // Data places
 gulp.task('data', function(){
   return JSON.parse(fs.readFileSync('./app/data/data.json'))
@@ -157,15 +142,7 @@ gulp.task('lint:js', function(){
 // OPTIMIZING
 // =================
 
-gulp.task('imagemin', function(){
-  return gulp.src('./app/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  .pipe(cache(imagemin({
-    progressive: true,
-    svgoPlugins: [{removeViewBox: false}],
-    use: [pngquant()]
-  })))
-  .pipe(gulp.dest('./dist/images'))
-});
+
 
 
 gulp.task('cache:clear', function (callback) {

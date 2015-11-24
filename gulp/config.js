@@ -16,6 +16,10 @@ var config = {
   },
   ghPages: {
     src: './dist/**/*'
+  },
+  imagemin: {
+     src: './app/images/**/*.+(png|jpg|jpeg|gif|svg)',
+    dest: './dist/images'
   }
 };
 

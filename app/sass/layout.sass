@@ -84,18 +84,15 @@ a:hover
   font-size: 130%
 
 .btn
-  +radius(normal, 3px)
-  border-color: $color-link
-  background-color: transparent
-  color: $color-link
   font-family: $font-title
   text-transform: uppercase
   font-size: 25px
+  color: $color-link
   +transition
   &:hover
     +shadow(normal, 0 3px 0 rgba(0, 0, 0, 0.1))
     border-color: $color-link-hover
-    background-color: transparent
+    background-color: $color-bg
     color: $color-link-hover
   &.btn-block
     margin-top: $gap
@@ -259,5 +256,7 @@ form
   background-color: $color-bg
   padding: 3px 10px 3px 0
 
+body, header .logo
+  +pattern(noise, white, 100)
 
 

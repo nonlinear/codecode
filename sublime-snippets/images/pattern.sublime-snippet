@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
++pattern(${1:noise}, ${2:white|black}, ${3:10-100})
+]]>
+  </content>
+  <tabTrigger>pattern</tabTrigger>
+  <description>pattern bg</description>
+</snippet>
