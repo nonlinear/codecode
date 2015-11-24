@@ -21,8 +21,10 @@ svgSprite = require('gulp-svg-sprites'),
 filter = require('gulp-filter'),
 svg2png = require('gulp-svg2png'),
 rename = require('gulp-rename'),
-todo = require('gulp-todo');
+todo = require('gulp-todo'),
+requireDir = require('require-dir');
 
+requireDir('./gulp/tasks');
 
 // Custom Plumber function for catching errors
 function customPlumber (errTitle) {
@@ -44,17 +46,6 @@ gulp.task('browserSync', function() {
   })
 })
 
-// Compiles Sass to CSS, removes unused files, /reports
-gulp.task('sass', function(){
-  return gulp.src('./app/sass/style.sass')
-  .pipe(customPlumber('Error Running SASS'))
-  .pipe(sass())
-  .pipe(autoprefixer())
-  .pipe(gulp.dest('./dist/css'))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
-});
 
 // SVG sprites
 gulp.task('svgSprite', function () {
