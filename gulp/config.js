@@ -11,7 +11,7 @@ var config = {
   uncss: {
     src: './dist/css/style.css',
     dest: './dist/css',
-    html: './dist/**/*.html',
+    html: ['./dist/**/*.html'],
     ignore: [/.chosen/, /.flex/]
   },
   ghPages: {
