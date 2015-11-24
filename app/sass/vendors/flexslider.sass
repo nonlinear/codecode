@@ -2,18 +2,16 @@
   outline: none
 
 .slides
-  margin: 0
-  padding: 0
-  list-style: none
+  +reset(all)
+  +reset(list)
   > li
     margin: 0
     padding: 0
     list-style: none
 
 .flex-control-nav, .flex-direction-nav
-  margin: 0
-  padding: 0
-  list-style: none
+  +reset(all)
+  +reset(list)
 
 .flex-pauseplay span
   text-transform: capitalize
@@ -23,7 +21,6 @@
   .slides
     > li
       display: none
-      height: 300px
       -webkit-backface-visibility: hidden
     img
       width: 100%
@@ -77,10 +74,10 @@ html[xmlns] .flexslider .slides
     overflow: hidden
     opacity: 0
     cursor: pointer
-    color: $color-divider
+    color: $color-text
     +transition
     &:hover
-      color: $color-divider
+      color: $color-text
     &:before
       font-family: FontAwesome
       font-size: 30px
@@ -149,7 +146,7 @@ html[xmlns] .flexslider .slides
     +size(square, 10px)
     display: block
     margin: 3px
-    background-color: $color-divider
+    background-color: $color-text
     cursor: pointer
     text-indent: -9999px
     +radius(50%)

@@ -211,7 +211,7 @@ gulp.task('uncss', function () {
   return gulp.src('./dist/css/style.css')
   .pipe(uncss({
     html: ['./dist/**/*.html'],
-    ignore: [/.chosen/]
+    ignore: [/.chosen/, /.flex/]
   }))
   .pipe(gulp.dest('./dist/css'));
 });
