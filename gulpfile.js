@@ -37,14 +37,7 @@ function customPlumber (errTitle) {
   });
 }
 
-// Browser Sync
-gulp.task('browserSync', function() {
-  browserSync({
-    server: {
-      baseDir: './dist/'
-    },
-  })
-})
+
 
 
 
@@ -54,36 +47,7 @@ gulp.task('data', function(){
 });
 
 
-// Clean files
-gulp.task('clean', function(callback){
-  del(['./dist', './app/sass/generated'], callback);
-});
 
-
-
-// Consolidated dev phase task
-
-
-// =======
-// TESTING
-// =======
-
-// Checks for JS errors
-gulp.task('lint:js', function(){
-  return gulp.src('./dist/js/*.js')
-  .pipe(customPlumber('JSHint Error'))
-  .pipe(jshint())
-  .pipe(jshint.reporter('jshint-stylish'))
-  .pipe(jshint.reporter('fail', {
-    ignoreWarning: true,
-    ignoreInfo: true
-  }))
-  .pipe(jscs({
-    fix: true,
-    configPath: '.jscsrc'
-  }))
-  .pipe(gulp.dest('./dist/js'))
-});
 
 // =================
 // OPTIMIZING

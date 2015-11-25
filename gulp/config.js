@@ -24,6 +24,9 @@ var config = {
   ghPages: {
     src: './dist/**/*'
   },
+  browserSync: {
+    baseDir: './dist/'
+  },
   svgSprites: {
     src: './app/svg/*.svg',
     dest: './dist',
