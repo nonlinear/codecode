@@ -17,7 +17,6 @@ imagemin = require('gulp-imagemin'),
 pngquant = require('imagemin-pngquant'),
 cache = require('gulp-cache'),
 ghPages = require('gulp-gh-pages'),
-svgSprite = require('gulp-svg-sprites'),
 filter = require('gulp-filter'),
 svg2png = require('gulp-svg2png'),
 rename = require('gulp-rename'),
@@ -47,33 +46,6 @@ gulp.task('browserSync', function() {
   })
 })
 
-
-// SVG sprites
-gulp.task('svgSprite', function () {
-  return gulp.src('./app/svg/*.svg')
-  .pipe(svgSprite({
-    cssFile: 'svg.scss'
-  }))
-  .pipe(gulp.dest("./app/sass/generated"))
-  .pipe(filter("**/*.svg"))
-  .pipe(svg2png())
-  .pipe(gulp.dest("./dist"))
-});
-
-// SVG symbols, trying a new method for icons...
-// Not having any luck.
-// gulp.task('symbols', function () {
-//   return gulp.src('./app/symbols/*.svg')
-//   .pipe(svgSprite({mode: "defs"}))
-//   .pipe(filter("**/*.svg"))
-//   .pipe(gulp.dest("./dist"))
-// });
-
-// gulp.task('symbols', function () {
-//     return gulp.src('./app/symbols/*.svg')
-//         .pipe(svgSprite({mode: "defs"}))
-//         .pipe(gulp.dest("./dist"));
-// });
 
 
 // Data places

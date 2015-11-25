@@ -24,6 +24,13 @@ var config = {
   ghPages: {
     src: './dist/**/*'
   },
+  svgSprites: {
+    src: './app/svg/*.svg',
+    dest: './dist',
+    cssFile: 'svg.scss',
+    generated: './app/sass/generated',
+    filter: '**/*.svg'
+  },
   imagemin: {
      src: './app/images/**/*.+(png|jpg|jpeg|gif|svg)',
     dest: './dist/images'
