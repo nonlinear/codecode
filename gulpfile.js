@@ -26,6 +26,7 @@ requireDir = require('require-dir');
 
 requireDir('./gulp/tasks');
 
+
 // Custom Plumber function for catching errors
 function customPlumber (errTitle) {
   return plumber({
@@ -75,23 +76,6 @@ gulp.task('svgSprite', function () {
 // });
 
 
-// Watchers files for changes
-gulp.task('watch', ['browserSync', 'sass'], function(){
-  gulp.watch('./app/sass/**/*.+(sass|scss)', ['sass']);
-  gulp.watch('./dist/js/*.js', ['lint:js']);
-  gulp.watch('./app/images/**/*.+(png|jpg|jpeg|gif|svg)', ['imagemin']);
-  gulp.watch('./app/svg/**/*', ['svgSprite']);
-  gulp.watch('./app/js/**/*.js', browserSync.reload);
-  gulp.watch('./dist/*.html', browserSync.reload);
-  gulp.watch([
-    './app/templates/**/*',
-    './app/pages/**/*.*'
-    // ,
-    // './app/data/data.json'
-    ], ['nunjucks']);
-});
-
-
 // Data places
 gulp.task('data', function(){
   return JSON.parse(fs.readFileSync('./app/data/data.json'))
@@ -106,16 +90,7 @@ gulp.task('clean', function(callback){
 
 
 // Consolidated dev phase task
-gulp.task('default', function(callback) {
-  runSequence(
-    'clean',
-    ['svgSprite', 'lint:js', 'imagemin'],
-    ['svgfile', 'font', 'js', 'todo'],
-    ['sass', 'nunjucks'],
-    ['browserSync', 'watch'],
-    callback
-    );
-});
+
 
 // =======
 // TESTING

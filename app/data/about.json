@@ -1,4 +1,15 @@
 {
-  "test1": "TEST!! Quis quibusdam, consequuntur animi. Id dicta molestias minima, recusandae voluptates, corporis ab.",
-  "test2": "TEST!! Ex, hic asperiores harum corporis veritatis deserunt, mollitia porro recusandae illo laborum."
+  "project": {
+    "title": "CodeCode/",
+    "url": "http://nonlinear.nyc/codecode",
+    "description": "This is my description",
+    "analytics": "UA-57576127-1"
+  },
+  "author": {
+    "name": "Nicholas Frota",
+    "email": "info@nicholasfrota.com",
+    "twitter": "nonlinear",
+    "github": "nonlinear",
+    "instagram": "nonlinear"
+  }
 }

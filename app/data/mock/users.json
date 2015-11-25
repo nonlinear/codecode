@@ -1,33 +1,4 @@
 {
-  "project": {
-    "title": "CodeCode/",
-    "url": "http://nonlinear.nyc/codecode",
-    "description": "This is my description",
-    "analytics": "UA-57576127-1"
-  },
-  "author": {
-    "name": "Nicholas Frota",
-    "email": "info@nicholasfrota.com",
-    "twitter": "nonlinear",
-    "github": "nonlinear",
-    "instagram": "nonlinear"
-  },
-  "images": [{
-    "src": "image-two.png",
-    "alt": "Image two aaa text"
-  }, {
-    "src": "image-two.png",
-    "alt": "Image two alt text"
-  }, {
-    "src": "image-two.png",
-    "alt": "Image two alt text"
-  }, {
-    "src": "image-two.png",
-    "alt": "Image two alt text"
-  }, {
-    "src": "image-two.png",
-    "alt": "Image two alt text"
-  }],
   "users": [{
     "name": "marion harris",
     "image": "https://randomuser.me/api/portraits/med/men/14.jpg",
