@@ -14,6 +14,13 @@ var config = {
     html: ['./dist/**/*.html'],
     ignore: [/.chosen/, /.flex/]
   },
+  nunjucks: {
+    src: './app/pages/**/*.*',
+    dest: './dist',
+    error: 'Error Running Nunjucks',
+    template: './app/templates/',
+    data: './app/data/data.json'
+  },
   ghPages: {
     src: './dist/**/*'
   },
