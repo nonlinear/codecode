@@ -41,13 +41,6 @@ function customPlumber (errTitle) {
 
 
 
-// Data places
-gulp.task('data', function(){
-  return JSON.parse(fs.readFileSync('./app/data/data.json'))
-});
-
-
-
 
 // =================
 // OPTIMIZING
@@ -56,15 +49,10 @@ gulp.task('data', function(){
 
 
 
-gulp.task('cache:clear', function (callback) {
-  return cache.clearAll(callback)
-});
+
 
 // move fonts to dist
-gulp.task('font', function () {
-  return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('./dist/fonts'))
-});
+
 
 // move resulting svg file to dist
 gulp.task('svgfile', function () {
