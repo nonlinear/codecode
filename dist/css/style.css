@@ -9259,6 +9259,9 @@ button, .button, .btn {
 h1, h2, h3, h4, .soon:before {
   font-weight: normal; }
 
+input, select, textarea {
+  width: 100%; }
+
 .calendar {
   margin: 0 auto; }
   .calendar header {

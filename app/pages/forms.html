@@ -8,29 +8,61 @@
   <div class="row">
     <div class="col-md-2 quote">
       <h1>top-notch interactions</h1>
-  </div>
+    </div>
     <div class="col-md-10 content">
-      <h2>forms snippets</h2>
       <div class="row">
-        <div class="col-md-4 col-xs-6">
+        <div class="col-md-4">
+          <h2>Form Snippets</h2>
           <code class="snippet">disable</code>
           <p>quick mixin to disable link, drag or select.</p>
-        </div>
-
-        <div class="col-md-4 col-xs-6">
           <code class="snippet">placeholder</code>
           <p>rules for input and textarea placeholders</p>
-        </div>
-        <div class="col-md-4 col-xs-6">
           <code class="snippet">scroll-hint</code>
           <p>i'll explain this one later.</p>
+        </div>
+
+        <div class="col-md-4">
+          <select name="" id="">
+            <option>Month</option>
+            {% for month in months %}
+            <option value="{{month.code}}">{{month.name}}</option>
+            {% endfor %}
+          </select>
+          <hr>
+          <select>
+            <option>Country</option>
+            {% for country in countries %}
+            <option value="{{country.code}}">{{country.name}}</option>
+            {% endfor %}
+          </select>
+           <hr>
+          <select>
+            <option>Industry</option>
+            {% for industry in industries %}
+            <option value="{{industry.name}}">{{industry.name}}</option>
+            {% endfor %}
+          </select>
+          <hr>
+          <select>
+            <option>Year</option>
+            {% for year in years %}
+            <option value="{{year.name}}">{{year.name}}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-4">
+            <ul class="soon">
+      <li>proper styling of form fields</li>
+      <li>form variables</li>
+      <li>chosen, multiselect</li>
+    </ul>
         </div>
       </div>
 
 
-   </div>
- </div>
+    </div>
+  </div>
   {% import 'macros/nav.html' as nav %}
-     {{nav.active('forms')}}
+  {{nav.active('forms')}}
 </div>
 {% endblock %}
