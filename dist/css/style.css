@@ -10363,15 +10363,3 @@ a.logo {
           .tutorial.joined > li:not(:first-of-type) {
             padding-left: 0;
             float: none; } }
-
-.stamp {
-  padding-right: 20px !important; }
-  .stamp:before {
-    font-family: FontAwesome;
-    content: "";
-    font-size: 18px;
-    margin-top: 0px;
-    color: inherit; }
-  .stamp:before {
-    float: right;
-    margin-right: -20px; }
