@@ -37,6 +37,13 @@
           </select>
            <hr>
           <select>
+            <option>State</option>
+            {% for state in states %}
+            <option value="{{state.code}}">{{state.name}}</option>
+            {% endfor %}
+          </select>
+           <hr>
+          <select>
             <option>Industry</option>
             {% for industry in industries %}
             <option value="{{industry.name}}">{{industry.name}}</option>
