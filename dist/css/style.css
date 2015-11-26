@@ -10363,3 +10363,17 @@ a.logo {
           .tutorial.joined > li:not(:first-of-type) {
             padding-left: 0;
             float: none; } }
+
+.stamp {
+  padding-left: 67px !important;
+  background-color: #ffffcc;
+  padding: 10px; }
+  .stamp:before {
+    font-family: FontAwesome;
+    content: "";
+    font-size: 50px;
+    margin-top: -12px;
+    color: blue; }
+  .stamp:before {
+    float: left;
+    margin-left: -57px; }

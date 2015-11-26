@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+// optionals: $size, $nudge, $padding, $spacing, $color
++stamp(\$icon: \$fa-var-${1:icon}, \$position: ${2:left})
+]]>
+  </content>
+  <tabTrigger>stamp</tabTrigger>
+  <description>icon stamp</description>
+</snippet>
