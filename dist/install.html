@@ -32,33 +32,33 @@
          <h2>Installation</h2>
          <ol class="tutorial">
            <li>Go to where you want your project to be in terminal, and type
-            <code class="terminal">git clone https://github.com/nonlinear/codecode</code></li>
-            <li>Rename <code class="folder">codecode</code> folder to your project name.</li>
+            <p class="code terminal">git clone https://github.com/nonlinear/codecode</p></li>
+            <li>Rename <p class="code folder">codecode</p> folder to your project name.</li>
             <li>Go to your project folder on terminal and type
-              <code class="terminal">npm install</code>
+              <p class="code terminal">npm install</p>
               <p class="sig">It will take a while.</p></li>
               <li>Create a new repository on github, copy the HTTPS: url, then type:
-               <code class="terminal">git remote rename origin upstream</code>
-               <code class="terminal">git remote add origin (paste HTTPS here)</code>
-               <code class="terminal">git push origin master</code>
+               <p class="code terminal">git remote rename origin upstream</p>
+               <p class="code terminal">git remote add origin (paste HTTPS here)</p>
+               <p class="code terminal">git push origin master</p>
              </li>
              <li> Clean up code with
-               <code class="terminal">gulp flush</code>
+               <p class="code terminal">gulp flush</p>
                <p class="sig">Important: do it once per project.</p>
              </li>
-             <li>Move <code class="folder">sublime-snippets</code> folder to <code class="folder">Library/Application Support/Sublime Text 2 (or 3)/Packages</code>.</li>
+             <li>Move <p class="code folder">sublime-Macros</p> folder to <p class="code folder">Library/Application Support/Sublime Text 2 (or 3)/Packages</p>.</li>
            </ol>
          </div>
          <div class="col-md-4">
            <h2>Usage</h2>
            <ol class="tutorial">
-             <li>On terminal, go to project and type <code class="terminal">gulp</code>
+             <li>On terminal, go to project and type <p class="code terminal">gulp</p>
               <p class="sig">A browser window will open, and refresh anytime your files are edited.</p></li>
-             <li>Files are on <code class="folder">app/pages</code></li>
-             <li>Templates are on <code class="folder">app/templates</code></li>
-             <li>Personalize base variables at <code class="doc">app/sass/style.sass</code></li>
-             <li>Edit project CSS rules at <code class="doc">app/sass/project/layout.sass</code></li>
-             <li>Push your changes at will, and when you're ready to publish it, type <code class="terminal">gulp publish</code>
+             <li>Files are on <p class="code folder">app/pages</p></li>
+             <li>Templates are on <p class="code folder">app/templates</p></li>
+             <li>Personalize base variables at <p class="code file">app/sass/style.sass</p></li>
+             <li>Edit project CSS rules at <p class="code file">app/sass/project/layout.sass</p></li>
+             <li>Push your changes at will, and when you're ready to publish it, type <p class="code terminal">gulp publish</p>
               <p class="sig">unCSS will remove unused rules, and gh-pages will publish it at  www.<em>your-github-username</em>.github.io/<em>project-name</em></p></li>
            </ol>
          </div>

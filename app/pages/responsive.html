@@ -8,52 +8,79 @@
   <div class="row">
     <div class="col-md-2 quote">
       <h1>device-ready from the start</h1>
-  </div>
+    </div>
     <div class="col-md-10 content">
 
 
-   <h2>responsive snippets</h2>
-   <div class="row">
-        <div class="col-md-4">
-          <code class="snippet">orientation</code>
-          <p>base orientation detection. variables are<code class="code">landscape</code>, <code class="code">portrait</code></p>
+
+     <div class="row">
+      <div class="col-md-4">
+        <h2>responsive Macros</h2>
+        <p class="code macro SASS">orientation</code>
+          <p class="sig">base orientation detection. variables are <p class="code variable">landscape</p><p class="code variable">portrait</p></p>
         </div>
         <div class="col-md-4">
-          <code class="snippet">viewport</code>
-          <p>prevents zoom.</p>
-          <p>add it anywhere between <code class="code">&lt;head&gt;</code> and <code class="code">&lt;/head&gt;</code> on your HTML file</p>
+          <h2>Media Mixin as numbers</h2>
+          <p class="code macro SASS">media</p><hr>
+          <p class="code SASS">+media(200px, max)</p>
+          outputs as
+          <p class="code SASS">@media screen and (max-width: 200px)</p>
+          <hr>
+          <h4>Scopes</h4>
+          <table class="legend">
+           <tbody>
+            <tr>
+              <td><p class="code variable">max</p></td>
+              <td>from number to smaller</td>
+            </tr>
+            <tr>
+              <td><p class="code variable">min</p></td>
+              <td>until number</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
         </div>
-            <div class="col-md-4">
-      <code class="snippet">media</code>
-      <p>media queries for most devices.</p>
-      <p>Either use numbers:
-        <br>
-        <code class="code">@include media(200px, max)</code><br>
-        outputs as<br>
-        <code class="code">@media screen and (max-width: 200px)</code><br>
-        <p>scopes are: <br>
-          <code class="code">max</code>: from number to smaller<br>
-          <code class="code">min</code>: until number</p>
-          <p>Or use proper device names:
-            <code class="code">ipad</code>,
-            <code class="code">iphone6</code>,
-            <code class="code">iphone5</code>,
-            <code class="code">iphone4</code> (more to come)<br>
-            scopes are: <br>
-            <code class="code">strict</code>: apply only to device<br>
-            <code class="code">landscape</code>: apply to landscape or smaller<br>
-            <code class="code">portrait</code>: apply to portrait or smaller
-          </p>
-        </div>
+        <div class="col-md-4">
+          <h2>Media Mixin as device names</h2>
+          <p class="code macro SASS">media</p><hr>
+          <p class="code variable">ipad</p>
+          <p class="code variable">iphone6</p>
+          <p class="code variable">iphone5</p>
+          <p class="code variable">iphone4</p>
+          <p class="sig">more to come</p>
+          <hr>
+          <h4>Scopes</h4>
+          <table class="legend">
+           <tbody>
+            <tr>
+              <td><p class="code variable">strict</p></td>
+              <td>apply <strong>only</strong> to device</td>
+            </tr>
+            <tr>
+              <td><p class="code variable">landscape</p></td>
+              <td>apply to landscape breakpoint and smaller</td>
+            </tr>
+            <tr>
+              <td><p class="code variable">portrait</p></td>
+              <td>apply to portrait breakpoint and smaller</td>
+            </tr>
+
+          </tbody>
+        </table>
 
       </div>
 
+    </div>
 
 
 
-   </div>
- </div>
-  {% import 'macros/nav.html' as nav %}
-     {{nav.active('responsive')}}
+
+  </div>
+</div>
+{% import 'macros/nav.html' as nav %}
+{{nav.active('responsive')}}
 </div>
 {% endblock %}

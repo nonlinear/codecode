@@ -31,35 +31,58 @@ body
     color: #666
     display: block
 
-textarea, input
-  &.code
-    margin-bottom: 10px
-    border: none
-    background-color: #F7F7F9
-    display: block
-    width: 100%
+.btn.external
+  padding: 2px
+  font-size: 15px
+  margin-top: -5px
+  margin-left: 5px
+  +size(square, 25px, 25px)
+  +radius(normal, 50%)
+  i.fa
+    padding: 0
 
-code, textarea.code, input.code
+h4.title
+  margin-bottom: 0
+
+
+.legend
+  td.title, th
+    @extend h4
+  th, td
+    padding: 3px 0
+    width: 50%
+    vertical-align: top
+  td:nth-of-type(2)
+    @extend .sig
+
+.code
   font-family: $font-mono
-  color: black
-  background: none
-  padding: 0
+  color: $color-text
+  margin: 0
+  margin: 0 3px 3px 0
+  padding: 5px 10px
+  line-height: 100%
+  display: inline-block
   word-break: break-all
+  background-color: rgba(yellow, .2)
+  +shadow(normal, 1px 1px 0px rgba(0, 0, 0, 0.1))
   text-transform: none !important
-  &:before
-    font-family: FontAwesome
-    color: #ccc
-    padding-right: 5px
   &.terminal
-    display: block
-    &:before
-      content: $fa-var-terminal
-  &.folder:before
-    content: $fa-var-folder-open
-  &.html:before
-    content: $fa-var-code
-  &.doc:before
-    content: $fa-var-file
+    +stamp($icon: $fa-var-terminal, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
+  &.folder
+    +stamp($icon: $fa-var-folder-open, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
+  &.file
+    +stamp($icon: $fa-var-file, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
+    height: auto !important
+  &.HTML
+    +stamp($icon: $fa-var-code, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
+  &.SASS
+    +stamp($icon: $fa-var-pencil, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
+  &.variable
+    +stamp($icon: $fa-var-asterisk, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
+  &.macro
+    background-color: rgba(yellow, .5)
+    +radius(normal, 20px)
 
 .quote
   +media($bp, min)
@@ -87,6 +110,10 @@ a:hover
   font-family: $font-title
   text-transform: uppercase
   font-size: 25px
+  i.fa
+    font-size: 16px
+    line-height: 20px
+
   color: $color-link
   +transition
   &:hover
@@ -171,7 +198,7 @@ nav.menu
           padding-top: 0
 
 
-.snippets, collapse
+.Macros, collapse
   +clearfix
 
 .snippet
@@ -246,15 +273,13 @@ form
   top: 70px
   right: 55px
 
-.flexslider h3.title
+.flexslider p.code
   position: absolute
   z-index: 1000
   display: inline-block
   float: left
   margin-top: 20px
   text-transform: none
-  background-color: $color-bg
-  padding: 3px 10px 3px 0
 
 ul.pattern
   +reset(all)

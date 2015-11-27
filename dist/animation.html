@@ -24,136 +24,127 @@
   <div class="row">
     <div class="col-md-2 quote">
       <h1>move it, baby</h1>
-  </div>
+    </div>
     <div class="col-md-10 content">
 
-      <h2>transform snippets</h2>
-      <div class="row">
-        <div class="col-md-4 col-xs-6">
-          <code class="snippet">rotate</code>
-          <p>variable is the degree (just number).</p>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <code class="snippet">scale</code>
-          <p>1 is normal, 1+ (1.2, 1.3) scales up, 1- (.5, .7) scales down.</p>
-        </div>
 
-        <div class="col-md-4 col-xs-6">
-          <code class="snippet">skew</code>
+      <div class="row">
+          <div class="col-md-8">
+            <h2>animate.css Macros
+              <a href="https://daneden.github.io/animate.css/" target="_blank" class="btn external"><i class="fa fa-link"></i></a>
+            </h2>
+            <p>variables are, in order
+              <p class="code variable">$duration</p><p class="code variable">$function</p><p class="code variable">$delay</p><p class="code variable">$count</p><p class="code variable">$fill</p><p class="code variable">$visibility</p>
+            </p>
+            <div class="row">
+            <div class="col-md-6">
+            <hr>
+            <h3>bounces</h3>
+            <p class="code SASS macro">bounce</p>
+            <p class="code SASS macro">bounceIn</p>
+            <p class="code SASS macro">bounceInDown</p>
+            <p class="code SASS macro">bounceInLeft</p>
+            <p class="code SASS macro">bounceInRight</p>
+            <p class="code SASS macro">bounceInUp</p>
+            <p class="code SASS macro">bounceOut</p>
+            <p class="code SASS macro">bounceOutDown</p>
+            <p class="code SASS macro">bounceOutLeft</p>
+            <p class="code SASS macro">bounceOutRight</p>
+            <p class="code SASS macro">bounceOutUp</p>
+            <hr>
+            <h3>fades</h3>
+            <p class="code SASS macro">fadeIn</p>
+            <p class="code SASS macro">fadeInDown</p>
+            <p class="code SASS macro">fadeInDownBig</p>
+            <p class="code SASS macro">fadeInLeft</p>
+            <p class="code SASS macro">fadeInLeftBig</p>
+            <p class="code SASS macro">fadeInRight</p>
+            <p class="code SASS macro">fadeInRightBig</p>
+            <p class="code SASS macro">fadeInUp</p>
+            <p class="code SASS macro">fadeInUpBig</p>
+            <p class="code SASS macro">fadeOut</p>
+            <p class="code SASS macro">fadeOutDown</p>
+            <p class="code SASS macro">fadeOutDownBig</p>
+            <p class="code SASS macro">fadeOutLeft</p>
+            <p class="code SASS macro">fadeOutLeftBig</p>
+            <p class="code SASS macro">fadeOutRight</p>
+            <p class="code SASS macro">fadeOutRightBig</p>
+            <p class="code SASS macro">fadeOutUp</p>
+            <p class="code SASS macro">fadeOutUpBig</p>
+            <hr>
+            <h3>flips</h3>
+            <p class="code SASS macro">flip</p>
+            <p class="code SASS macro">flipInX</p>
+            <p class="code SASS macro">flipInY</p>
+            <p class="code SASS macro">flipOutX</p>
+            <p class="code SASS macro">flipOutY</p>
+          </div>
+            <div class="col-md-6">
+            <hr>
+            <h3>hinges</h3>
+            <p class="code SASS macro">hingeLeft</p>
+            <p class="code SASS macro">hingeRight</p>
+            <hr>
+            <h3>lightSpeed</h3>
+            <p class="code SASS macro">lightSpeedIn</p>
+            <p class="code SASS macro">lightSpeedOut</p>
+            <hr>
+            <h3>rolls</h3>
+            <p class="code SASS macro">rollIn</p>
+            <p class="code SASS macro">rollOut</p>
+            <p class="code SASS macro">rotateIn</p>
+            <p class="code SASS macro">rotateInDownLeft</p>
+            <p class="code SASS macro">rotateInDownRight</p>
+            <p class="code SASS macro">rotateInUpLeft</p>
+            <p class="code SASS macro">rotateInUpRight</p>
+            <p class="code SASS macro">rotateOut</p>
+            <p class="code SASS macro">rotateOutDownLeft</p>
+            <p class="code SASS macro">rotateOutDownRight</p>
+            <p class="code SASS macro">rotateOutUpLeft</p>
+            <p class="code SASS macro">rotateOutUpRight</p>
+            <hr>
+            <h3>slides</h3>
+            <p class="code SASS macro">slideInDown</p>
+            <p class="code SASS macro">slideInLeft</p>
+            <p class="code SASS macro">slideInRight</p>
+            <p class="code SASS macro">slideInUp</p>
+            <p class="code SASS macro">slideOutDown</p>
+            <p class="code SASS macro">slideOutLeft</p>
+            <p class="code SASS macro">slideOutRight</p>
+            <p class="code SASS macro">slideOutUp</p>
+            <hr>
+            <h3>specials</h3>
+            <p class="code SASS macro">pulse</p>
+            <p class="code SASS macro">shake</p>
+            <p class="code SASS macro">swing</p>
+            <p class="code SASS macro">tada</p>
+            <p class="code SASS macro">wiggle</p>
+            <p class="code SASS macro">wobble</p>
+          </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+          <h2>animation Macros</h2>
+          <p class="code SASS macro">rotate</p>
+          <p>variable is the degree (just number).</p>
+          <p class="code SASS macro">scale</p>
+          <p>1 is normal, 1+ (1.2, 1.3) scales up, 1- (.5, .7) scales down.</p>
+          <p class="code SASS macro">skew</p>
           <p>variable is degree.</p>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <code class="snippet">translate</code>
+          <p class="code SASS macro">translate</p>
           <p>2 types:<br>
             translate: variables are x, y.<br>
             translate 3d: variables are x, y, z.</p>
-          </div>
-          <div class="col-md-4 col-xs-6">
-            <code class="snippet">animate</code>
+            <p class="code SASS macro">animate</p>
             <p>create your own animation mixin</p>
           </div>
         </div>
-        <h2><a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a> snippets</h2>
-        <p>variables are, in order
-              <code class="code">duration</code>, <code class="code">function</code>, <code class="code">delay</code>, <code class="code">count</code>, <code class="code">fill</code>, <code class="code">visibility</code>.
-</p></h2>
-        <div class="row">
-
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>bounces</h3>
-            <code class="snippet">bounce</code>
-            <code class="snippet">bounceIn</code>
-            <code class="snippet">bounceInDown</code>
-            <code class="snippet">bounceInLeft</code>
-            <code class="snippet">bounceInRight</code>
-            <code class="snippet">bounceInUp</code>
-            <code class="snippet">bounceOut</code>
-            <code class="snippet">bounceOutDown</code>
-            <code class="snippet">bounceOutLeft</code>
-            <code class="snippet">bounceOutRight</code>
-            <code class="snippet">bounceOutUp</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>fades</h3>
-            <code class="snippet">fadeIn</code>
-            <code class="snippet">fadeInDown</code>
-            <code class="snippet">fadeInDownBig</code>
-            <code class="snippet">fadeInLeft</code>
-            <code class="snippet">fadeInLeftBig</code>
-            <code class="snippet">fadeInRight</code>
-            <code class="snippet">fadeInRightBig</code>
-            <code class="snippet">fadeInUp</code>
-            <code class="snippet">fadeInUpBig</code>
-            <code class="snippet">fadeOut</code>
-            <code class="snippet">fadeOutDown</code>
-            <code class="snippet">fadeOutDownBig</code>
-            <code class="snippet">fadeOutLeft</code>
-            <code class="snippet">fadeOutLeftBig</code>
-            <code class="snippet">fadeOutRight</code>
-            <code class="snippet">fadeOutRightBig</code>
-            <code class="snippet">fadeOutUp</code>
-            <code class="snippet">fadeOutUpBig</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>flips</h3>
-            <code class="snippet">flip</code>
-            <code class="snippet">flipInX</code>
-            <code class="snippet">flipInY</code>
-            <code class="snippet">flipOutX</code>
-            <code class="snippet">flipOutY</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>hinges</h3>
-            <code class="snippet">hingeLeft</code>
-            <code class="snippet">hingeRight</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>lightSpeed</h3>
-            <code class="snippet">lightSpeedIn</code>
-            <code class="snippet">lightSpeedOut</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>rolls</h3>
-            <code class="snippet">rollIn</code>
-            <code class="snippet">rollOut</code>
-            <code class="snippet">rotateIn</code>
-            <code class="snippet">rotateInDownLeft</code>
-            <code class="snippet">rotateInDownRight</code>
-            <code class="snippet">rotateInUpLeft</code>
-            <code class="snippet">rotateInUpRight</code>
-            <code class="snippet">rotateOut</code>
-            <code class="snippet">rotateOutDownLeft</code>
-            <code class="snippet">rotateOutDownRight</code>
-            <code class="snippet">rotateOutUpLeft</code>
-            <code class="snippet">rotateOutUpRight</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>slides</h3>
-            <code class="snippet">slideInDown</code>
-            <code class="snippet">slideInLeft</code>
-            <code class="snippet">slideInRight</code>
-            <code class="snippet">slideInUp</code>
-            <code class="snippet">slideOutDown</code>
-            <code class="snippet">slideOutLeft</code>
-            <code class="snippet">slideOutRight</code>
-            <code class="snippet">slideOutUp</code>
-          </div>
-          <div class="col-md-4 col-xs-6 mini">
-            <h3>specials</h3>
-            <code class="snippet">pulse</code>
-            <code class="snippet">shake</code>
-            <code class="snippet">swing</code>
-            <code class="snippet">tada</code>
-            <code class="snippet">wiggle</code>
-            <code class="snippet">wobble</code>
-          </div>
-        </div>
 
 
-   </div>
- </div>
-  
-     
+      </div>
+    </div>
+    
+    
 <nav class="menu row">
   <div class="col-md-2 social">
     <p>Made by Nicholas Frota, standing on the shoulder of Open Source giants.</p>
@@ -217,8 +208,8 @@
 </ul></div>
 </nav>
 
-</div>
-
+  </div>
+  
 
  <script src="js/vendors/jquery.js"></script>
  <script src="js/vendors/bootstrap.js"></script>
