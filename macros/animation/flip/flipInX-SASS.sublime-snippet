@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+flipInX
-]]>
-  </content>
-  <tabTrigger>flipInX</tabTrigger>
-  <description>flipInX SASS animation</description>
-</snippet>

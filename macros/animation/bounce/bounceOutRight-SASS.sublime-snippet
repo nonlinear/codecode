@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+bounceOutRight
-]]>
-  </content>
-  <tabTrigger>bounceOutRight</tabTrigger>
-  <description>bounceOutRight SASS animation</description>
-</snippet>

@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+wobble
-]]>
-  </content>
-  <tabTrigger>wobble</tabTrigger>
-  <description>wobble SASS animation</description>
-</snippet>

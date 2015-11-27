@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+hingeLeft
-]]>
-  </content>
-  <tabTrigger>hingeLeft</tabTrigger>
-  <description>hingeLeft SASS animation</description>
-</snippet>

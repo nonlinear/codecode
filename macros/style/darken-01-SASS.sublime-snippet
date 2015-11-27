@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-darken(${1:color}, 10%)
-]]>
-  </content>
-  <tabTrigger>darken</tabTrigger>
-  <description>darken 10% SCSS</description>
-</snippet>

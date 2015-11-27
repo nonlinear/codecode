@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+slideOutRight
-]]>
-  </content>
-  <tabTrigger>slideOutRight</tabTrigger>
-  <description>slideOutRight SASS animation</description>
-</snippet>

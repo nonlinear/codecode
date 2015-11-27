@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+flipOutX
-]]>
-  </content>
-  <tabTrigger>flipOutX</tabTrigger>
-  <description>flipOutX SASS animation</description>
-</snippet>

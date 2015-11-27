@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+fadeInRight
-]]>
-  </content>
-  <tabTrigger>fadeInRight</tabTrigger>
-  <description>fadeInRight SASS animation</description>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-<a data-toggle="popover" title="${1:Popover title}" data-content="${2:Popover content}" data-placement="${4:top|bottom|left|right}">${3:Popover trigger}</a>
-]]></content>
-  <tabTrigger>popover</tabTrigger>
-  <description>Popover HTML bootstrap</description>
-</snippet>

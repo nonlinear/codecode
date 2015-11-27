@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+pulse
-]]>
-  </content>
-  <tabTrigger>pulse</tabTrigger>
-  <description>pulse SASS animation</description>
-</snippet>

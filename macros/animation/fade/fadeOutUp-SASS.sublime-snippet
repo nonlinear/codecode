@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+fadeOutUp
-]]>
-  </content>
-  <tabTrigger>fadeOutUp</tabTrigger>
-  <description>fadeOutUp SASS animation</description>
-</snippet>

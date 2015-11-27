@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-lighten(${1:color}, 10%)
-]]>
-  </content>
-  <tabTrigger>lighten</tabTrigger>
-  <description>lighten 10% SCSS</description>
-</snippet>
