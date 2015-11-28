@@ -84,6 +84,16 @@ h4.title
     background-color: rgba(yellow, .5)
     +radius(normal, 20px)
 
+.patternbolt, .flexslider
+  p.code
+    position: absolute
+    z-index: 1000
+    display: inline-block
+    float: left
+    text-transform: none
+    background-color: rgba(yellow, .9)
+    margin-top: 10px
+
 .quote
   +media($bp, min)
     text-align: right
@@ -273,15 +283,7 @@ form
   top: 70px
   right: 55px
 
-.flexslider p.code
-  position: absolute
-  z-index: 1000
-  display: inline-block
-  float: left
-  margin-top: 20px
-  text-transform: none
-
-ul.pattern
+.pattern
   +reset(all)
   +reset(list)
   li
@@ -295,6 +297,43 @@ ul.pattern
       +pattern(noise, black, 30)
     li:nth-of-type(2)
       +pattern(noise, white, 30)
+
+
+.patternbolt
+  +reset(all)
+  +reset(list)
+  li
+    min-height: 40px
+    margin-bottom: 5px
+    &:nth-of-type(1)
+      +pb(lines-c, 10px, $color-bg, black)
+    &:nth-of-type(2)
+      +pb(lines-b, 10px, $color-bg, black)
+    &:nth-of-type(3)
+      +pb(lines-a, 10px, $color-bg, black)
+    &:nth-of-type(4)
+      +pb(lines-45-c, 10px, $color-bg, black)
+    &:nth-of-type(5)
+      +pb(lines-45-b, 10px, $color-bg, black)
+    &:nth-of-type(6)
+      +pb(lines-45-a, 10px, $color-bg, black)
+    &:nth-of-type(7)
+      +pb(cross-c, 15px, $color-bg, black)
+    &:nth-of-type(8)
+      +pb(cross-b, 30px, $color-bg, black)
+    &:nth-of-type(9)
+      +pb(cross-a, 30px, $color-bg, black)
+    &:nth-of-type(10)
+      +pb(cross-thin-c, 10px, $color-bg, black)
+    &:nth-of-type(11)
+      +pb(cross-thin-b, 10px, $color-bg, black)
+    &:nth-of-type(12)
+      +pb(cross-thin-a, 10px, $color-bg, black)
+    &:nth-of-type(14)
+      +pb(candy-a, 50px, $color-bg, black)
+    &:nth-of-type(13)
+      +pb(candy-b, 50px, $color-bg, black)
+    &:nth-of-type(15)
 
 
 
