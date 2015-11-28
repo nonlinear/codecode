@@ -17,60 +17,85 @@
           <p class="sig">quick mixin to disable link, drag or select.</p>
           <p class="code macro SASS">placeholder</p>
           <p class="sig">rules for input and textarea placeholders</p>
-          <p class="code macro SASS">scroll-hint</p>
-          <p class="sig">i'll explain this one later.</p>
+          <!--  TODO: explain, extend scroll-hint -->
         </div>
-
         <div class="col-md-4">
-          <select name="" id="">
+          <h2>Field Macros</h2>
+          <p class="code macro HTML">select</p>
+          <table class="legend">
+           <tbody>
+            <tr>
+              <td><p class="code variable">base</p></td>
+              <td>base select</td>
+            </tr>
+            <tr>
+              <td><p class="code variable">auto</p></td>
+              <td>auto select (chosen)</td>
+            </tr>
+            <tr>
+              <td><p class="code variable">multi</p></td>
+              <td>multi select (chosen)</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <hr>
+        <p class="code macro HTML">month</p>
+        <p class="sig">month select, data from <span class="code file">app/data/month.json</span></p>
+        <div class="select">
+          <select>
             <option>Month</option>
             {% for month in months %}
             <option value="{{month.code}}">{{month.name}}</option>
             {% endfor %}
           </select>
-          <hr>
-          <select>
-            <option>Country</option>
-            {% for country in countries %}
-            <option value="{{country.code}}">{{country.name}}</option>
-            {% endfor %}
-          </select>
-           <hr>
-          <select>
-            <option>State</option>
-            {% for state in states %}
-            <option value="{{state.code}}">{{state.name}}</option>
-            {% endfor %}
-          </select>
-           <hr>
-          <select>
-            <option>Industry</option>
-            {% for industry in industries %}
-            <option value="{{industry.name}}">{{industry.name}}</option>
-            {% endfor %}
-          </select>
-          <hr>
-          <select>
-            <option>Year</option>
-            {% for year in years %}
-            <option value="{{year.name}}">{{year.name}}</option>
-            {% endfor %}
-          </select>
         </div>
-        <div class="col-md-4">
-            <ul class="soon">
-      <li>proper styling of form fields</li>
-      <li>form variables</li>
-      <li>chosen, multiselect</li>
-      <li>date picker calendar</li>
-    </ul>
-        </div>
+        <hr>
+        <p class="code macro HTML">country</p>
+        <p class="sig">country auto select, data from <span class="code file">app/data/country.json</span></p>
+        <select class="chosen-select">
+          <option>Country</option>
+          {% for country in countries %}
+          <option value="{{country.code}}">{{country.name}}</option>
+          {% endfor %}
+        </select>
+        <hr>
+        <p class="code macro HTML">state</p>
+        <p class="sig">state auto select, data from <span class="code file">app/data/state.json</span></p>
+        <select class="chosen-select">
+          <option>State</option>
+          {% for state in states %}
+          <option value="{{state.code}}">{{state.name}}</option>
+          {% endfor %}
+        </select>
+        <hr>
+        <p class="code macro HTML">industry</p>
+        <p class="sig">industry auto select, data from <span class="code file">app/data/industry.json</span></p>
+        <select class="chosen-select">
+          <option>Industry</option>
+          {% for industry in industries %}
+          <option value="{{industry.name}}">{{industry.name}}</option>
+          {% endfor %}
+        </select>
+        <hr>
+        <p class="code macro HTML">year</p>
+        <p class="sig">year auto select, data from <span class="code file">app/data/year.json</span></p>
+        <select class="chosen-select">
+          <option>Year</option>
+          {% for year in years %}
+          <option value="{{year.name}}">{{year.name}}</option>
+          {% endfor %}
+        </select>
       </div>
-
-
+      <div class="col-md-4">
+        <ul class="soon">
+          <li>date picker calendar</li>
+        </ul>
+      </div>
     </div>
   </div>
-  {% import 'macros/nav.html' as nav %}
-  {{nav.active('forms')}}
+</div>
+{% import 'macros/nav.html' as nav %}
+{{nav.active('forms')}}
 </div>
 {% endblock %}

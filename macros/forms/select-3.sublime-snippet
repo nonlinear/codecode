@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+<select  class="chosen-select" multiple>
+    <option>${1}</option>
+</select>
+]]>
+  </content>
+  <tabTrigger>select</tabTrigger>
+  <description>multi select</description>
+</snippet>

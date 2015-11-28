@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+<select class="chosen-select">
+  <option>State</option>
+  {% for state in states %}
+    <option value="{{state.code}}">{{state.name}}</option>
+  {% endfor %}
+</select>
+]]>
+  </content>
+  <tabTrigger>state</tabTrigger>
+  <description>state auto select</description>
+</snippet>

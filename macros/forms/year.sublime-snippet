@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+<select class="chosen-select">
+  <option>Year</option>
+  {% for year in years %}
+    <option value="{{year.name}}">{{year.name}}</option>
+  {% endfor %}
+</select>
+]]>
+  </content>
+  <tabTrigger>year</tabTrigger>
+  <description>year auto select</description>
+</snippet>

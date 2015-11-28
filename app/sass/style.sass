@@ -62,6 +62,7 @@ $icons_on: true
 @import 'vendors/bootstrap'
 @import 'vendors/fontawesome'
 @import 'vendors/animate'
+@import 'vendors/chosen'
 @import 'vendors/codecode'
 @import 'vendors/flexslider'
 
@@ -75,6 +76,56 @@ $icons_on: true
 @import 'project/header'
 @import 'project/user'
 @import 'project/tutorial'
+
+
+input, textarea, .select, .chosen-container
+  width: 100%
+  heighT: 40px
+  font-size: 15px
+  background-color: #FFF
+  +radius(normal, 2px)
+  border: solid 1px $color-link-hover
+
+.chosen-container
+  width: 100% !important
+  .chosen-single
+    +shadow(normal, none)
+    heighT: 40px
+    text-decoration: none !important
+    font-size: 100%
+    color: $color-text
+
+input, textarea
+  padding: 7px
+  +placeholder
+    color: $color-link-hover
+  &:focus
+    outline: none
+
+.select, .chosen-container, .chosen-container-active.chosen-with-drop
+  +stamp($icon: $fa-var-angle-down, $position: right, $padding: 10px, $nudge: 7px, $color: $color-link-hover)
+  select, .chosen-single
+    -webkit-appearance: none
+    border: none
+    padding: 7px
+    width: 100%
+    background: none
+    &:focus
+      outline: none
+
+.chosen-container-active.chosen-with-drop, .select:active
+  +stamp($icon: $fa-var-angle-up, $position: right, $padding: 10px, $nudge: 7px, $color: $color-link-hover)
+
+.chosen-container, input, textarea, .select
+  margin-bottom: 10px
+
+textarea
+  height: 150px
+
+select
+  +stamp($icon: $fa-var-check, $position: right)
+
+
 
 
 
