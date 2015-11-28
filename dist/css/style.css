@@ -9347,6 +9347,8 @@ input, textarea {
     -webkit-appearance: none;
     border: none;
     padding: 7px;
+    font-size: 15px;
+    height: 40px;
     width: 100%;
     background: none; }
     .select select:focus, .select .chosen-single:focus, .chosen-container select:focus, .chosen-container .chosen-single:focus, .chosen-container-active.chosen-with-drop select:focus, .chosen-container-active.chosen-with-drop .chosen-single:focus {
@@ -9724,11 +9726,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   position: relative;
   display: block;
   overflow: hidden;
-  padding: 0 0 0 8px;
-  height: 25px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  background-color: #fff;
   background-clip: padding-box;
   color: #444;
   text-decoration: none;
@@ -9935,16 +9932,11 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   color: #ccc;
   cursor: default; }
 
-.chosen-container-active .chosen-single {
-  border: 1px solid #5897fb; }
-
-.chosen-container-active.chosen-with-drop .chosen-single {
-  border: 1px solid #aaa; }
-  .chosen-container-active.chosen-with-drop .chosen-single div {
-    border-left: none;
-    background: transparent; }
-    .chosen-container-active.chosen-with-drop .chosen-single div b {
-      background-position: -18px 2px; }
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-left: none;
+  background: transparent; }
+  .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -18px 2px; }
 
 .chosen-container-active .chosen-choices {
   border: 1px solid #5897fb; }
