@@ -335,6 +335,42 @@ form
       +pb(candy-b, 50px, $color-bg, black)
     &:nth-of-type(15)
 
+$nav-width: 400px
+$nav-step: 3
 
+header.header .dropdown
+  .dropdown-toggle
+    text-decoration: none
+    color: $color-text
+    &:after
+      display: none
+    &:before
+    +stamp($icon: $fa-var-angle-down, $position: right, $nudge: 10px, $spacing: -15px, $padding: 10px)
+  .dropdown-menu
+    +fadeInDown
+    +radius(normal, 0)
+    margin-top: -1px
+    border-top: none
+    border-left: none
+    padding: 0
+    width: $nav-width
+    margin-left: (($nav-width / 2) * -1) + 11
+    background-color: $color-bg
+    li
+      width: (100% / $nav-step)
+      border-top: solid 1px $color-divider
+      &:not(:nth-of-type(#{$nav-step}n-2))
+        margin-left: -3px
+      display: inline-block
+    a
+      text-decoration: none !important
+      padding: 5px 10px
+      displaY: block
+      font-size: 25px
+
+a.off
+  +disable(link)
+  +opacity(40)
+  +stamp($icon: $fa-var-lock, $nudge: 7px, $padding: 7px, $position: right, $size: 13px)
 
 

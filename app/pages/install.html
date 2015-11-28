@@ -3,12 +3,23 @@
 <div class="container install">
   <header class="header">
     <a href="index.html" class="logo">{{project.title}}</a>
-    <h2>Install</h2>
+    <h2 class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Install
+      </a>
+      <ul class="dropdown-menu">
+        {% for category in categories %}
+        <li>
+          <a class="{{category.status}}" href="{{category.link}}.html">{{category.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </h2>
   </header>
   <div class="row">
     <div class="col-md-2 quote">
       <h1>Another quote here</h1>
-  </div>
+    </div>
     <div class="col-md-10 content">
       <div class="row">
 
@@ -38,20 +49,29 @@
            <ol class="tutorial">
              <li>On terminal, go to project and type <p class="code terminal">gulp</p>
               <p class="sig">A browser window will open, and refresh anytime your files are edited.</p></li>
-             <li>Files are on <p class="code folder">app/pages</p></li>
-             <li>Templates are on <p class="code folder">app/templates</p></li>
-             <li>Personalize base variables at <p class="code file">app/sass/style.sass</p></li>
-             <li>Edit project CSS rules at <p class="code file">app/sass/project/layout.sass</p></li>
-             <li>Push your changes at will, and when you're ready to publish it, type <p class="code terminal">gulp publish</p>
-              <p class="sig">unCSS will remove unused rules, and gh-pages will publish it at  www.<em>your-github-username</em>.github.io/<em>project-name</em></p></li>
-           </ol>
-         </div>
+              <li>Files are on <p class="code folder">app/pages</p></li>
+              <li>Templates are on <p class="code folder">app/templates</p></li>
+              <li>Personalize base variables at <p class="code file">app/sass/style.sass</p></li>
+              <li>Edit project CSS rules at <p class="code file">app/sass/project/layout.sass</p></li>
+              <li>Push your changes at will, and when you're ready to publish it, type <p class="code terminal">gulp publish</p>
+                <p class="sig">unCSS will remove unused rules, and gh-pages will publish it at  www.<em>your-github-username</em>.github.io/<em>project-name</em></p></li>
+              </ol>
+            </div>
 
-</div>
-    </div>
-  </div>
- {% import 'macros/nav.html' as nav %}
- {{nav.active('install')}}
-</div>
+          </div>
+        </div>
+      </div>
+      <nav class="menu footer row">
+        <div class="col-md-2 social">
+          {% include "partials/sig.html" %}
+        </div>
+        <div class="col-md-10">
+          <ul>
+            {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
+         </li>{% endfor %}
+       </ul>
+     </div>
+   </nav>
+ </div>
 
-{% endblock %}
+ {% endblock %}

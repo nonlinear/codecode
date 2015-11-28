@@ -3,7 +3,18 @@
 <div class="container frameworks">
   <header class="header">
     <a href="index.html" class="logo">{{project.title}}</a>
-    <h2>frameworks</h2>
+    <h2 class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        frameworks
+      </a>
+      <ul class="dropdown-menu">
+        {% for category in categories %}
+        <li>
+          <a class="{{category.status}}" href="{{category.link}}.html">{{category.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </h2>
   </header>
   <div class="row">
     <div class="col-md-2 quote">
@@ -48,8 +59,17 @@
 
    </div>
  </div>
-  {% import 'macros/nav.html' as nav %}
-     {{nav.active('frameworks')}}
+  <nav class="menu footer row">
+        <div class="col-md-2 social">
+          {% include "partials/sig.html" %}
+        </div>
+        <div class="col-md-10">
+          <ul>
+            {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
+         </li>{% endfor %}
+       </ul>
+     </div>
+   </nav>
 </div>
 {% endblock %}
 

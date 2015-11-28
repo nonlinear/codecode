@@ -1,0 +1,16 @@
+{
+  "categories": [
+  {"name": "about", "link": "index", "status": "on"},
+  {"name": "install", "link": "install", "status": "on"},
+  {"name": "partials", "link": "partials", "status": "off"},
+  {"name": "symbols", "link": "symbols", "status": "on"},
+  {"name": "animation", "link": "animation", "status": "on"},
+  {"name": "images", "link": "images", "status": "on"},
+  {"name": "typography", "link": "typography", "status": "on"},
+  {"name": "forms", "link": "forms", "status": "on"},
+  {"name": "responsive", "link": "responsive", "status": "on"},
+  {"name": "data", "link": "data", "status": "off"},
+  {"name": "frameworks", "link": "frameworks", "status": "on"},
+  {"name": "social", "link": "social", "status": "on"}
+  ]
+}

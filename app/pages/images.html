@@ -3,7 +3,18 @@
 <div class="container images">
   <header class="header">
     <a href="index.html" class="logo">{{project.title}}</a>
-    <h2>images</h2>
+    <h2 class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        images
+      </a>
+      <ul class="dropdown-menu">
+        {% for category in categories %}
+        <li>
+          <a class="{{category.status}}" href="{{category.link}}.html">{{category.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </h2>
   </header>
   <div class="row">
     <div class="col-md-2 quote">
@@ -13,25 +24,25 @@
       <div class="col-md-4">
         <h2>PatternBolt
           <a href="http://buseca.github.io/patternbolt/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
-                  <p class="code macro SASS">pb</p>
+          <p class="code macro SASS">pb</p>
           <p class="sig">variables are respectively:
             <span class="code variable">$pattern</span>
-           <span class="code variable">$background-size</span>, in px
-           <span class="code variable">$background-color</span>
-           <span class="code variable">$foreground-color</span>
+            <span class="code variable">$background-size</span>, in px
+            <span class="code variable">$background-color</span>
+            <span class="code variable">$foreground-color</span>
            <span class="code variable">$opacity</span><!--
            <span class="code variable">$mask</span> --></p>
 
            {% include "partials/patternbolt.html" %}
 
 
-      </div>
-      <div class="col-md-4">
-        <h2>CSSgram filters<a href="http://una.im/CSSgram/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+         </div>
+         <div class="col-md-4">
+          <h2>CSSgram filters<a href="http://una.im/CSSgram/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
 
-        {% include "partials/filters.html" %}
-      </div>
-      <div class="col-md-4">
+          {% include "partials/filters.html" %}
+        </div>
+        <div class="col-md-4">
 <!--         <h2>Image Macros</h2>
         <p class="code macro SASS">pattern</p>
         <hr>
@@ -63,7 +74,16 @@
       </div>
     </div>
   </div>
-  {% import 'macros/nav.html' as nav %}
-  {{nav.active('images')}}
+  <nav class="menu footer row">
+        <div class="col-md-2 social">
+          {% include "partials/sig.html" %}
+        </div>
+        <div class="col-md-10">
+          <ul>
+            {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
+         </li>{% endfor %}
+       </ul>
+     </div>
+   </nav>
 </div>
 {% endblock %}
