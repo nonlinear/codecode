@@ -2,11 +2,11 @@
 | Filename | line # | TODO
 |:------|:------:|:------
 | js/scripts.js | 1 | testing this shit
-| pages/forms.html | 20 | explain, extend scroll-hint
-| pages/typography.html | 19 | google font sample
-| pages/typography.html | 23 | google font sample
-| pages/typography.html | 27 | google font sample
-| pages/typography.html | 31 | google font sample
+| pages/forms.html | 31 | explain, extend scroll-hint
+| pages/typography.html | 30 | google font sample
+| pages/typography.html | 34 | google font sample
+| pages/typography.html | 38 | google font sample
+| pages/typography.html | 42 | google font sample
 | js/vendors/jquery.js | 3741 | Now that all calls to _data and _removeData have been replaced
 | js/vendors/modernizr.js | 56 | : make the prefixes more granular
 | js/vendors/modernizr.js | 223 | : Add flag for hasownprop ? didn't last time
