@@ -2821,7 +2821,7 @@ h4.title {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-.patternbolt p.code,
+.pattern p.code,
 .flexslider p.code {
   position: absolute;
   z-index: 1000;
@@ -2829,7 +2829,7 @@ h4.title {
   float: left;
   text-transform: none;
   background-color: rgba(255, 255, 0, 0.9);
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 @media screen and (min-width: 770px) {
@@ -2972,7 +2972,7 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   background: #ffe6e6;
 }
 
-.patternbolt {
+.pattern {
   margin: 0px !important;
   padding: 0px !important;
   border: none;
@@ -2980,57 +2980,17 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   list-style: none;
 }
 
-.patternbolt li {
-  min-height: 40px;
+.pattern li {
+  min-height: 50px;
   margin-bottom: 5px;
 }
 
-.patternbolt li:nth-of-type(1) {
+.pattern li:nth-of-type(1) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(1)::after {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-size: 10px;
-  background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2710px%27%20height%3D%2710px%27%20viewBox%3D%270%200%2010%2010%27%20enable-background%3D%27new%200%200%2010%2010%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Crect%20fill%3D%27black%27%20width%3D%2710%27%20height%3D%275%27/%3E%0A%3C/svg%3E");
-  content: '';
-  z-index: -1;
-}
-
-.patternbolt li:nth-of-type(2) {
-  position: relative;
-  z-index: 1;
-}
-
-.patternbolt li:nth-of-type(2)::after {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-size: 10px;
-  background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2710px%27%20height%3D%2710px%27%20viewBox%3D%270%200%2010%2010%27%20enable-background%3D%27new%200%200%2010%2010%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Crect%20fill%3D%27black%27%20width%3D%2710%27%20height%3D%273%27/%3E%0A%3C/svg%3E");
-  content: '';
-  z-index: -1;
-}
-
-.patternbolt li:nth-of-type(3) {
-  position: relative;
-  z-index: 1;
-}
-
-.patternbolt li:nth-of-type(3)::after {
+.pattern li:nth-of-type(1)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3045,12 +3005,12 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(4) {
+.pattern li:nth-of-type(2) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(4)::after {
+.pattern li:nth-of-type(2)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3060,17 +3020,17 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   overflow: hidden;
   background-size: 10px;
   background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27black%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M12%2C3.535V0H8.465L0%2C8.465V12h3.535L12%2C3.535z%20M0%2C0h3.535L0%2C3.535V0z%20M8.465%2C12L12%2C8.465V12H8.465z%27/%3E%0A%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2710px%27%20height%3D%2710px%27%20viewBox%3D%270%200%2010%2010%27%20enable-background%3D%27new%200%200%2010%2010%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Crect%20fill%3D%27black%27%20width%3D%2710%27%20height%3D%273%27/%3E%0A%3C/svg%3E");
   content: '';
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(5) {
+.pattern li:nth-of-type(3) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(5)::after {
+.pattern li:nth-of-type(3)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3080,17 +3040,17 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   overflow: hidden;
   background-size: 10px;
   background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27black%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M12%2C2.121V0H9.879L0%2C9.879V12h2.121L12%2C2.121z%20M9.879%2C12L12%2C9.879V12H9.879z%20M0%2C2.121V0h2.121L0%2C2.121z%27/%3E%0A%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2710px%27%20height%3D%2710px%27%20viewBox%3D%270%200%2010%2010%27%20enable-background%3D%27new%200%200%2010%2010%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Crect%20fill%3D%27black%27%20width%3D%2710%27%20height%3D%275%27/%3E%0A%3C/svg%3E");
   content: '';
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(6) {
+.pattern li:nth-of-type(4) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(6)::after {
+.pattern li:nth-of-type(4)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3105,12 +3065,52 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(7) {
+.pattern li:nth-of-type(5) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(7)::after {
+.pattern li:nth-of-type(5)::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-size: 10px;
+  background-color: #eeeeee;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27black%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M12%2C2.121V0H9.879L0%2C9.879V12h2.121L12%2C2.121z%20M9.879%2C12L12%2C9.879V12H9.879z%20M0%2C2.121V0h2.121L0%2C2.121z%27/%3E%0A%3C/svg%3E");
+  content: '';
+  z-index: -1;
+}
+
+.pattern li:nth-of-type(6) {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern li:nth-of-type(6)::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-size: 10px;
+  background-color: #eeeeee;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27black%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M12%2C3.535V0H8.465L0%2C8.465V12h3.535L12%2C3.535z%20M0%2C0h3.535L0%2C3.535V0z%20M8.465%2C12L12%2C8.465V12H8.465z%27/%3E%0A%3C/svg%3E");
+  content: '';
+  z-index: -1;
+}
+
+.pattern li:nth-of-type(7) {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern li:nth-of-type(7)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3120,17 +3120,17 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   overflow: hidden;
   background-size: 15px;
   background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2722px%27%20height%3D%2722px%27%20viewBox%3D%270%200%2022%2022%27%20enable-background%3D%27new%200%200%2022%2022%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M12%2C9H9v3H3V9H0V3h3V0h6v3h3V9z%20M22%2C14h-2v-3h-6v3h-3v6h3v2h6v-2h2V14z%20M14%2C1h6V0h-6V1z%20M0%2C20h1v-6H0V20z%27/%3E%0A%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2722px%27%20height%3D%2722px%27%20viewBox%3D%270%200%2022%2022%27%20enable-background%3D%27new%200%200%2022%2022%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M12%2C7H7v5H5V7H0V5h5V0h2v5h5V7z%20M22%2C16h-4v-5h-2v5h-5v2h5v4h2v-4h4V16z%20M16%2C1h2V0h-2V1z%20M0%2C18h1v-2H0V18z%27/%3E%0A%3C/svg%3E");
   content: '';
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(8) {
+.pattern li:nth-of-type(8) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(8)::after {
+.pattern li:nth-of-type(8)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3145,12 +3145,12 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(9) {
+.pattern li:nth-of-type(9) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(9)::after {
+.pattern li:nth-of-type(9)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3160,57 +3160,17 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   overflow: hidden;
   background-size: 30px;
   background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2722px%27%20height%3D%2722px%27%20viewBox%3D%270%200%2022%2022%27%20enable-background%3D%27new%200%200%2022%2022%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M12%2C7H7v5H5V7H0V5h5V0h2v5h5V7z%20M22%2C16h-4v-5h-2v5h-5v2h5v4h2v-4h4V16z%20M16%2C1h2V0h-2V1z%20M0%2C18h1v-2H0V18z%27/%3E%0A%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2722px%27%20height%3D%2722px%27%20viewBox%3D%270%200%2022%2022%27%20enable-background%3D%27new%200%200%2022%2022%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M12%2C9H9v3H3V9H0V3h3V0h6v3h3V9z%20M22%2C14h-2v-3h-6v3h-3v6h3v2h6v-2h2V14z%20M14%2C1h6V0h-6V1z%20M0%2C20h1v-6H0V20z%27/%3E%0A%3C/svg%3E");
   content: '';
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(10) {
+.pattern li:nth-of-type(10) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(10)::after {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-size: 10px;
-  background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2736px%27%20height%3D%2736px%27%20viewBox%3D%27-7%20-7%2036%2036%27%20enable-background%3D%27new%20-7%20-7%2036%2036%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M5%2C2H2v3h-6V2h-3v-6h3v-3h6v3h3V2z%20M23%2C20h-3v3h-6v-3h-3v-6h3v-3h6v3h3V20z%27/%3E%0A%3C/svg%3E");
-  content: '';
-  z-index: -1;
-}
-
-.patternbolt li:nth-of-type(11) {
-  position: relative;
-  z-index: 1;
-}
-
-.patternbolt li:nth-of-type(11)::after {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-size: 10px;
-  background-color: #eeeeee;
-  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2736px%27%20height%3D%2736px%27%20viewBox%3D%27-7%20-7%2036%2036%27%20enable-background%3D%27new%20-7%20-7%2036%2036%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M5%2C1H1v4h-4V1h-4v-4h4v-4h4v4h4V1z%20M23%2C19h-4v4h-4v-4h-4v-4h4v-4h4v4h4V19z%27/%3E%0A%3C/svg%3E");
-  content: '';
-  z-index: -1;
-}
-
-.patternbolt li:nth-of-type(12) {
-  position: relative;
-  z-index: 1;
-}
-
-.patternbolt li:nth-of-type(12)::after {
+.pattern li:nth-of-type(10)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3225,12 +3185,52 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(14) {
+.pattern li:nth-of-type(11) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(14)::after {
+.pattern li:nth-of-type(11)::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-size: 10px;
+  background-color: #eeeeee;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2736px%27%20height%3D%2736px%27%20viewBox%3D%27-7%20-7%2036%2036%27%20enable-background%3D%27new%20-7%20-7%2036%2036%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M5%2C1H1v4h-4V1h-4v-4h4v-4h4v4h4V1z%20M23%2C19h-4v4h-4v-4h-4v-4h4v-4h4v4h4V19z%27/%3E%0A%3C/svg%3E");
+  content: '';
+  z-index: -1;
+}
+
+.pattern li:nth-of-type(12) {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern li:nth-of-type(12)::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-size: 10px;
+  background-color: #eeeeee;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2736px%27%20height%3D%2736px%27%20viewBox%3D%27-7%20-7%2036%2036%27%20enable-background%3D%27new%20-7%20-7%2036%2036%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27black%27%20d%3D%27M5%2C2H2v3h-6V2h-3v-6h3v-3h6v3h3V2z%20M23%2C20h-3v3h-6v-3h-3v-6h3v-3h6v3h3V20z%27/%3E%0A%3C/svg%3E");
+  content: '';
+  z-index: -1;
+}
+
+.pattern li:nth-of-type(13) {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern li:nth-of-type(13)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3245,12 +3245,12 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   z-index: -1;
 }
 
-.patternbolt li:nth-of-type(13) {
+.pattern li:nth-of-type(14) {
   position: relative;
   z-index: 1;
 }
 
-.patternbolt li:nth-of-type(13)::after {
+.pattern li:nth-of-type(14)::after {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -3261,6 +3261,26 @@ nav.menu ul li:not(:last-of-type) a:hover:after {
   background-size: 50px;
   background-color: #eeeeee;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2040%2040%22%20enable-background%3D%22new%200%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%20stroke-width%3D%222px%22%3E%0A%3Cline%20x1%3D%2226.7%22%20y1%3D%2225.6%22%20x2%3D%2223.4%22%20y2%3D%2228.3%22/%3E%0A%3Cline%20x1%3D%2229%22%20y1%3D%2228.4%22%20x2%3D%2231.2%22%20y2%3D%2224.7%22/%3E%0A%3Cline%20x1%3D%2215.9%22%20y1%3D%2224.7%22%20x2%3D%2219.5%22%20y2%3D%2227%22/%3E%0A%3Cline%20x1%3D%2217.4%22%20y1%3D%2217.9%22%20x2%3D%2216.4%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2225.9%22%20y1%3D%2229.7%22%20x2%3D%2227.6%22%20y2%3D%2233.6%22/%3E%0A%3Cline%20x1%3D%2234.4%22%20y1%3D%2225.4%22%20x2%3D%2237.7%22%20y2%3D%2228.1%22/%3E%0A%3Cline%20x1%3D%2234.5%22%20y1%3D%2229.9%22%20x2%3D%2230.6%22%20y2%3D%2232.2%22/%3E%0A%3Cline%20x1%3D%2236.6%22%20y1%3D%2221.1%22%20x2%3D%2232.5%22%20y2%3D%2222%22/%3E%0A%3Cline%20x1%3D%2220.1%22%20y1%3D%2221.3%22%20x2%3D%2222.9%22%20y2%3D%2224.5%22/%3E%0A%3Cline%20x1%3D%2223.2%22%20y1%3D%2231.6%22%20x2%3D%2221.5%22%20y2%3D%2235.4%22/%3E%0A%3Cline%20x1%3D%2218.3%22%20y1%3D%2237.9%22%20x2%3D%2216.2%22%20y2%3D%2233.5%22/%3E%0A%3Cline%20x1%3D%2229.3%22%20y1%3D%2235.5%22%20x2%3D%2226%22%20y2%3D%2238.2%22/%3E%0A%3Cline%20x1%3D%2234.9%22%20y1%3D%2235.5%22%20x2%3D%2237.3%22%20y2%3D%2232%22/%3E%0A%3Cline%20x1%3D%2220.7%22%20y1%3D%2217.7%22%20x2%3D%2223.8%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%2227.6%22%20y1%3D%225.7%22%20x2%3D%2226.3%22%20y2%3D%229.8%22/%3E%0A%3Cline%20x1%3D%2233.1%22%20y1%3D%225.7%22%20x2%3D%2233%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2220.3%22%20y1%3D%228%22%20x2%3D%2223.9%22%20y2%3D%2211.8%22/%3E%0A%3Cline%20x1%3D%2216.4%22%20y1%3D%2214.7%22%20x2%3D%2220.3%22%20y2%3D%2212.8%22/%3E%0A%3Cline%20x1%3D%2215.8%22%20y1%3D%226.5%22%20x2%3D%2217.1%22%20y2%3D%2210.6%22/%3E%0A%3Cline%20x1%3D%2229.4%22%20y1%3D%229.1%22%20x2%3D%2233%22%20y2%3D%2211.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%22-1.4%22%20x2%3D%2238%22%20y2%3D%222%22/%3E%0A%3Cline%20x1%3D%2237.3%22%20y1%3D%224.9%22%20x2%3D%2235.3%22%20y2%3D%229%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%22-3.2%22%20x2%3D%2230.6%22%20y2%3D%221%22/%3E%0A%3Cline%20x1%3D%2219.8%22%20y1%3D%225.1%22%20x2%3D%2224.6%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%2228.3%22%20y1%3D%2213%22%20x2%3D%2228.9%22%20y2%3D%2217.2%22/%3E%0A%3Cline%20x1%3D%2228.6%22%20y1%3D%2221.7%22%20x2%3D%2225.4%22%20y2%3D%2218.8%22/%3E%0A%3Cline%20x1%3D%2233.6%22%20y1%3D%2215.1%22%20x2%3D%2232.3%22%20y2%3D%2219.1%22/%3E%0A%3Cline%20x1%3D%2237.7%22%20y1%3D%2217.8%22%20x2%3D%2236.8%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%222.3%22%20y1%3D%2231.9%22%20x2%3D%22-1.1%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%224%22%20y1%3D%2234.5%22%20x2%3D%226.3%22%20y2%3D%2230.9%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%2237.5%22%20x2%3D%222.9%22%20y2%3D%2241.5%22/%3E%0A%3Cline%20x1%3D%229.5%22%20y1%3D%2231.6%22%20x2%3D%2212.7%22%20y2%3D%2234.4%22/%3E%0A%3Cline%20x1%3D%229.8%22%20y1%3D%2236.7%22%20x2%3D%225.6%22%20y2%3D%2237.9%22/%3E%0A%3Cline%20x1%3D%2210.6%22%20y1%3D%2224.6%22%20x2%3D%2211.1%22%20y2%3D%2228.9%22/%3E%0A%3Cline%20x1%3D%224.6%22%20y1%3D%2214.8%22%20x2%3D%221.3%22%20y2%3D%2217.6%22/%3E%0A%3Cline%20x1%3D%226%22%20y1%3D%2218.4%22%20x2%3D%228.2%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%227.8%22%20y1%3D%221.7%22%20x2%3D%228.7%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%223.3%22%20y1%3D%2219.5%22%20x2%3D%225%22%20y2%3D%2223.4%22/%3E%0A%3Cline%20x1%3D%2211%22%20y1%3D%2215.2%22%20x2%3D%2214.3%22%20y2%3D%2217.9%22/%3E%0A%3Cline%20x1%3D%2211.5%22%20y1%3D%2220.2%22%20x2%3D%227.7%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2213.7%22%20y1%3D%2212.8%22%20x2%3D%229.6%22%20y2%3D%2211.4%22/%3E%0A%3Cline%20x1%3D%22-1.6%22%20y1%3D%2210.6%22%20x2%3D%221.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%221.1%22%20y1%3D%2221.9%22%20x2%3D%22-0.6%22%20y2%3D%2225.7%22/%3E%0A%3Cline%20x1%3D%226.7%22%20y1%3D%2225.7%22%20x2%3D%223.3%22%20y2%3D%2228.4%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%224.6%22%20x2%3D%226%22%20y2%3D%226.7%22/%3E%0A%3Cline%20x1%3D%226.6%22%20y1%3D%229.2%22%20x2%3D%222.5%22%20y2%3D%2210.4%22/%3E%0A%3Cline%20x1%3D%2213.2%22%20y1%3D%224.6%22%20x2%3D%2211.9%22%20y2%3D%228.7%22/%3E%0A%3Cline%20x1%3D%2218.6%22%20y1%3D%2229.4%22%20x2%3D%2214.5%22%20y2%3D%2230.8%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%222.6%22%20x2%3D%2222.8%22%20y2%3D%22-1.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%2238.6%22%20x2%3D%2238%22%20y2%3D%2242%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%2236.9%22%20x2%3D%2230.6%22%20y2%3D%2241%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%2241.3%22%20x2%3D%2213.6%22%20y2%3D%2237.3%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%2242.6%22%20x2%3D%2222.8%22%20y2%3D%2238.5%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%22-2.5%22%20x2%3D%222.9%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%221.3%22%20x2%3D%2213.6%22%20y2%3D%22-2.7%22/%3E%0A%3Cline%20x1%3D%2220.2%22%20y1%3D%223.2%22%20x2%3D%2216.6%22%20y2%3D%220.6%22/%3E%0A%3Cline%20x1%3D%2242.3%22%20y1%3D%2231.9%22%20x2%3D%2238.9%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%2238.4%22%20y1%3D%2210.6%22%20x2%3D%2241.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%2241.1%22%20y1%3D%2221.9%22%20x2%3D%2239.4%22%20y2%3D%2225.7%22/%3E%0A%3C/svg%3E");
+  content: '';
+  z-index: -1;
+}
+
+.pattern li:nth-of-type(15) {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern li:nth-of-type(15)::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-size: 50px;
+  background-color: #eeeeee;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2040%2040%22%20enable-background%3D%22new%200%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%20stroke-width%3D%223px%22%3E%0A%3Cline%20x1%3D%2226.7%22%20y1%3D%2225.6%22%20x2%3D%2223.4%22%20y2%3D%2228.3%22/%3E%0A%3Cline%20x1%3D%2229%22%20y1%3D%2228.4%22%20x2%3D%2231.2%22%20y2%3D%2224.7%22/%3E%0A%3Cline%20x1%3D%2215.9%22%20y1%3D%2224.7%22%20x2%3D%2219.5%22%20y2%3D%2227%22/%3E%0A%3Cline%20x1%3D%2217.4%22%20y1%3D%2217.9%22%20x2%3D%2216.4%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2225.9%22%20y1%3D%2229.7%22%20x2%3D%2227.6%22%20y2%3D%2233.6%22/%3E%0A%3Cline%20x1%3D%2234.4%22%20y1%3D%2225.4%22%20x2%3D%2237.7%22%20y2%3D%2228.1%22/%3E%0A%3Cline%20x1%3D%2234.5%22%20y1%3D%2229.9%22%20x2%3D%2230.6%22%20y2%3D%2232.2%22/%3E%0A%3Cline%20x1%3D%2236.6%22%20y1%3D%2221.1%22%20x2%3D%2232.5%22%20y2%3D%2222%22/%3E%0A%3Cline%20x1%3D%2220.1%22%20y1%3D%2221.3%22%20x2%3D%2222.9%22%20y2%3D%2224.5%22/%3E%0A%3Cline%20x1%3D%2223.2%22%20y1%3D%2231.6%22%20x2%3D%2221.5%22%20y2%3D%2235.4%22/%3E%0A%3Cline%20x1%3D%2218.3%22%20y1%3D%2237.9%22%20x2%3D%2216.2%22%20y2%3D%2233.5%22/%3E%0A%3Cline%20x1%3D%2229.3%22%20y1%3D%2235.5%22%20x2%3D%2226%22%20y2%3D%2238.2%22/%3E%0A%3Cline%20x1%3D%2234.9%22%20y1%3D%2235.5%22%20x2%3D%2237.3%22%20y2%3D%2232%22/%3E%0A%3Cline%20x1%3D%2220.7%22%20y1%3D%2217.7%22%20x2%3D%2223.8%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%2227.6%22%20y1%3D%225.7%22%20x2%3D%2226.3%22%20y2%3D%229.8%22/%3E%0A%3Cline%20x1%3D%2233.1%22%20y1%3D%225.7%22%20x2%3D%2233%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2220.3%22%20y1%3D%228%22%20x2%3D%2223.9%22%20y2%3D%2211.8%22/%3E%0A%3Cline%20x1%3D%2216.4%22%20y1%3D%2214.7%22%20x2%3D%2220.3%22%20y2%3D%2212.8%22/%3E%0A%3Cline%20x1%3D%2215.8%22%20y1%3D%226.5%22%20x2%3D%2217.1%22%20y2%3D%2210.6%22/%3E%0A%3Cline%20x1%3D%2229.4%22%20y1%3D%229.1%22%20x2%3D%2233%22%20y2%3D%2211.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%22-1.4%22%20x2%3D%2238%22%20y2%3D%222%22/%3E%0A%3Cline%20x1%3D%2237.3%22%20y1%3D%224.9%22%20x2%3D%2235.3%22%20y2%3D%229%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%22-3.2%22%20x2%3D%2230.6%22%20y2%3D%221%22/%3E%0A%3Cline%20x1%3D%2219.8%22%20y1%3D%225.1%22%20x2%3D%2224.6%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%2228.3%22%20y1%3D%2213%22%20x2%3D%2228.9%22%20y2%3D%2217.2%22/%3E%0A%3Cline%20x1%3D%2228.6%22%20y1%3D%2221.7%22%20x2%3D%2225.4%22%20y2%3D%2218.8%22/%3E%0A%3Cline%20x1%3D%2233.6%22%20y1%3D%2215.1%22%20x2%3D%2232.3%22%20y2%3D%2219.1%22/%3E%0A%3Cline%20x1%3D%2237.7%22%20y1%3D%2217.8%22%20x2%3D%2236.8%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%222.3%22%20y1%3D%2231.9%22%20x2%3D%22-1.1%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%224%22%20y1%3D%2234.5%22%20x2%3D%226.3%22%20y2%3D%2230.9%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%2237.5%22%20x2%3D%222.9%22%20y2%3D%2241.5%22/%3E%0A%3Cline%20x1%3D%229.5%22%20y1%3D%2231.6%22%20x2%3D%2212.7%22%20y2%3D%2234.4%22/%3E%0A%3Cline%20x1%3D%229.8%22%20y1%3D%2236.7%22%20x2%3D%225.6%22%20y2%3D%2237.9%22/%3E%0A%3Cline%20x1%3D%2210.6%22%20y1%3D%2224.6%22%20x2%3D%2211.1%22%20y2%3D%2228.9%22/%3E%0A%3Cline%20x1%3D%224.6%22%20y1%3D%2214.8%22%20x2%3D%221.3%22%20y2%3D%2217.6%22/%3E%0A%3Cline%20x1%3D%226%22%20y1%3D%2218.4%22%20x2%3D%228.2%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%227.8%22%20y1%3D%221.7%22%20x2%3D%228.7%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%223.3%22%20y1%3D%2219.5%22%20x2%3D%225%22%20y2%3D%2223.4%22/%3E%0A%3Cline%20x1%3D%2211%22%20y1%3D%2215.2%22%20x2%3D%2214.3%22%20y2%3D%2217.9%22/%3E%0A%3Cline%20x1%3D%2211.5%22%20y1%3D%2220.2%22%20x2%3D%227.7%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2213.7%22%20y1%3D%2212.8%22%20x2%3D%229.6%22%20y2%3D%2211.4%22/%3E%0A%3Cline%20x1%3D%22-1.6%22%20y1%3D%2210.6%22%20x2%3D%221.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%221.1%22%20y1%3D%2221.9%22%20x2%3D%22-0.6%22%20y2%3D%2225.7%22/%3E%0A%3Cline%20x1%3D%226.7%22%20y1%3D%2225.7%22%20x2%3D%223.3%22%20y2%3D%2228.4%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%224.6%22%20x2%3D%226%22%20y2%3D%226.7%22/%3E%0A%3Cline%20x1%3D%226.6%22%20y1%3D%229.2%22%20x2%3D%222.5%22%20y2%3D%2210.4%22/%3E%0A%3Cline%20x1%3D%2213.2%22%20y1%3D%224.6%22%20x2%3D%2211.9%22%20y2%3D%228.7%22/%3E%0A%3Cline%20x1%3D%2218.6%22%20y1%3D%2229.4%22%20x2%3D%2214.5%22%20y2%3D%2230.8%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%222.6%22%20x2%3D%2222.8%22%20y2%3D%22-1.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%2238.6%22%20x2%3D%2238%22%20y2%3D%2242%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%2236.9%22%20x2%3D%2230.6%22%20y2%3D%2241%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%2241.3%22%20x2%3D%2213.6%22%20y2%3D%2237.3%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%2242.6%22%20x2%3D%2222.8%22%20y2%3D%2238.5%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%22-2.5%22%20x2%3D%222.9%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%221.3%22%20x2%3D%2213.6%22%20y2%3D%22-2.7%22/%3E%0A%3Cline%20x1%3D%2220.2%22%20y1%3D%223.2%22%20x2%3D%2216.6%22%20y2%3D%220.6%22/%3E%0A%3Cline%20x1%3D%2242.3%22%20y1%3D%2231.9%22%20x2%3D%2238.9%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%2238.4%22%20y1%3D%2210.6%22%20x2%3D%2241.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%2241.1%22%20y1%3D%2221.9%22%20x2%3D%2239.4%22%20y2%3D%2225.7%22/%3E%0A%3C/svg%3E");
   content: '';
   z-index: -1;
 }
