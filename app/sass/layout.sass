@@ -17,7 +17,7 @@ body
 .soon
   +reset(list)
   +reset(all)
-  +pb(lines-45-a, 10px,#eee, white)
+  +pattern(lines-45-a, 10px,#eee, white)
   &:before
     @extend h4
     content: "Next:"
@@ -85,7 +85,7 @@ h4.title
     +radius(normal, 20px)
     +shadow(normal, 1px 1px 0px rgba(0, 0, 0, 0.2))
 
-.patternbolt, .flexslider
+.pattern, .flexslider
   p.code
     position: absolute
     z-index: 1000
@@ -93,7 +93,7 @@ h4.title
     float: left
     text-transform: none
     background-color: rgba(yellow, .9)
-    margin-top: 10px
+    margin-top: 5px
 
 .quote
   +media($bp, min)
@@ -287,53 +287,38 @@ form
   +reset(all)
   +reset(list)
   li
-    height: 50px
-    &:nth-of-type(1)
-      background-color: white
-    &:nth-of-type(2)
-      background-color: #333
-  &.noise
-    li:nth-of-type(1)
-      +pattern(noise, black, 30)
-    li:nth-of-type(2)
-      +pattern(noise, white, 30)
-
-
-.patternbolt
-  +reset(all)
-  +reset(list)
-  li
-    min-height: 40px
+    min-height: 50px
     margin-bottom: 5px
     &:nth-of-type(1)
-      +pb(lines-c, 10px, $color-bg, black)
+      +pattern(lines-a, 10px, $color-bg, black)
     &:nth-of-type(2)
-      +pb(lines-b, 10px, $color-bg, black)
+      +pattern(lines-b, 10px, $color-bg, black)
     &:nth-of-type(3)
-      +pb(lines-a, 10px, $color-bg, black)
+      +pattern(lines-c, 10px, $color-bg, black)
     &:nth-of-type(4)
-      +pb(lines-45-c, 10px, $color-bg, black)
+      +pattern(lines-45-a, 10px, $color-bg, black)
     &:nth-of-type(5)
-      +pb(lines-45-b, 10px, $color-bg, black)
+      +pattern(lines-45-b, 10px, $color-bg, black)
     &:nth-of-type(6)
-      +pb(lines-45-a, 10px, $color-bg, black)
+      +pattern(lines-45-c, 10px, $color-bg, black)
     &:nth-of-type(7)
-      +pb(cross-c, 15px, $color-bg, black)
+      +pattern(cross-a, 15px, $color-bg, black)
     &:nth-of-type(8)
-      +pb(cross-b, 30px, $color-bg, black)
+      +pattern(cross-b, 30px, $color-bg, black)
     &:nth-of-type(9)
-      +pb(cross-a, 30px, $color-bg, black)
+      +pattern(cross-c, 30px, $color-bg, black)
     &:nth-of-type(10)
-      +pb(cross-thin-c, 10px, $color-bg, black)
+      +pattern(cross-thin-a, 10px, $color-bg, black)
     &:nth-of-type(11)
-      +pb(cross-thin-b, 10px, $color-bg, black)
+      +pattern(cross-thin-b, 10px, $color-bg, black)
     &:nth-of-type(12)
-      +pb(cross-thin-a, 10px, $color-bg, black)
-    &:nth-of-type(14)
-      +pb(candy-a, 50px, $color-bg, black)
+      +pattern(cross-thin-c, 10px, $color-bg, black)
     &:nth-of-type(13)
-      +pb(candy-b, 50px, $color-bg, black)
+      +pattern(candy-a, 50px, $color-bg, black)
+    &:nth-of-type(14)
+      +pattern(candy-b, 50px, $color-bg, black)
     &:nth-of-type(15)
+      +pattern(candy-c, 50px, $color-bg, black)
 
 $nav-width: 400px
 $nav-step: 3

@@ -1,9 +1,10 @@
 <snippet>
   <content>
 <![CDATA[
-+pattern(${1:noise}, ${2:white|black}, ${3:10-100})
+${5:// refer to nonlinear.nyc/codecode/images.html
+}+pattern(${1:lines-b}, ${2:10px}, ${3:white}, ${4:black})
 ]]>
   </content>
   <tabTrigger>pattern</tabTrigger>
-  <description>pattern bg</description>
+  <description>pattern background</description>
 </snippet>
