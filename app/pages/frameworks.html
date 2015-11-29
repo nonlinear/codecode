@@ -19,12 +19,12 @@
   <div class="row">
     <div class="col-md-2 quote">
       <h1>extending common frameworks</h1>
-  </div>
+    </div>
     <div class="col-md-10 content">
-<div class="row">
-     <div class="col-md-4">
-      <h2>Bootstrap Macros<a href="https://getbootstrap.com" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
-           <p class="code macro HTML">alert</p>
+      <div class="row">
+       <div class="col-md-4">
+        <h2>Bootstrap Macros<a href="https://getbootstrap.com" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+        <p class="code macro HTML">alert</p>
         <p class="code macro HTML">badge</p>
         <p class="code macro HTML">button</p>
         <p class="code macro HTML">collapse</p>
@@ -35,41 +35,38 @@
         <p class="code macro HTML">popover</p>
         <p class="code macro HTML">tabs</p>
         <p class="code macro HTML">tooltip</p>
-    </div>
-    <div class="col-md-4">
-       <h2>Modernizr Macros<a href="https://modernizr.com" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
-      <p class="sig">most popular detections:</p>
-          <p class="code variable">mac</p><p class="code variable">windows</p><p class="code variable">linux</p><p class="code variable">ios</p><p class="code variable">android</p><p class="code variable">firefox</p><p class="code variable">chrome</p><p class="code variable">ie</p><p class="code variable">safari</p><p class="code variable">touch</p>
-<hr>
-          <p class="code macro SASS">hidden</p><p class="code macro SASS">visible</p>
-          <p class="sig">class extend to hide or show objects.</p>
-
-<hr>
-          <p class="code macro SASS">only</p>
-          <p class="sig">rules <strong>only</strong> for variable.</p>
-          <hr>
-          <p class="code macro SASS">except</p>
-          <p class="sig">rules for everywhere <strong>except</strong> variable.</p>
-
-    </div>
-   <div class="col-md-4">
-   </div>
       </div>
+      <div class="col-md-4">
+       <h2>Modernizr Macros<a href="https://modernizr.com" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+       <p class="sig">most popular detections:</p>
+       <p class="code variable">mac</p><p class="code variable">windows</p><p class="code variable">linux</p><p class="code variable">ios</p><p class="code variable">android</p><p class="code variable">firefox</p><p class="code variable">chrome</p><p class="code variable">ie</p><p class="code variable">safari</p><p class="code variable">touch</p>
+       <hr>
+       <p class="code macro SASS">hidden</p><p class="code macro SASS">visible</p>
+       <p class="sig">class extend to hide or show objects.</p>
 
-
+       <hr>
+       <p class="code macro SASS">only</p>
+       <p class="sig">rules <strong>only</strong> for variable.</p>
+       <hr>
+       <p class="code macro SASS">except</p>
+       <p class="sig">rules for everywhere <strong>except</strong> variable.</p>
+     </div>
+     <div class="col-md-4">
+     </div>
    </div>
  </div>
-  <nav class="menu footer row">
-        <div class="col-md-2 social">
-          {% include "partials/sig.html" %}
-        </div>
-        <div class="col-md-10">
-          <ul>
-            {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
-         </li>{% endfor %}
-       </ul>
-     </div>
-   </nav>
+</div>
+<nav class="menu footer row">
+  <div class="col-md-2 social">
+    {% include "partials/sig.html" %}
+  </div>
+  <div class="col-md-10">
+    <ul>
+      {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
+    </li>{% endfor %}
+  </ul>
+</div>
+</nav>
 </div>
 {% endblock %}
 

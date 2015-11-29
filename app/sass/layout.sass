@@ -373,4 +373,27 @@ a.off
   +opacity(40)
   +stamp($icon: $fa-var-lock, $nudge: 7px, $padding: 7px, $position: right, $size: 13px)
 
+.animate
+  border-top: solid 1px $color-divider
+  margin-top: $gap
+  padding-top: $gap
+  a
+    float: right
+  &.bounce:hover a.btn
+    +bounceIn($count: infinite)
+  &.fades:hover a.btn
+    +fadeIn($count: infinite)
+  &.flip:hover a.btn
+    +flip($count: infinite)
+  &.hinge:hover a.btn
+    +hinge($count: infinite)
+  &.lightspeed:hover a.btn
+    +lightSpeedIn($count: infinite)
+  &.roll:hover a.btn
+    +rollIn($count: infinite)
+  &.slide:hover a.btn
+    +slideInUp($count: infinite)
+  &.specials:hover a.btn
+    +pulse($count: infinite)
+
 
