@@ -344,8 +344,8 @@ header.header .dropdown
     color: $color-text
     &:after
       display: none
-    &:before
-    +stamp($icon: $fa-var-angle-down, $position: right, $nudge: 10px, $spacing: -15px, $padding: 10px)
+    // &:before
+    // +stamp($icon: $fa-var-angle-down, $position: right, $nudge: 10px, $spacing: -15px, $padding: 10px)
   .dropdown-menu
     +fadeInDown
     +radius(normal, 0)
@@ -395,5 +395,3 @@ a.off
     +slideInUp($count: infinite)
   &.specials:hover a.btn
     +pulse($count: infinite)
-
-
