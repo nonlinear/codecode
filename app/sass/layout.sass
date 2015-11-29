@@ -1,7 +1,7 @@
 +font-face(dense)
 
 body
-  padding-top: $gap
+  padding: $gap 0
 
 .title, h1, h2, h3, h4
   text-transform: uppercase
@@ -17,7 +17,7 @@ body
 .soon
   +reset(list)
   +reset(all)
-  background-color: $color-divider
+  +pb(lines-45-a, 10px,#eee, white)
   &:before
     @extend h4
     content: "Next:"
@@ -28,7 +28,7 @@ body
     padding-top: 0
     @extend .sig
   li, &:before
-    color: #666
+    color: $color-title
     display: block
 
 .btn.external
@@ -140,15 +140,14 @@ a:hover
   +clearfix
   border-top: solid 1px white
 
-.row + .row, nav.menu
+.row + .row
   border-top: solid 1px $color-divider
   margin-top: $gap
   padding-top: $gap
 
+
+
 nav.menu
-  margin-bottom: $gap
-  padding-bottom: $gap
-  border-bottom: solid 1px $color-divider
   ul
     +reset(list)
     +reset(all)
