@@ -46,21 +46,31 @@
 
 .calendar
   margin: 0 auto
+  a
+    text-decoration: none !important
   header
-    display: table
-    width: 100%
-    & > *
-      display: table-cell
+    padding-bottom: 10px
+    .the-month
       text-align: center
-    .title
-      width: 100%
-      padding-top: 10px
+      padding-top: 3px
     .btn
-      @extend .mini
+      width: 25px
+      padding: 0
+      height: 25px
+      margin: 0
+      text-align: center
+      +radius(normal, 50%)
+      i.fa
+        margin: 0
+        padding: 0
+        padding-top: 1px
+        vertical-align: top
+      &:first-of-type
+        float: left
+      &:last-of-type
+        float: right
   input
     width: 100%
-  .month
-    padding: 15px 0
   .week
     display: table
     width: 100%

@@ -62,11 +62,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"])
 //     .fa
 //       margin: 0
 
-.btn.mini
-  width: 30px
-  height: 30px
-  padding-top: 0
-  padding-bottom: 0
 
 .alert
   +radius(normal, 0)
@@ -132,8 +127,10 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"])
     border-right: none
   & > .btn
     +radius(custom, 0, 2px, 2px, 0)
-    padding-top: 3px
-    padding-bottom: 3px
+    padding: 0 5px
+    i.fa
+      padding: 0
+
 
 // ('ㅅ')づ column padding on mobile
 

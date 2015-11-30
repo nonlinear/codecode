@@ -9,7 +9,9 @@ gulp.task('start1', function(callback){
     './app/fonts/dense.*',
     './app/pages',
     './app/templates/layout.html',
-    './app/templates/macros/nav.html',
+    './app/data/categories.json',
+    './app/templates/partials/*.*',
+    '!./app/templates/partials/datepicker.html',
     './app/sass/project',
     './app/sass/style.sass'
     ], callback);

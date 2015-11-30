@@ -9283,19 +9283,32 @@ html.touch .hidden-touch, .hidden {
 
 .calendar {
   margin: 0 auto; }
+  .calendar a {
+    text-decoration: none !important; }
   .calendar header {
-    display: table;
-    width: 100%; }
-    .calendar header > * {
-      display: table-cell;
-      text-align: center; }
-    .calendar header .title {
-      width: 100%;
-      padding-top: 10px; }
+    padding-bottom: 10px; }
+    .calendar header .the-month {
+      text-align: center;
+      padding-top: 3px; }
+    .calendar header .btn {
+      width: 25px;
+      padding: 0;
+      height: 25px;
+      margin: 0;
+      text-align: center;
+      border-radius: 50%;
+      background-clip: padding-box; }
+      .calendar header .btn i.fa {
+        margin: 0;
+        padding: 0;
+        padding-top: 1px;
+        vertical-align: top; }
+      .calendar header .btn:first-of-type {
+        float: left; }
+      .calendar header .btn:last-of-type {
+        float: right; }
   .calendar input {
     width: 100%; }
-  .calendar .month {
-    padding: 15px 0; }
   .calendar .week {
     display: table;
     width: 100%; }
@@ -9406,19 +9419,13 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
 .dropdown-menu {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
 
-.alert.mini, .calendar header .alert.btn {
+.alert.mini {
   border: none;
   margin: 5px 0;
   padding: 5px 10px;
   border-radius: 0;
   background-clip: padding-box;
   font-size: 80%; }
-
-.btn.mini, .calendar header .btn {
-  width: 30px;
-  height: 30px;
-  padding-top: 0;
-  padding-bottom: 0; }
 
 .alert {
   border-radius: 0;
@@ -9512,8 +9519,9 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     background-clip: padding-box;
-    padding-top: 3px;
-    padding-bottom: 3px; }
+    padding: 0 5px; }
+    .input-group > .btn i.fa {
+      padding: 0; }
 
 @media screen and (max-width: 770px) {
   .col-md-2:not(:first-of-type), .col-md-3:not(:first-of-type), .col-md-4:not(:first-of-type), .col-md-5:not(:first-of-type), .col-md-6:not(:first-of-type), .col-md-7:not(:first-of-type), .col-md-8:not(:first-of-type), .col-md-9:not(:first-of-type), .col-md-10:not(:first-of-type) {
@@ -10599,7 +10607,7 @@ nav.menu ul {
   font-family: "Courier New", Courier, monospace;
   background-color: #ffff99;
   font-size: 20px; }
-  .mini .snippet, .calendar header .btn .snippet, .snippet.mini, .calendar header .snippet.btn {
+  .mini .snippet, .snippet.mini {
     font-size: 18px; }
 
 .object {
@@ -11239,15 +11247,15 @@ header.header {
   .tutorial img {
     max-width: 100%;
     height: auto; }
-  .tutorial.mini, .calendar header .tutorial.btn {
+  .tutorial.mini {
     border: none; }
-    .tutorial.mini > li, .calendar header .tutorial.btn > li {
+    .tutorial.mini > li {
       border: none;
       margin: 0px !important;
       padding: 0px !important;
       border: none;
       background: transparent; }
-      .tutorial.mini > li:before, .calendar header .tutorial.btn > li:before {
+      .tutorial.mini > li:before {
         -webkit-transform: translate(0px, 10px);
         -ms-transform: translate(0px, 10px);
         transform: translate(0px, 10px); }
