@@ -12,7 +12,3 @@ gulp.task('svgfile', function () {
   .pipe(gulp.dest('./dist/svg'))
 });
 
-gulp.task('js', function () {
-  return gulp.src('./app/js/**/*')
-  .pipe(gulp.dest('./dist/js'))
-});
