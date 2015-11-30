@@ -259,7 +259,7 @@ body {
   color: #373a3c;
   background-color: #fff; }
 
-h1, h2, h3, h4, .soon:before, .legend td.title, .legend th, h5, h6 {
+h1, h2, h3, h4, .soon:before, .warning:before, .legend td.title, .legend th, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem; }
 
@@ -370,7 +370,7 @@ input[type="search"] {
 output {
   display: inline-block; }
 
-h1, h2, h3, h4, .soon:before, .legend td.title, .legend th, h5, h6,
+h1, h2, h3, h4, .soon:before, .warning:before, .legend td.title, .legend th, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -382,7 +382,7 @@ h2, .h2,
 h3, .h3 {
   margin-bottom: 0.5rem; }
 
-h4, .soon:before, .legend td.title, .legend th, .h4,
+h4, .soon:before, .warning:before, .legend td.title, .legend th, .h4,
 h5, .h5,
 h6, .h6 {
   margin-bottom: 0.5rem; }
@@ -396,7 +396,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.75rem; }
 
-h4, .soon:before, .legend td.title, .legend th, .h4 {
+h4, .soon:before, .warning:before, .legend td.title, .legend th, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
@@ -9218,7 +9218,7 @@ textarea {
   a[href^="javascript:"]:after {
     content: ""; } }
 
-h1, h2, h3, h4, .soon:before, .legend td.title, .legend th, h5, h6 {
+h1, h2, h3, h4, .soon:before, .warning:before, .legend td.title, .legend th, h5, h6 {
   font-family: dense;
   color: black;
   text-rendering: optimizeLegibility; }
@@ -9246,7 +9246,7 @@ a:not(.btn) {
   a:not(.btn):hover {
     color: gray; }
 
-.sig, .soon li, .legend td:nth-of-type(2), .menu .social p {
+.sig, .soon li, .warning li, .soon p, .warning p, .legend td:nth-of-type(2), .menu .social p {
   font-size: 80%;
   line-height: 115%;
   padding: 5px 0;
@@ -9256,7 +9256,7 @@ button, .button, .btn {
   -webkit-transition: color 300ms ease-out;
   transition: color 300ms ease-out; }
 
-h1, h2, h3, h4, .soon:before, .legend td.title, .legend th {
+h1, h2, h3, h4, .soon:before, .warning:before, .legend td.title, .legend th {
   font-weight: normal; }
 
 .calendar {
@@ -10316,7 +10316,7 @@ html[xmlns] .flexslider .slides {
 body {
   padding: 20px 0; }
 
-.title, h1, h2, h3, h4, .soon:before, .legend td.title, .legend th {
+.title, h1, h2, h3, h4, .soon:before, .warning:before, .legend td.title, .legend th {
   text-transform: uppercase; }
 
 .content ul, .content ol {
@@ -10328,7 +10328,7 @@ body {
     padding-top: 10px;
     margin-top: 10px; } }
 
-.soon {
+.soon, .warning {
   list-style: none;
   margin: 0px !important;
   padding: 0px !important;
@@ -10336,7 +10336,7 @@ body {
   background: transparent;
   position: relative;
   z-index: 1; }
-  .soon::after {
+  .soon::after, .warning::after {
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -10349,16 +10349,19 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27white%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%276.375%206.375%2012%2012%27%20enable-background%3D%27new%206.375%206.375%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M7.082%2C18.375H6.375v-0.707L17.668%2C6.375h0.707v0.707L7.082%2C18.375z%20M18.375%2C18.375v-0.707l-0.707%2C0.707H18.375z%0A%20%20%20%20%20M7.082%2C6.375H6.375v0.707L7.082%2C6.375z%27/%3E%0A%3C/svg%3E");
     content: '';
     z-index: -1; }
-  .soon:before {
+  .soon:before, .warning:before {
     content: "Next:";
     padding: 10px;
     padding-bottom: 0; }
-  .soon li {
+  .soon li, .warning li, .soon p, .warning p {
     padding: 10px;
     padding-top: 0; }
-  .soon li, .soon:before {
+  .soon li, .warning li, .soon p, .warning p, .soon:before, .warning:before {
     color: black;
     display: block; }
+
+.warning:before {
+  content: "Alert:"; }
 
 .btn.external {
   padding: 2px;
@@ -10375,7 +10378,7 @@ body {
   .btn.external i.fa {
     padding: 0; }
 
-h4.title, .title.soon:before, .legend td.title, .legend th.title {
+h4.title, .title.soon:before, .title.warning:before, .legend td.title, .legend th.title {
   margin-bottom: 0; }
 
 .legend th, .legend td {
@@ -11282,7 +11285,7 @@ header.header {
   border: none;
   background: transparent;
   counter-reset: step; }
-  .tutorial p.sig, .tutorial .menu .social p, .menu .social .tutorial p {
+  .tutorial p.sig, .tutorial .soon p, .soon .tutorial p, .tutorial .warning p, .warning .tutorial p, .tutorial .menu .social p, .menu .social .tutorial p {
     padding: 10px 0 0 0 !important; }
   .tutorial img {
     max-width: 100%;

@@ -23,13 +23,19 @@ body
     content: "Next:"
     padding: 10px
     padding-bottom: 0
-  li
+  li, p
     padding: 10px
     padding-top: 0
     @extend .sig
-  li, &:before
+  li, p, &:before
     color: $color-title
     display: block
+
+.warning
+  @extend .soon
+  &:before
+    @extend h4
+    content: "Alert:"
 
 .btn.external
   padding: 2px
