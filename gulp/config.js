@@ -12,7 +12,7 @@ var config = {
     src: './dist/css/style.css',
     dest: './dist/css',
     html: ['./dist/**/*.html'],
-    ignore: [/.chosen/, /.flex/]
+    ignore: [/.chosen/, /.flex/, /.popover/, /.calendar/]
   },
   nunjucks: {
     src: './app/pages/**/*.*',
