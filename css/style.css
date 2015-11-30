@@ -569,6 +569,160 @@ hr {
   background-color: #d9534f;
 }
 
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: block;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 0.85rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+
+.popover.popover-top,
+.popover.bs-tether-element-attached-bottom {
+  margin-top: -10px;
+}
+
+.popover.popover-top .popover-arrow,
+.popover.bs-tether-element-attached-bottom .popover-arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0;
+}
+
+.popover.popover-top .popover-arrow:after,
+.popover.bs-tether-element-attached-bottom .popover-arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: "";
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+
+.popover.popover-right,
+.popover.bs-tether-element-attached-left {
+  margin-left: 10px;
+}
+
+.popover.popover-right .popover-arrow,
+.popover.bs-tether-element-attached-left .popover-arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+.popover.popover-right .popover-arrow:after,
+.popover.bs-tether-element-attached-left .popover-arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: "";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+
+.popover.popover-bottom,
+.popover.bs-tether-element-attached-top {
+  margin-top: 10px;
+}
+
+.popover.popover-bottom .popover-arrow,
+.popover.bs-tether-element-attached-top .popover-arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.popover.popover-bottom .popover-arrow:after,
+.popover.bs-tether-element-attached-top .popover-arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: "";
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+
+.popover.popover-left,
+.popover.bs-tether-element-attached-right {
+  margin-left: -10px;
+}
+
+.popover.popover-left .popover-arrow,
+.popover.bs-tether-element-attached-right .popover-arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+
+.popover.popover-left .popover-arrow:after,
+.popover.bs-tether-element-attached-right .popover-arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: "";
+  border-right-width: 0;
+  border-left-color: #fff;
+}
+
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: -0.7rem -0.7rem 0 0;
+}
+
+.popover-content {
+  padding: 9px 14px;
+}
+
+.popover-arrow,
+.popover-arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover-arrow {
+  border-width: 11px;
+}
+
+.popover-arrow:after {
+  content: "";
+  border-width: 10px;
+}
+
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -605,6 +759,10 @@ hr {
   content: "";
 }
 
+.fa-calendar:before {
+  content: "";
+}
+
 .fa-twitter:before {
   content: "";
 }
@@ -635,6 +793,22 @@ hr {
 
 .fa-instagram:before {
   content: "";
+}
+
+.fa-calendar-plus-o:before {
+  content: "";
+}
+
+.fa-calendar-minus-o:before {
+  content: "";
+}
+
+.fa-calendar-times-o:before {
+  content: "";
+}
+
+.fa-calendar-check-o:before {
+  content: "";
 }
 
 @-webkit-keyframes pulse {
@@ -1349,6 +1523,95 @@ h4,
   font-weight: normal;
 }
 
+.calendar {
+  margin: 0 auto;
+}
+
+.calendar a {
+  text-decoration: none !important;
+}
+
+.calendar header {
+  padding-bottom: 10px;
+}
+
+.calendar header .the-month {
+  text-align: center;
+  padding-top: 3px;
+}
+
+.calendar header .btn {
+  width: 25px;
+  padding: 0;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+.calendar header .btn i.fa {
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
+  vertical-align: top;
+}
+
+.calendar header .btn:first-of-type {
+  float: left;
+}
+
+.calendar header .btn:last-of-type {
+  float: right;
+}
+
+.calendar input {
+  width: 100%;
+}
+
+.calendar .week {
+  display: table;
+  width: 100%;
+}
+
+.calendar .week a.day {
+  text-decoration: none;
+}
+
+.calendar .week a.day:hover,
+.calendar .week a.day.active {
+  color: white !important;
+  background-color: #333;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+.calendar .week .day {
+  display: table-cell;
+  width: 14.28571%;
+  text-align: center;
+  height: 27px;
+  padding-top: 4px;
+}
+
+.calendar .week .day.past {
+  color: #ccc;
+}
+
+.calendar .week .day.active:not(.past) {
+  color: #333;
+}
+
+.calendar tbody,
+.calendar thead {
+  padding: 20px 0;
+}
+
+.calendar td,
+.calendar th {
+  padding: 0;
+}
+
 input,
 .select,
 html.touch .chosen-container {
@@ -1501,10 +1764,27 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.1);
 }
 
+.popover {
+  border-radius: 2px;
+  background-clip: padding-box;
+  width: 210px;
+  background-color: #eee;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.popover .popover-content {
+  padding: 5px;
+}
+
 .input-group {
   margin: 3px 0;
   width: 100%;
   displaY: table;
+}
+
+.input-group .popover {
+  margin-left: -85px;
+  margin-top: 5px;
 }
 
 .input-group > * {
