@@ -3,16 +3,10 @@ See [nonlinear.nyc/codecode](http://nonlinear.nyc/codecode)
 ### TODOs
 | Filename | line # | TODO
 |:------|:------:|:------
-| js/scripts.js | 1 | testing this shit
-| pages/forms.html | 13 | explain, extend scroll-hint
+| pages/data.html | 7 | explain json
+| pages/data.html | 8 | loops, references
+| pages/forms.html | 13 | explain scroll-hint
+| pages/partials.html | 8 | explain templates
+| pages/partials.html | 18 | explain partials
+| pages/partials.html | 26 | explain macros
 | pages/typography.html | 10 | snippets for common google fonts
-| js/vendors/jquery.js | 3741 | Now that all calls to _data and _removeData have been replaced
-| js/vendors/modernizr.js | 56 | : make the prefixes more granular
-| js/vendors/modernizr.js | 223 | : Add flag for hasownprop ? didn't last time
-| js/vendors/modernizr.js | 342 | : add testDOMProps
-| js/vendors/modernizr.js | 913 | hypothetically we could be doing an array of tests and use a basic loop here.
-| sass/vendors/bootstrap/_dropdown.scss | 165 | abstract this so that the navbar fixed styles are not placed here?
-| sass/vendors/bootstrap/_forms.scss | 86 | clear this up
-| sass/vendors/bootstrap/_reboot.scss | 289 | needed?
-| sass/vendors/bootstrap/_tables.scss | 114 | find out if we need this still.
-| sass/vendors/bootstrap/_utilities.scss | 119 | redo this as a proper class

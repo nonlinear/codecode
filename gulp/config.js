@@ -5,7 +5,7 @@ var config = {
     error: 'Error Running SASS'
   },
   todo: {
-    src: './app/**/*.+(js|html|sass|scss)',
+    src: ['./app/**/*.+(js|html|sass|scss)', '!./app/sass/vendors/**/*.*', '!./app/js/vendors/**/*.*'],
     dest: './'
   },
   uncss: {
