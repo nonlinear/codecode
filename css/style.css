@@ -1489,6 +1489,16 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (max-width: 770px) {
+  .col-md-4:not(:first-of-type),
+  .col-md-6:not(:first-of-type),
+  .col-md-10:not(:first-of-type) {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: solid 1px white;
+  }
+}
+
 .filter-aden:before,
 .filter-inkwell:before,
 .filter-perpetua:before,
@@ -2852,12 +2862,6 @@ h4.title {
   content: "/";
 }
 
-@media screen and (max-width: 770px) {
-  .menu .social {
-    display: none;
-  }
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -2949,7 +2953,7 @@ nav.menu ul li a {
   color: gray;
 }
 
-nav.menu ul li:not(:last-of-type) a:after {
+nav.menu ul li:not(.gitter) a:after {
   font-family: FontAwesome;
   content: "";
   display: block;
@@ -2965,13 +2969,9 @@ nav.menu ul li:not(:last-of-type) a:after {
   transition: all 300ms ease-out;
 }
 
-nav.menu ul li:not(:last-of-type) a:hover:after {
+nav.menu ul li:not(.gitter) a:hover:after {
   color: gray;
   padding: 0;
-}
-
-.todo {
-  background: #ffe6e6;
 }
 
 .pattern {
@@ -3340,20 +3340,18 @@ header.header .dropdown .dropdown-menu a {
 }
 
 a.off {
-  pointer-events: none;
-  cursor: default;
   opacity: 0.4;
   filter: "alpha(opacity=40)";
   -khtml-opacity: 0.4;
   -moz-opacity: 0.4;
-  padding-right: 22px !important;
+  padding-right: 20px !important;
 }
 
 a.off:before {
   font-family: FontAwesome;
-  content: "";
+  content: "";
   font-size: 13px;
-  margin-top: 7px;
+  margin-top: 0px;
   color: inherit;
 }
 
@@ -3515,30 +3513,9 @@ a.off:before {
 header.header {
   height: 120px;
   margin-bottom: 20px;
-  padding-top: 28px;
+  padding-top: 30px;
   position: relative;
   z-index: 1;
-}
-
-header.header h2 {
-  background-color: #eee;
-  display: inline-block;
-  padding: 14px 20px 11px 0;
-  float: left;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  -webkit-animation-iteration-count: 1s;
-  animation-iteration-count: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 header.header::after {
@@ -3556,13 +3533,27 @@ header.header::after {
   z-index: -1;
 }
 
-a.logo {
-  color: black;
-  float: left;
+header.header .dropdown-toggle {
   background-color: #eee;
+  pointer-events: none;
+  cursor: default;
+  padding: 5px 10px 0px 0;
+  float: left;
+}
+
+header.header .logo,
+header.header .title {
+  color: black;
+  vertical-align: middle;
   display: inline-block;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none;
+  background: transparent;
   text-decoration: none !important;
-  padding: 5px 10px 1px 0;
+}
+
+header.header .logo {
   line-height: 90%;
   font-size: 60px;
   -webkit-animation-name: fadeInLeft;
@@ -3579,6 +3570,61 @@ a.logo {
   animation-fill-mode: both;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+header.header .title {
+  line-height: 90%;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.home header.header .title {
+  display: none;
+}
+
+.home .home,
+.install .install,
+.partials .partials,
+.symbols .symbols,
+.animation .animation,
+.images .images,
+.typography .typography,
+.forms .forms,
+.responsive .responsive,
+.data .data,
+.frameworks .frameworks,
+.social .social {
+  color: black;
+  pointer-events: none;
+  cursor: default;
+}
+
+.home .home:after,
+.install .install:after,
+.partials .partials:after,
+.symbols .symbols:after,
+.animation .animation:after,
+.images .images:after,
+.typography .typography:after,
+.forms .forms:after,
+.responsive .responsive:after,
+.data .data:after,
+.frameworks .frameworks:after,
+.social .social:after {
+  color: black !important;
+  margin-top: -5px !important;
 }
 
 .avatar {
