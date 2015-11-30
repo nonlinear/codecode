@@ -12,8 +12,8 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
   gulp.watch('./app/js/**/*.js', browserSync.reload);
   gulp.watch('./dist/*.html', browserSync.reload);
   gulp.watch([
-    './app/templates/**/*',
-    './app/pages/**/*.*',
-    './data.json'
+    config.nunjucks.watch,
+    config.nunjucks.src,
+    config.nunjucks.data
     ], ['nunjucks']);
 });

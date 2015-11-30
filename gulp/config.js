@@ -19,7 +19,8 @@ var config = {
     dest: './dist',
     error: 'Error Running Nunjucks',
     template: './app/templates/',
-    data: './data.json'
+    watch: './app/templates/**/*',
+    data: './app/data/generated/data.json'
   },
   ghPages: {
     src: './dist/**/*'
@@ -39,8 +40,8 @@ var config = {
     dest: './dist/images'
   },
   json: {
-    src: './app/data/**/*.json',
-    dest: './',
+    src: './app/data/*.json',
+    dest: './app/data/generated',
     error: 'Error Running JSON extend',
     file: 'data.json'
   }
