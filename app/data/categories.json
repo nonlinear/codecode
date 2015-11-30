@@ -2,7 +2,7 @@
   "categories": [
   {"name": "home", "link": "index", "status": "on"},
   {"name": "install", "link": "install", "status": "on"},
-  {"name": "partials", "link": "partials", "status": "off"},
+  {"name": "partials", "link": "partials", "status": "on"},
   {"name": "symbols", "link": "symbols", "status": "on"},
   {"name": "animation", "link": "animation", "status": "on"},
   {"name": "images", "link": "images", "status": "on"},

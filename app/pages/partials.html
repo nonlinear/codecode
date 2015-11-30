@@ -5,30 +5,29 @@
 {% block content %}
 <div class="col-md-4">
   <h2>Templates</h2>
-  <!-- TODO: explain templates -->
-  <ul class="soon">
-    <li>explain templates</li>
-    <li>how to create</li>
-    <li>how to call it</li>
-    <li>frontmatter?</li>
-  </ul>
+  <ol class="tutorial">
+    <li>
+      create a template on <p class="code folder">app/templates</p>
+    </li>
+    <li>create variables with <p class="code macro HTML">block</p></li>
+    <li>create pages on <p class="code folder">app/pages</p></li>
+    <li>assign layout with <p class="code macro HTML">extend</p></li>
+    <li>add variable contents with <p class="code macro HTML">block</p></li>
+    <li>results (template + page)  appear on <p class="code folder">dist</p></li>
+  </ol>
 </div>
 <div class="col-md-4">
   <h2>Partials</h2>
-  <!-- TODO: explain partials -->
-  <ul class="soon">
-    <li>explain partials</li>
-    <li>how to create</li>
-    <li>how to call it</li>
-  </ul>
+    <ol class="tutorial">
+    <li>
+      create a partial on <p class="code folder">app/templates/partials</p>
+    </li>
+    <li>call it on <p class="code folder">app/templates</p> or <p class="code folder">app/pages</p> with <p class="code macro HTML">include</p></li>
+  </ol>
 </div>
 <div class="col-md-4">
-  <!-- TODO: explain macros -->
-  <h2>Macros</h2>
   <ul class="soon">
-    <li>explain macros</li>
-    <li>how to create</li>
-    <li>how to call it</li>
+    <li>explain macros (creation and calling)</li>
   </ul>
 </div>
 {% endblock %}
