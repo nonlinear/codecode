@@ -39,6 +39,11 @@ var config = {
      src: './app/images/**/*.+(png|jpg|jpeg|gif|svg)',
     dest: './dist/images'
   },
+  js: {
+    src: ['./app/js/vendors/jquery.js', './app/js/vendors/bootstrap.js', './app/js/vendors/modernizr.js', './app/js/vendors/detectizr.js', './app/js/vendors/chosen.js', './app/js/scripts.js'],
+    dest: './dist/js',
+    title: 'main.js'
+  },
   json: {
     src: './app/data/*.json',
     dest: './app/data/generated',
