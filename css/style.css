@@ -1321,7 +1321,7 @@ h4,
 }
 
 .select,
-.chosen-container {
+html.touch .chosen-container {
   width: 100%;
   heighT: 40px;
   font-size: 15px;
@@ -1359,14 +1359,12 @@ textarea:-ms-input-placeholder {
 }
 
 .select,
-.chosen-container,
-.chosen-container-active.chosen-with-drop {
+html.touch .chosen-container {
   padding-right: 30px !important;
 }
 
 .select:before,
-.chosen-container:before,
-.chosen-container-active.chosen-with-drop:before {
+html.touch .chosen-container:before {
   font-family: FontAwesome;
   content: "";
   font-size: 18px;
@@ -1375,18 +1373,15 @@ textarea:-ms-input-placeholder {
 }
 
 .select:before,
-.chosen-container:before,
-.chosen-container-active.chosen-with-drop:before {
+html.touch .chosen-container:before {
   float: right;
   margin-right: -20px;
 }
 
 .select select,
+html.touch .chosen-container select,
 .select .chosen-single,
-.chosen-container select,
-.chosen-container .chosen-single,
-.chosen-container-active.chosen-with-drop select,
-.chosen-container-active.chosen-with-drop .chosen-single {
+html.touch .chosen-container .chosen-single {
   -webkit-appearance: none;
   border: none;
   padding: 7px;
@@ -1397,36 +1392,14 @@ textarea:-ms-input-placeholder {
 }
 
 .select select:focus,
+html.touch .chosen-container select:focus,
 .select .chosen-single:focus,
-.chosen-container select:focus,
-.chosen-container .chosen-single:focus,
-.chosen-container-active.chosen-with-drop select:focus,
-.chosen-container-active.chosen-with-drop .chosen-single:focus {
+html.touch .chosen-container .chosen-single:focus {
   outline: none;
 }
 
-.chosen-container-active.chosen-with-drop,
-.select:active {
-  padding-right: 30px !important;
-}
-
-.chosen-container-active.chosen-with-drop:before,
-.select:active:before {
-  font-family: FontAwesome;
-  content: "";
-  font-size: 18px;
-  margin-top: 7px;
-  color: gray;
-}
-
-.chosen-container-active.chosen-with-drop:before,
-.select:active:before {
-  float: right;
-  margin-right: -20px;
-}
-
-.chosen-container,
-.select {
+.select,
+html.touch .chosen-container {
   margin-bottom: 10px;
 }
 
