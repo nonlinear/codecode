@@ -10381,6 +10381,15 @@ h4.title, .title.soon:before, .title.warning:before, .legend td.title, .legend t
   padding: 3px 0;
   width: 50%;
   vertical-align: top; }
+  @media screen and (max-width: 770px) {
+    .legend th, .legend td {
+      display: inline;
+      width: 100%;
+      vertical-align: baseline; } }
+
+@media screen and (max-width: 770px) {
+  .legend td:nth-of-type(2) {
+    padding-left: 5px; } }
 
 .code {
   font-family: "Courier New", Courier, monospace;
