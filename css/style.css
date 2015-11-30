@@ -33,7 +33,8 @@ strong {
   font-weight: bold;
 }
 
-h1 {
+h1,
+.quote {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -156,6 +157,7 @@ body {
 }
 
 h1,
+.quote,
 h2,
 h3,
 h4,
@@ -207,6 +209,7 @@ select {
 }
 
 h1,
+.quote,
 h2,
 h3,
 h4,
@@ -218,6 +221,7 @@ h4,
 }
 
 h1,
+.quote,
 h2,
 h3 {
   margin-bottom: 0.5rem;
@@ -228,7 +232,8 @@ h4,
   margin-bottom: 0.5rem;
 }
 
-h1 {
+h1,
+.quote {
   font-size: 2.5rem;
 }
 
@@ -1282,6 +1287,7 @@ img {
 }
 
 h1,
+.quote,
 h2,
 h3,
 h4,
@@ -1335,6 +1341,7 @@ a:not(.btn):hover {
 }
 
 h1,
+.quote,
 h2,
 h3,
 h4,
@@ -2347,6 +2354,7 @@ body {
 
 .title,
 h1,
+.quote,
 h2,
 h3,
 h4,
