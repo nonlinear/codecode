@@ -135,3 +135,14 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"])
     padding-top: 3px
     padding-bottom: 3px
 
+// ('ㅅ')づ column padding on mobile
+
++media($bp, max)
+  .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10
+    &:not(:first-of-type)
+      padding-top: $gap
+      margin-top: $gap
+      border-top: solid 1px $color-divider
+
+
+

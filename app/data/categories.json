@@ -1,6 +1,6 @@
 {
   "categories": [
-  {"name": "about", "link": "index", "status": "on"},
+  {"name": "home", "link": "index", "status": "on"},
   {"name": "install", "link": "install", "status": "on"},
   {"name": "partials", "link": "partials", "status": "off"},
   {"name": "symbols", "link": "symbols", "status": "on"},

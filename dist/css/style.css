@@ -9527,6 +9527,12 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     padding-top: 3px;
     padding-bottom: 3px; }
 
+@media screen and (max-width: 770px) {
+  .col-md-2:not(:first-of-type), .col-md-3:not(:first-of-type), .col-md-4:not(:first-of-type), .col-md-5:not(:first-of-type), .col-md-6:not(:first-of-type), .col-md-7:not(:first-of-type), .col-md-8:not(:first-of-type), .col-md-9:not(:first-of-type), .col-md-10:not(:first-of-type) {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: solid 1px white; } }
+
 .filter-aden:before, .filter-inkwell:before, .filter-perpetua:before, .filter-reyes:before, .filter-gingham:before, .filter-toaster:before, .filter-walden:before, .filter-hudson:before, .filter-earlybird:before, .filter-mayfair:before, .filter-lofi:before, .filter-1977:before, .filter-brooklyn:before, .filter-xpro2:before, .filter-nashville:before, .filter-lark:before, .filter-moon:before, .filter-aden:after, .filter-inkwell:after, .filter-perpetua:after, .filter-reyes:after, .filter-gingham:after, .filter-toaster:after, .filter-walden:after, .filter-hudson:after, .filter-earlybird:after, .filter-mayfair:after, .filter-lofi:after, .filter-1977:after, .filter-brooklyn:after, .filter-xpro2:after, .filter-nashville:after, .filter-lark:after, .filter-moon:after {
   content: '';
   display: block;
@@ -10497,10 +10503,6 @@ h4.title, .title.soon:before, .legend td.title, .legend th.title {
   .menu .social a:not(:first-of-type):before {
     content: "/"; }
 
-@media screen and (max-width: 770px) {
-  .menu .social {
-    display: none; } }
-
 a:hover {
   text-decoration: none; }
 
@@ -10576,7 +10578,7 @@ nav.menu ul {
       line-height: 120%;
       text-transform: uppercase;
       color: gray; }
-    nav.menu ul li:not(:last-of-type) a:after {
+    nav.menu ul li:not(.gitter) a:after {
       font-family: FontAwesome;
       content: "";
       display: block;
@@ -10590,29 +10592,9 @@ nav.menu ul {
       padding-top: 5px;
       -webkit-transition: all 300ms ease-out;
       transition: all 300ms ease-out; }
-    nav.menu ul li:not(:last-of-type) a:hover:after {
+    nav.menu ul li:not(.gitter) a:hover:after {
       color: gray;
       padding: 0; }
-    nav.menu ul li.pending a {
-      pointer-events: none;
-      cursor: default;
-      opacity: 0.5;
-      filter: "alpha(opacity=50)";
-      -khtml-opacity: 0.5;
-      -moz-opacity: 0.5; }
-      nav.menu ul li.pending a:after {
-        content: "";
-        color: gray;
-        font-size: 14px;
-        margin: 0;
-        padding: 0; }
-    nav.menu ul li.active a {
-      color: black;
-      pointer-events: none;
-      cursor: default; }
-      nav.menu ul li.active a:after {
-        color: black;
-        padding-top: 0; }
 
 .Macros, collapse {
   zoom: 1; }
@@ -11016,18 +10998,16 @@ header.header .dropdown .dropdown-menu {
     font-size: 25px; }
 
 a.off {
-  pointer-events: none;
-  cursor: default;
   opacity: 0.4;
   filter: "alpha(opacity=40)";
   -khtml-opacity: 0.4;
   -moz-opacity: 0.4;
-  padding-right: 22px !important; }
+  padding-right: 20px !important; }
   a.off:before {
     font-family: FontAwesome;
-    content: "";
+    content: "";
     font-size: 13px;
-    margin-top: 7px;
+    margin-top: 0px;
     color: inherit; }
   a.off:before {
     float: right;
@@ -11167,14 +11147,40 @@ a.off {
 header.header {
   height: 120px;
   margin-bottom: 20px;
-  padding-top: 28px;
+  padding-top: 30px;
   position: relative;
   z-index: 1; }
-  header.header h2 {
+  header.header::after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background-size: 7px;
+    background-color: #eeeeee;
+    background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27black%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%276.375%206.375%2012%2012%27%20enable-background%3D%27new%206.375%206.375%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M7.082%2C18.375H6.375v-0.707L17.668%2C6.375h0.707v0.707L7.082%2C18.375z%20M18.375%2C18.375v-0.707l-0.707%2C0.707H18.375z%0A%20%20%20%20%20M7.082%2C6.375H6.375v0.707L7.082%2C6.375z%27/%3E%0A%3C/svg%3E");
+    content: '';
+    z-index: -1; }
+  header.header .dropdown-toggle {
     background-color: #eee;
+    pointer-events: none;
+    cursor: default;
+    padding: 5px 10px 0px 0;
+    float: left; }
+  header.header .logo, header.header .title {
+    color: black;
+    vertical-align: middle;
     display: inline-block;
-    padding: 14px 20px 11px 0;
-    float: left;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none;
+    background: transparent;
+    text-decoration: none !important; }
+  header.header .logo {
+    line-height: 90%;
+    font-size: 60px;
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
     -webkit-animation-iteration-count: 1s;
@@ -11189,43 +11195,54 @@ header.header {
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-  header.header::after {
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-    background-size: 7px;
-    background-color: #eeeeee;
-    background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20fill%3D%27black%27%20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%276.375%206.375%2012%2012%27%20enable-background%3D%27new%206.375%206.375%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20d%3D%27M7.082%2C18.375H6.375v-0.707L17.668%2C6.375h0.707v0.707L7.082%2C18.375z%20M18.375%2C18.375v-0.707l-0.707%2C0.707H18.375z%0A%20%20%20%20%20M7.082%2C6.375H6.375v0.707L7.082%2C6.375z%27/%3E%0A%3C/svg%3E");
-    content: '';
-    z-index: -1; }
+  header.header .title {
+    line-height: 90%;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-iteration-count: 1s;
+    animation-iteration-count: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .home header.header .title {
+    display: none; }
 
-a.logo {
+.home .home,
+.install .install,
+.partials .partials,
+.symbols .symbols,
+.animation .animation,
+.images .images,
+.typography .typography,
+.forms .forms,
+.responsive .responsive,
+.data .data,
+.frameworks .frameworks,
+.social .social {
   color: black;
-  float: left;
-  background-color: #eee;
-  display: inline-block;
-  text-decoration: none !important;
-  padding: 5px 10px 1px 0;
-  line-height: 90%;
-  font-size: 60px;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  -webkit-animation-iteration-count: 1s;
-  animation-iteration-count: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  pointer-events: none;
+  cursor: default; }
+  .home .home:after,
+  .install .install:after,
+  .partials .partials:after,
+  .symbols .symbols:after,
+  .animation .animation:after,
+  .images .images:after,
+  .typography .typography:after,
+  .forms .forms:after,
+  .responsive .responsive:after,
+  .data .data:after,
+  .frameworks .frameworks:after,
+  .social .social:after {
+    color: black !important;
+    margin-top: -5px !important; }
 
 .avatar {
   zoom: 1;

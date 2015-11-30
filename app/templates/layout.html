@@ -3,35 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <title>{{project.title}}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-<!--   <div class="ribbon">
-    <a href="https://github.com/nonlinear/codecode">
-      <img src="https://github-camo.global.ssl.fastly.net/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
-    </a>
-  </div> -->
-
-
-    {% block content %}
-     {% endblock %}
-
- <script src="js/vendors/jquery.js"></script>
- <script src="js/vendors/bootstrap.js"></script>
- <script src="js/vendors/modernizr.js"></script>
- <script src="js/vendors/detectizr.js"></script>
- <script src="js/vendors/chosen.js"></script>
-  <script src="js/vendors/flexslider.js"></script>
- <script src="js/scripts.js"></script>
- <script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-   ga('create', '{{project.analytics}}', 'auto');
-   ga('send', 'pageview');
- </script>
+<body class="{% block active %}{% endblock %}">
+  <div class="container">
+    <header class="header">
+      <div class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <h1 class="logo">{{project.title}}</h1>
+          <h2 class="title">{% block active %}{% endblock %}</h2>
+        </a>
+        <ul class="dropdown-menu">
+          {% for category in categories %}
+          <li>
+            <a class="{{category.status}}" href="{{category.link}}.html">{{category.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-md-2 quote">
+       <h2> {% block quote %}
+        {% endblock %}</h2>
+      </div>
+      <div class="col-md-10 content">
+        <div class="row">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+    <nav class="menu footer row">
+      <div class="col-md-2 social">
+        {% include "partials/sig.html" %}
+      </div>
+      <div class="col-md-10">
+        <ul>
+          {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
+        </li>{% endfor %}
+        <li class="gitter">
+          <a href="https://gitter.im/nonlinear/codecode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<script src="js/vendors/jquery.js"></script>
+<script src="js/vendors/bootstrap.js"></script>
+<script src="js/vendors/modernizr.js"></script>
+<script src="js/vendors/detectizr.js"></script>
+<script src="js/vendors/chosen.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

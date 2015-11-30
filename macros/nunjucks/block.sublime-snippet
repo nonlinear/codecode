@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-{% block content %}
+{% block ${1:content} %}
 ${1}
 {% endblock %}
 ]]>

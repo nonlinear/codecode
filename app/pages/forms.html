@@ -1,27 +1,9 @@
 {% extends "layout.html" %}
+{% block active %}forms{% endblock %}
+{% block quote %}top-notch interactions{% endblock %}
+
 {% block content %}
-<div class="container forms">
-  <header class="header">
-    <a href="index.html" class="logo">{{project.title}}</a>
-    <h2 class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        forms
-      </a>
-      <ul class="dropdown-menu">
-        {% for category in categories %}
-        <li>
-          <a class="{{category.status}}" href="{{category.link}}.html">{{category.name}}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </h2>
-  </header>
-  <div class="row">
-    <div class="col-md-2 quote">
-      <h1>top-notch interactions</h1>
-    </div>
-    <div class="col-md-10 content">
-      <div class="row">
+
         <div class="col-md-4">
           <h2>Form Macros</h2>
           <p class="code macro SASS">disable</p>
@@ -104,19 +86,5 @@
           <li>style .chosen-drop</li>
         </ul>
       </div>
-    </div>
-  </div>
-</div>
-<nav class="menu footer row">
-        <div class="col-md-2 social">
-          {% include "partials/sig.html" %}
-        </div>
-        <div class="col-md-10">
-          <ul>
-            {% for category in categories %}<li><a class="{{category.status}} {{category.name}}" href="{{category.link}}.html">{{category.name}}</a>
-         </li>{% endfor %}
-       </ul>
-     </div>
-   </nav>
-</div>
+
 {% endblock %}

@@ -109,8 +109,6 @@ h4.title
     text-decoration: none !important
     &:not(:first-of-type):before
       content: "/"
-  +media($bp, max)
-    display: none
 a:hover
   text-decoration: none
 
@@ -168,7 +166,6 @@ nav.menu
       +border-box
       padding: 0
       margin: 0
-
       a
         +transition
         text-decoration: none !important
@@ -178,7 +175,7 @@ nav.menu
         line-height: 120%
         text-transform: uppercase
         color: $color-link-hover
-      &:not(:last-of-type)
+      &:not(.gitter)
         a:after
           font-family: FontAwesome
           content: $fa-var-angle-up
@@ -192,22 +189,7 @@ nav.menu
         a:hover:after
           color: $color-link-hover
           padding: 0
-      &.pending a
-        +disable(link)
-        +opacity(50)
-        &:after
-          content: $fa-var-lock
-          color: $color-link-hover
-          font-size: 14px
-          margin: 0
-          padding: 0
 
-      &.active a
-        color: $color-title
-        +disable(link)
-        &:after
-          color: $color-title
-          padding-top: 0
 
 
 .Macros, collapse
@@ -356,9 +338,8 @@ header.header .dropdown
       font-size: 25px
 
 a.off
-  +disable(link)
   +opacity(40)
-  +stamp($icon: $fa-var-lock, $nudge: 7px, $padding: 7px, $position: right, $size: 13px)
+  +stamp($icon: $fa-var-clock-o, $nudge: 0px, $padding: 5px, $position: right, $size: 13px)
 
 .animate
   border-top: solid 1px $color-divider
@@ -382,3 +363,6 @@ a.off
     +slideInUp($count: infinite)
   &.specials:hover a.btn
     +pulse($count: infinite)
+
+
+

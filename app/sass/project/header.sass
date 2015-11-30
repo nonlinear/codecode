@@ -1,45 +1,45 @@
 header.header
   height: 120px
   margin-bottom: $gap
-  padding-top: 28px
-  h2
-    background-color: $color-bg
-    display: inline-block
-    padding: 14px 20px 11px 0
-    float: left
-    +fadeInLeft
+  padding-top: 30px
   +pattern(lines-45-a, 7px, $color-bg, $color-title)
-  // .index &
-  //   +pattern(lines-45-c, 20px, $color-bg, $color-title)
-  // .install &
-  //   +pattern(cross-thin-b, 20px, $color-title, $color-bg)
-  // .partials &
-  // .symbols &
-  //   +pattern(candy-a, 100px, $color-title, $color-bg)
-  // .animation &
-  //   +pattern(cross-c, 20px, $color-bg, $color-title)
-  // .images &
-  //   +pattern(cross-b, 20px, $color-title, $color-bg)
-  // .typography &
-  //   +pattern(candy-a, 70px, $color-bg, $color-title)
-  // .forms &
-  //   +pattern(lines-a, 20px, $color-title, $color-bg)
-  // .responsive &
-  //   +pattern(lines-45-a, 7px, $color-bg, $color-title)
-  // .data &
-  // .frameworks &
-  //   +pattern(candy-a, 100px, $color-bg, $color-title)
-  // .social &
-  //   +pattern(cross-thin-a, 20px, $color-title, $color-bg)
+  .dropdown-toggle
+    background-color: $color-bg
+    +disable(link)
+    padding: 5px 10px 0px 0
+    float: left
+  .logo, .title
+    color: $color-text
+    vertical-align: middle
+    display: inline-block
+    +reset(all)
+    text-decoration: none !important
+  .logo
+    line-height: 90%
+    font-size: 60px
+    +fadeInLeft
+  .title
+    line-height: 90%
+    +fadeInLeft($delay: .3s)
+  .home &
+    .title
+      display: none
 
-a.logo
-  color: $color-text
-  float: left
-  background-color: $color-bg
-  display: inline-block
-  text-decoration: none !important
-  padding: 5px 10px 1px 0
-  line-height: 90%
-  font-size: 60px
-  +fadeInLeft
 
+.home .home,
+.install .install,
+.partials .partials,
+.symbols .symbols,
+.animation .animation,
+.images .images,
+.typography .typography,
+.forms .forms,
+.responsive .responsive,
+.data .data,
+.frameworks .frameworks,
+.social .social
+  color: $color-title
+  +disable(link)
+  &:after
+    color: $color-title !important
+    margin-top: -5px !important
