@@ -3,7 +3,6 @@
 <![CDATA[
 +only(${1:mac|linux|safari|etc})
   ${2:rules here. needs modernizr to operate.}
-}
 ]]>
   </content>
   <tabTrigger>only</tabTrigger>

@@ -1,9 +1,11 @@
 <snippet>
   <content>
 <![CDATA[
-<select  class="chosen-select">
+<div class="select">
+  <select class="chosen-select">
     <option>${1}</option>
-</select>
+  </select>
+</div>
 ]]>
   </content>
   <tabTrigger>select</tabTrigger>

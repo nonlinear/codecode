@@ -46,39 +46,47 @@
         <hr>
         <p class="code macro HTML">country</p>
         <p class="sig">country auto select, data from <span class="code file">app/data/country.json</span></p>
-        <select class="chosen-select">
+        <div class="select">
+          <select class="chosen-select">
           <option>Country</option>
           {% for country in countries %}
           <option value="{{country.code}}">{{country.name}}</option>
           {% endfor %}
         </select>
+        </div>
         <hr>
         <p class="code macro HTML">state</p>
         <p class="sig">state auto select, data from <span class="code file">app/data/state.json</span></p>
-        <select class="chosen-select">
+        <div class="select">
+          <select class="chosen-select">
           <option>State</option>
           {% for state in states %}
           <option value="{{state.code}}">{{state.name}}</option>
           {% endfor %}
         </select>
+        </div>
         <hr>
         <p class="code macro HTML">industry</p>
         <p class="sig">industry auto select, data from <span class="code file">app/data/industry.json</span></p>
-        <select class="chosen-select">
+        <div class="select">
+          <select class="chosen-select">
           <option>Industry</option>
           {% for industry in industries %}
           <option value="{{industry.name}}">{{industry.name}}</option>
           {% endfor %}
         </select>
+        </div>
         <hr>
         <p class="code macro HTML">year</p>
         <p class="sig">year auto select, data from <span class="code file">app/data/year.json</span></p>
-        <select class="chosen-select">
+        <div class="select">
+          <select class="chosen-select">
           <option>Year</option>
           {% for year in years %}
           <option value="{{year.name}}">{{year.name}}</option>
           {% endfor %}
         </select>
+        </div>
       </div>
       <div class="col-md-4">
         <ul class="soon">

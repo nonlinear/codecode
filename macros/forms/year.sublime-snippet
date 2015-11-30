@@ -1,12 +1,14 @@
 <snippet>
   <content>
 <![CDATA[
-<select class="chosen-select">
-  <option>Year</option>
-  {% for year in years %}
-    <option value="{{year.name}}">{{year.name}}</option>
-  {% endfor %}
-</select>
+<div class="select">
+  <select class="chosen-select">
+    <option>Year</option>
+    {% for year in years %}
+      <option value="{{year.name}}">{{year.name}}</option>
+    {% endfor %}
+  </select>
+</div>
 ]]>
   </content>
   <tabTrigger>year</tabTrigger>
