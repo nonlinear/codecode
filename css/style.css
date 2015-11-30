@@ -2801,6 +2801,7 @@ h4.title {
 
 .code.variable {
   padding-left: 29px !important;
+  font-style: italic;
 }
 
 .code.variable:before {
