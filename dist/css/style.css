@@ -10538,7 +10538,7 @@ a:hover {
   .next:after {
     clear: both; }
 
-.row + .row, .quote h2, body.images h3 {
+.row + .row, .quote h2, body.patterns h3 {
   border-top: solid 1px white;
   margin-top: 20px;
   padding-top: 20px; }
