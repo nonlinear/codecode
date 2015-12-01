@@ -2944,7 +2944,8 @@ a:hover {
 }
 
 .row + .row,
-.quote h2 {
+.quote h2,
+body.patterns h3 {
   border-top: solid 1px white;
   margin-top: 20px;
   padding-top: 20px;
