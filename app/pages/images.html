@@ -3,32 +3,96 @@
 {% block quote %}modern filters and patterns{% endblock %}
 
 {% block content %}
-
-<div class="col-md-4">
+<div class="col-md-12">
   <h2>PatternBolt
-    <a href="http://buseca.github.io/patternbolt/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
-    <p class="code macro SASS">pattern</p>
-    <p class="sig">variables are respectively:
-      <span class="code variable">$pattern</span>
-      <span class="code variable">$background-size</span>, in px
-      <span class="code variable">$background-color</span>
-      <span class="code variable">$foreground-color</span>
-      <span class="code variable">$opacity</span>
-      <!-- <span class="code variable">$mask</span> -->
-    </p>
-
-  </div>
+  <a href="http://buseca.github.io/patternbolt/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+  <p class="code macro SASS">pattern</p>
+  <p class="sig">variables are respectively:
+    <span class="code variable">$pattern</span> (see below)
+    <span class="code variable">$background-size</span> (in px)
+    <span class="code variable">$background-color</span>
+    <span class="code variable">$foreground-color</span>
+    <span class="code variable">$opacity</span>
+    <span class="code variable">$mask</span>
+    <!-- TODO: add example, animated -->
+  </p>
+</div>
   <div class="col-md-4">
-    {% include "partials/pattern.html" %}
-  </div>
-<!--   <div class="col-md-4">
-    <h2>CSSgram filters<a href="http://una.im/CSSgram/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
-    {% include "partials/filters.html" %}
-  </div> -->
-  <div class="col-md-4">
-    <ul class="soon">
-      <li>extend patternbolt (dots, fabrics)</li>
+    <h3>lines</h3>
+    <ul class="pattern lines">
+      <li>
+        <p class="code variable">lines-a</p>
+      </li>
+      <li>
+        <p class="code variable">lines-b</p>
+      </li>
+      <li>
+        <p class="code variable">lines-c</p>
+      </li>
+    </ul>
+    <h3>lines-45</h3>
+    <ul class="pattern lines-45">
+      <li>
+        <p class="code variable">lines-45-a</p>
+      </li>
+      <li>
+        <p class="code variable">lines-45-b</p>
+      </li>
+      <li>
+        <p class="code variable">lines-45-c</p>
+      </li>
     </ul>
   </div>
-
+  <div class="col-md-4">
+    <h3>cross</h3>
+    <ul class="pattern cross">
+      <li>
+        <p class="code variable">cross-a</p>
+      </li>
+      <li>
+        <p class="code variable">cross-b</p>
+      </li>
+      <li>
+        <p class="code variable">cross-c</p>
+      </li>
+    </ul>
+    <h3>cross-thin</h3>
+    <ul class="pattern cross-thin">
+      <li>
+        <p class="code variable">cross-thin-a</p>
+      </li>
+      <li>
+        <p class="code variable">cross-thin-b</p>
+      </li>
+      <li>
+        <p class="code variable">cross-thin-c</p>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h3>candy</h3>
+    <ul class="pattern candy">
+      <li>
+        <p class="code variable">candy-a</p>
+      </li>
+      <li>
+        <p class="code variable">candy-b</p>
+      </li>
+      <li>
+        <p class="code variable">candy-c</p>
+      </li>
+    </ul>
+    <h3>dots</h3>
+    <ul class="pattern dots">
+      <li>
+        <p class="code variable">dots-a</p>
+      </li>
+      <li>
+        <p class="code variable">dots-b</p>
+      </li>
+      <li>
+        <p class="code variable">dots-c</p>
+      </li>
+    </ul>
+  </div>
   {% endblock %}

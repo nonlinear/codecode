@@ -1,0 +1,62 @@
+.pattern
+  +reset(all)
+  +reset(list)
+  li
+    height: 70px
+    margin-bottom: 5px
+  .code
+    position: absolute
+    z-index: 1000
+    display: inline-block
+    float: left
+    text-transform: none
+    background-color: rgba(yellow, .9)
+    margin-top: 15px
+
+.pattern.lines
+  li:nth-of-type(1)
+    +pattern(lines-a, 10px, $color-bg, black)
+  li:nth-of-type(2)
+    +pattern(lines-b, 10px, $color-bg, black)
+  li:nth-of-type(3)
+    +pattern(lines-c, 10px, $color-bg, black)
+
+.pattern.lines-45
+  li:nth-of-type(1)
+    +pattern(lines-45-a, 10px, $color-bg, black)
+  li:nth-of-type(2)
+    +pattern(lines-45-b, 10px, $color-bg, black)
+  li:nth-of-type(3)
+    +pattern(lines-45-c, 10px, $color-bg, black)
+
+.pattern.cross
+  li:nth-of-type(1)
+    +pattern(cross-a, 15px, $color-bg, black)
+  li:nth-of-type(2)
+    +pattern(cross-b, 30px, $color-bg, black)
+  li:nth-of-type(3)
+    +pattern(cross-c, 30px, $color-bg, black)
+
+.pattern.cross-thin
+  li:nth-of-type(1)
+    +pattern(cross-thin-a, 10px, $color-bg, black)
+  li:nth-of-type(2)
+    +pattern(cross-thin-b, 10px, $color-bg, black)
+  li:nth-of-type(3)
+    +pattern(cross-thin-c, 10px, $color-bg, black)
+
+.pattern.candy
+  li:nth-of-type(1)
+    +pattern(candy-a, 50px, $color-bg, black)
+  li:nth-of-type(2)
+    +pattern(candy-b, 50px, $color-bg, black)
+  li:nth-of-type(3)
+    +pattern(candy-c, 50px, $color-bg, black)
+
+.pattern.dots
+  li:nth-of-type(1)
+    +pattern(dots-a, 10px, $color-bg, black)
+  li:nth-of-type(2)
+    +pattern(dots-b, 10px, $color-bg, black)
+  li:nth-of-type(3)
+    +pattern(dots-c, 10px, $color-bg, black)
