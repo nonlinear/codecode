@@ -2944,8 +2944,7 @@ a:hover {
 }
 
 .row + .row,
-.quote h2,
-body.images h3 {
+.quote h2 {
   border-top: solid 1px white;
   margin-top: 20px;
   padding-top: 20px;
@@ -3334,6 +3333,7 @@ header.header .title {
 .partials .partials,
 .symbols .symbols,
 .animation .animation,
+.patterns .patterns,
 .typography .typography,
 .forms .forms,
 .responsive .responsive,
@@ -3350,6 +3350,7 @@ header.header .title {
 .partials .partials:after,
 .symbols .symbols:after,
 .animation .animation:after,
+.patterns .patterns:after,
 .typography .typography:after,
 .forms .forms:after,
 .responsive .responsive:after,
