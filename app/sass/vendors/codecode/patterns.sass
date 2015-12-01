@@ -98,25 +98,29 @@
 
 
   @else
-    @error "PatternBolt pattern `#{$pattern}` was not found."
+    @error "Pattern `#{$pattern}` was not found."
 
 
   position: relative
   z-index: 1
+  background-size: $background-size
+  background-color: rgba($background-color, $opacity)
+  background-image: $background-image
 
-  &::after
-    box-sizing: border-box
-    position: absolute
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-    overflow: hidden
-    background-size: $background-size
-    background-color: rgba($background-color, $opacity)
-    background-image: $background-image
-    content: ''
-    z-index: -1
-    @if $mask == mask
-      opacity: 0.2
-      z-index: 0
+
+  // &::after
+  //   box-sizing: border-box
+  //   position: absolute
+  //   top: 0
+  //   left: 0
+  //   bottom: 0
+  //   right: 0
+  //   overflow: hidden
+  //   background-size: $background-size
+  //   background-color: rgba($background-color, $opacity)
+  //   background-image: $background-image
+  //   content: ''
+  //   z-index: -1
+  //   @if $mask == mask
+  //     opacity: 0.2
+  //     z-index: 0
