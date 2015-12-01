@@ -5,7 +5,7 @@
   {"name": "partials", "link": "partials", "status": "on"},
   {"name": "symbols", "link": "symbols", "status": "on"},
   {"name": "animation", "link": "animation", "status": "on"},
-  {"name": "images", "link": "images", "status": "on"},
+  {"name": "patterns", "link": "patterns", "status": "on"},
   {"name": "typography", "link": "typography", "status": "on"},
   {"name": "forms", "link": "forms", "status": "on"},
   {"name": "responsive", "link": "responsive", "status": "on"},

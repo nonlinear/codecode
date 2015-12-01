@@ -7,4 +7,5 @@ See [nonlinear.nyc/codecode](http://nonlinear.nyc/codecode)
 | pages/data.html | 8 | loops, references
 | pages/forms.html | 31 | explain scroll-hint
 | pages/forms.html | 34 | style .chosen-drop
+| pages/images.html | 18 | add example, animated
 | pages/typography.html | 10 | snippets for common google fonts
