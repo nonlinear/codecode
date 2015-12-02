@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+{% for ${1:user} in ${2:users} %}
+  ${3: // make sure json file is at app/data/, get variables}
+{% endfor %}
+]]>
+  </content>
+  <tabTrigger>loop</tabTrigger>
+  <description>nunjuck loop</description>
+</snippet>
