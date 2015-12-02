@@ -11048,7 +11048,7 @@ header.header {
   list-style: none; }
   .pattern li {
     height: 70px;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
   .pattern .code {
     position: absolute;
     z-index: 1000;
