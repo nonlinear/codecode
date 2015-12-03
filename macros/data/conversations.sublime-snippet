@@ -1,0 +1,23 @@
+<snippet>
+  <content>
+<![CDATA[
+<div class="talks">
+  {% for talk in talks %}
+  <div class="talk {{talk.class}}">
+    <div class="avatar">
+      <div class="image" style="background-image: url({{talk.image}});"></div>
+      <div class="user">{{talk.user}}</div>
+    </div>
+    <div class="message">
+      {{talk.message}}
+      <p class="timestamp">{{talk.timestamp}}
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+]]>
+  </content>
+  <tabTrigger>talks</tabTrigger>
+  <description>talks data loop</description>
+</snippet>

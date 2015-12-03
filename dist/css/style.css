@@ -9246,7 +9246,7 @@ a:not(.btn) {
   a:not(.btn):hover {
     color: gray; }
 
-.sig, .soon li, .warning li, .soon p, .warning p, .legend td:nth-of-type(2), .menu .social p {
+.sig, .soon li, .warning li, .soon p, .warning p, .legend td:nth-of-type(2), .menu .social p, .users .info p {
   font-size: 80%;
   line-height: 115%;
   padding: 5px 0;
@@ -10935,36 +10935,110 @@ header.header {
     margin-top: -5px !important; }
 
 .avatar {
-  zoom: 1;
-  padding-top: 20px;
-  border-top: solid 1px #ccc;
-  margin-top: 20px; }
-  .avatar:before, .avatar:after {
-    display: table;
-    content: ""; }
-  .avatar:after {
-    clear: both; }
-  .avatar ul {
-    margin: 0px !important;
-    padding: 0px !important;
-    border: none;
-    background: transparent;
-    list-style: none;
-    float: left; }
-  .avatar li {
-    text-transform: capitalize; }
-    .avatar li.title {
-      font-size: 120%; }
+  padding-right: 20px; }
   .avatar .image {
-    width: 100px;
+    width: 70px;
     height: 5px;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-clip: padding-box;
-    background-size: contain;
+    background-size: contain; }
+
+.users .avatar {
+  text-align: center;
+  width: 70px; }
+  .users .avatar .image {
+    margin: 0 auto; }
+
+.users .user {
+  display: table;
+  padding-top: 10px;
+  width: 100%; }
+  .users .user > * {
+    display: table-cell;
+    vertical-align: top; }
+
+.users, .talks {
+  max-height: 500px;
+  overflow: auto;
+  overflow: auto;
+  background: -webkit-linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.2), transparent), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.2), transparent) 0 100%;
+  background: linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.2), transparent), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.2), transparent) 0 100%;
+  background: -webkit-linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.5), transparent), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.5), transparent) 0 100%;
+  background: linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.5), transparent), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.5), transparent) 0 100%;
+  background-repeat: no-repeat;
+  background-color: #eee;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll; }
+
+.title {
+  font-family: dense;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.users .user:not(first-of-type) {
+  border-top: solid 1px white;
+  margin-top: 5px; }
+
+.users .info p {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none;
+  background: transparent; }
+  .users .info p label {
+    width: 20%; }
+
+.talk {
+  display: table;
+  padding-top: 10px; }
+  .talk .timestamp {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    color: gray;
+    padding-left: 14px !important; }
+    .talk .timestamp:before {
+      font-family: FontAwesome;
+      content: "";
+      font-size: 12px;
+      margin-top: 0px;
+      color: inherit; }
+    .talk .timestamp:before {
+      float: left;
+      margin-left: -14px; }
+  .talk .avatar {
+    width: 20%;
     float: left;
-    margin-right: 20px; }
+    text-align: center !important; }
+    .talk .avatar .image {
+      margin: 0 auto; }
+  .talk .message {
+    width: 80%;
+    float: right;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background-color: #ccc;
+    padding: 10px; }
+    .talk .message:before {
+      font-family: FontAwesome;
+      content: "";
+      margin-left: -20px;
+      float: left;
+      font-size: 40px;
+      color: #ccc; }
+  .talk.other .avatar {
+    float: right;
+    padding: 0;
+    padding-left: 20px; }
+  .talk.other .message {
+    float: left; }
+    .talk.other .message:before {
+      content: "";
+      margin-right: -20px;
+      float: right;
+      font-size: 40px;
+      color: #ccc; }
 
 .tutorial {
   margin: 0px !important;
@@ -10972,7 +11046,7 @@ header.header {
   border: none;
   background: transparent;
   counter-reset: step; }
-  .tutorial p.sig, .tutorial .soon p, .soon .tutorial p, .tutorial .warning p, .warning .tutorial p, .tutorial .menu .social p, .menu .social .tutorial p {
+  .tutorial p.sig, .tutorial .soon p, .soon .tutorial p, .tutorial .warning p, .warning .tutorial p, .tutorial .menu .social p, .menu .social .tutorial p, .tutorial .users .info p, .users .info .tutorial p {
     padding: 10px 0 0 0 !important; }
   .tutorial img {
     max-width: 100%;
