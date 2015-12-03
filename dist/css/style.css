@@ -12236,6 +12236,7 @@ header.header {
 .animation .animation,
 .patterns .patterns,
 .typography .typography,
+.filters .filters,
 .forms .forms,
 .responsive .responsive,
 .data .data,
@@ -12251,6 +12252,7 @@ header.header {
   .animation .animation:after,
   .patterns .patterns:after,
   .typography .typography:after,
+  .filters .filters:after,
   .forms .forms:after,
   .responsive .responsive:after,
   .data .data:after,
@@ -12258,6 +12260,13 @@ header.header {
   .social .social:after {
     color: black !important;
     margin-top: -5px !important; }
+
+.filters .col-md-4 p.code {
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 770px) {
+  .filters .col-md-4:not(:first-of-type) {
+    padding-top: 62px; } }
 
 .avatar {
   padding-right: 20px; }

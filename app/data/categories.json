@@ -9,7 +9,7 @@
   {"name": "typography", "link": "typography", "status": "on"},
   {"name": "forms", "link": "forms", "status": "on"},
   {"name": "responsive", "link": "responsive", "status": "on"},
-  {"name": "filters", "link": "filters", "status": "off"},
+  {"name": "filters", "link": "filters", "status": "on"},
   {"name": "data", "link": "data", "status": "off"},
   {"name": "frameworks", "link": "frameworks", "status": "on"},
   {"name": "social", "link": "social", "status": "on"}

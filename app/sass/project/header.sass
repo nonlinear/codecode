@@ -33,6 +33,7 @@ header.header
 .animation .animation,
 .patterns .patterns,
 .typography .typography,
+.filters .filters,
 .forms .forms,
 .responsive .responsive,
 .data .data,
@@ -43,3 +44,11 @@ header.header
   &:after
     color: $color-title !important
     margin-top: -5px !important
+
+.filters .col-md-4
+  p.code
+    margin-bottom: $gap
+  +media($bp, min)
+    &:not(:first-of-type)
+      padding-top: 62px
+
