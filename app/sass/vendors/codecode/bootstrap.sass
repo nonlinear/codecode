@@ -27,6 +27,51 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"])
   +radius(normal, 0)
   font-size: 80%
 
+
+.tab-content
+  padding-top: $gapxhalf
+
+.nav-tabs
+  & > .active > a, & > .active > a:hover
+    background-color: $color-bg
+    border-color: $color-divider
+    border-bottom: solid 1px $color-bg
+
+.nav
+  +reset(all)
+  +reset(list)
+  border-bottom: solid 1px $color-divider
+  +clearfix
+  vertical-align: bottom
+  li
+    display: inline-block
+    vertical-align: bottom
+    width: 150px
+    &:not(:first-of-type)
+      padding-left: 5px
+    border-bottom: solid 1px $color-divider
+    a
+      display: block
+      +radius(custom, 3px, 3px, 0, 0)
+      text-align: center
+      margin: 0
+      padding: 10px 0
+      +transition
+      @extend h4
+      border: solid 1px $color-divider !important
+      text-decoration: none !important
+      color: $font-title
+      border-bottom: none !important
+      background-color: $color-bg !important
+    &.active a, a:hover
+      padding: 15px 0
+      color: $font-title !important
+    &.active a
+      background-color: $color-divider
+      +translate(0, 1)
+
+
+
 // ('ㅅ')づ btn color rewrites
 
 // .btn, .btn:hover, .alert, .alert-hover, .pagination li a
