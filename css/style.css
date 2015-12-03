@@ -3380,7 +3380,8 @@ header.header .title {
   background-attachment: local, local, scroll, scroll;
 }
 
-.title {
+.users .title,
+.talks .title {
   font-family: dense;
   text-transform: uppercase;
   font-size: 20px;
