@@ -11689,7 +11689,7 @@ body {
   .btn.external i.fa {
     padding: 0; }
 
-h4.title, .nav li a.title, .title.soon:before, .title.warning:before, .legend td.title, .legend th.title {
+h3.title {
   margin-bottom: 0; }
 
 .legend th, .legend td {

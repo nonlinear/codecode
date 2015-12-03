@@ -52,6 +52,10 @@
           </li>
           
           <li>
+            <a class="off" href="filters.html">filters</a>
+          </li>
+          
+          <li>
             <a class="off" href="data.html">data</a>
           </li>
           
@@ -107,12 +111,12 @@
   <div class="tab-pane fade" id="advanced">
     <ol class="tutorial">
       <li>Add a <p class="code file">*.ttf</p> or  <p class="code file">*.otf</p> font on <p class="code folder">app/fontgen</p></li>
-      <li>copy filename, this will be the name of your font-family
-        <p class="sig">feel free to rename it</p></li>
+      <li>copy filename, rename if needed
+        <p class="sig">it will become <span class="code SASS">font-family</span></p></li>
       <li>on terminal, inside your project folder, type <p class="code terminal">gulp fontgen</p>
        </li>
-       <li>go to your sass file and type <p class="code macro SASS">fontface</p>, paste filename as variable
-        <p class="sig">make sure to add this declaration before you call font-family, otherwise it won't register</p></li>
+       <li>go to top of <p class="code file">app/sass/layout.sass</p> and type <p class="code macro SASS">fontface</p>, paste filename as variable
+        <p class="sig">add this declaration before you call <span class="code SASS">font-family</span> for it to work</p></li>
        <li>on <p class="code file">app/sass/style.sass</p>, use font filename as variable for either <p class="code SASS">$font-text</p> or <p class="code SASS">$font-title</p></li>
     </ol>
   </div>
@@ -172,6 +176,7 @@
         </li><li><a class="on typography" href="typography.html">typography</a>
         </li><li><a class="on forms" href="forms.html">forms</a>
         </li><li><a class="on responsive" href="responsive.html">responsive</a>
+        </li><li><a class="off filters" href="filters.html">filters</a>
         </li><li><a class="off data" href="data.html">data</a>
         </li><li><a class="on frameworks" href="frameworks.html">frameworks</a>
         </li><li><a class="on social" href="social.html">social</a>

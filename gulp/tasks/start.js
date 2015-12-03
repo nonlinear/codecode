@@ -7,6 +7,7 @@ config = require('../config');
 gulp.task('start1', function(callback){
   del([
     './app/fonts/dense.*',
+    './app/fontgen/dense.*',
     './app/pages',
     './app/templates/layout.html',
     './app/data/categories.json',
