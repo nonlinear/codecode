@@ -1,15 +1,15 @@
 var gulp = require('gulp'),
-replace = require('gulp-regex-replace'),
 $ = require('gulp-load-plugins')(),
 config = require('../config');
 
 gulp.task('patterns', function() {
-  return gulp.src('./app/patterns/*.svg')
-    .pipe($.concat('all.sass'))
+  return gulp.src('./app/patterns/svg/*.svg')
+    .pipe($.concat('bb_middle.txt'))
     .pipe(gulp.dest('./app/patterns'));
 });
 
-gulp.task('regex', function () {
-    return gulp.src('./app/patterns/all.sass')
-        .pipe(replace({regex:'aaa', replace:'height'}));
+gulp.task('patterns2', function() {
+  return gulp.src('./app/patterns/*.txt')
+    .pipe($.concat('patterns.sass'))
+    .pipe(gulp.dest('./app/patterns'));
 });

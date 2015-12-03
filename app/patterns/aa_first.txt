@@ -1,0 +1,17 @@
+// (\_/)   codecode/style
+// ('ㅅ')づ do not change
+// (")(")  refer to nonlinear.nyc/codecode/patterns.html
+
+// ('ㅅ')づ from PatternBolt https://github.com/buseca/patternbolt
+
+=pattern($pattern, $size: 200px, $background-color: #000, $foreground-color: #fff, $foreground-alpha: 1, $background-alpha: $foreground-alpha, $mask: 'none')
+
+
+  @if unitless($size)
+    @warn "Assuming PatternBolt background-size `#{$size}` to be in pixels."
+    $size: ($size + 0px)
+
+
+  //Initializing $background-image variable, for correct sass compiling
+
+  $background-image: null
