@@ -1,0 +1,83 @@
+"pattern_1": {
+"find": "</svg>",
+"replace": "%3C/svg%3E")",
+"greedy": true,
+"case": false
+},
+
+"pattern_2": {
+"find": "<?xml version=\"1.0" encoding=\"utf-8"?>\\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">",
+"replace": "XXXXX",
+"greedy": true,
+"case": false
+},
+
+"pattern_3": {
+"find": "<",
+"replace": "%3C",
+"greedy": true,
+"case": false
+},
+
+"pattern_4": {
+"find": ">",
+"replace": "%3E",
+"greedy": true,
+"case": false
+},
+
+"pattern_5": {
+"find": "=",
+"replace": "%3D",
+"greedy": true,
+"case": false
+},
+
+"pattern_6": {
+"find": " ",
+"replace": "%20",
+"greedy": true,
+"case": false
+},
+
+"pattern_7": {
+"find": "\\n",
+"replace": "%0A",
+"greedy": true,
+"case": false
+},
+
+"pattern_8": {
+"find": ":",
+"replace": "%3A",
+"greedy": true,
+"case": false
+},
+
+"pattern_9": {
+"find": "\"",
+"replace": "%27",
+"greedy": true,
+"case": false
+},
+
+"pattern_10": {
+"find": ",",
+"replace": "%2C",
+"greedy": true,
+"case": false
+},
+
+"pattern_11": {
+"find": "#FF0000",
+"replace": "\"+ rgba($foreground-color, $opacity) +\"",
+"greedy": true,
+"case": false
+},
+
+"pattern_12": {
+"find": "XXXXX",
+"replace": "@elseif $pattern == 'NAME'\\n$background-image: url("data:image/svg+xml,",
+"greedy": true,
+"case": false
+}
