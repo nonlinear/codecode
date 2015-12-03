@@ -4,12 +4,6 @@ config = require('../config');
 
 gulp.task('patterns', function() {
   return gulp.src('./app/patterns/svg/*.svg')
-    .pipe($.concat('bb_middle.txt'))
-    .pipe(gulp.dest('./app/patterns'));
-});
-
-gulp.task('patterns2', function() {
-  return gulp.src('./app/patterns/*.txt')
-    .pipe($.concat('patterns.sass'))
+    .pipe($.concat('move.sass'))
     .pipe(gulp.dest('./app/patterns'));
 });
