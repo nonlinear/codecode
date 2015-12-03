@@ -10971,11 +10971,10 @@ header.header {
   background-color: #eee;
   background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
   background-attachment: local, local, scroll, scroll; }
-
-.title {
-  font-family: dense;
-  text-transform: uppercase;
-  font-size: 20px; }
+  .users .title, .talks .title {
+    font-family: dense;
+    text-transform: uppercase;
+    font-size: 20px; }
 
 .users .user:not(first-of-type) {
   border-top: solid 1px white;
