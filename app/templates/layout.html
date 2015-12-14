@@ -8,6 +8,7 @@
 <body class="{% block active %}{% endblock %}">
   <div class="container">
     <header class="header">
+      {% include "partials/ribbon.html" %}
       <div class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           <h1 class="logo">{{project.title}}</h1>
