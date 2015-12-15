@@ -6,7 +6,7 @@ config = require('../config');
 gulp.task('default', function(callback) {
   runSequence(
     'clean',
-    ['svgSprite', 'lint:js', 'imagemin'],
+    // ['svgSprite', 'lint:js', 'imagemin'],
     ['svgfile', 'font', 'js', 'todo', 'json'],
     ['readme', 'sass', 'nunjucks'],
     ['browserSync', 'watch'],

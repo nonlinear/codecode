@@ -11608,25 +11608,6 @@ html[xmlns] .flexslider .slides {
     -moz-opacity: 1;
     right: 10px; } }
 
-.icon {
-  font-size: 10px; }
-
-.icon:before {
-  content: ' ';
-  vertical-align: middle;
-  display: inline-block;
-  background-image: url("../svg/sprite.svg");
-  background-repeat: no-repeat;
-  background-size: 30em 30em; }
-
-.no-svg .icon:before {
-  background-image: url("../svg/sprite.png"); }
-
-.icon.bunny:before {
-  background-position: 0em 0em;
-  width: 30em;
-  height: 30em; }
-
 @font-face {
   font-family: dense;
   src: url("../fonts/dense.eot");
