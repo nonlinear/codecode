@@ -12,6 +12,7 @@
   {"name": "filters", "link": "filters", "status": "on"},
   {"name": "data", "link": "data", "status": "off"},
   {"name": "frameworks", "link": "frameworks", "status": "on"},
-  {"name": "social", "link": "social", "status": "on"}
+  {"name": "social", "link": "social", "status": "on"},
+  {"name": "upcoming", "link": "upcoming", "status": "on"}
   ]
 }

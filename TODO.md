@@ -5,3 +5,4 @@
 | pages/forms.html | 34 | style .chosen-drop
 | pages/patterns.html | 17 | add example, animated
 | pages/typography.html | 10 | snippets for common google fonts
+| pages/upcoming.html | 10 | snippets for common google fonts
