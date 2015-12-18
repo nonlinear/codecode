@@ -3445,7 +3445,8 @@ header.header .title {
 .responsive .responsive,
 .data .data,
 .frameworks .frameworks,
-.social .social {
+.social .social,
+.upcoming .upcoming {
   color: black;
   pointer-events: none;
   cursor: default;
@@ -3463,7 +3464,8 @@ header.header .title {
 .responsive .responsive:after,
 .data .data:after,
 .frameworks .frameworks:after,
-.social .social:after {
+.social .social:after,
+.upcoming .upcoming:after {
   color: black !important;
   margin-top: -5px !important;
 }
