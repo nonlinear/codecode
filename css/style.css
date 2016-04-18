@@ -1475,8 +1475,8 @@ select {
 
 a:not(.btn) {
   color: #333;
-  -webkit-transition: color 300ms ease-out;
-  transition: color 300ms ease-out;
+  -webkit-transition: color 300ms ease-out !important;
+  transition: color 300ms ease-out !important;
 }
 
 a:not(.btn):hover {
@@ -1494,8 +1494,8 @@ a:not(.btn):hover {
 }
 
 .btn {
-  -webkit-transition: color 300ms ease-out;
-  transition: color 300ms ease-out;
+  -webkit-transition: color 300ms ease-out !important;
+  transition: color 300ms ease-out !important;
 }
 
 h1,
@@ -1741,6 +1741,13 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   vertical-align: bottom;
 }
 
+.nav:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .nav:before,
 .nav:after {
   display: table;
@@ -1780,8 +1787,8 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   text-align: center;
   margin: 0;
   padding: 10px 0;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
   border: solid 1px white !important;
   text-decoration: none !important;
   color: dense;
@@ -2746,6 +2753,13 @@ h4,
   background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%2712%2C12%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%270.707%2C12%200%2C12%200%2C11.293%2011.293%2C0%2012%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#eeeeee%27%20points%3D%270%2C11.293%2011.293%2C0%200.707%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#eeeeee%27%20points%3D%270.707%2C12%2012%2C0.707%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3C/svg%3E");
 }
 
+.soon:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .soon:before {
   content: "Next:";
   padding: 10px;
@@ -2976,8 +2990,8 @@ a:hover {
   text-transform: uppercase;
   font-size: 25px;
   color: #333;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
 }
 
 .btn i.fa {
@@ -3013,6 +3027,13 @@ nav.menu ul {
   margin: 0;
 }
 
+nav.menu ul:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
 nav.menu ul li {
   display: inline-block;
   box-sizing: border-box;
@@ -3043,8 +3064,8 @@ nav.menu ul li {
 }
 
 nav.menu ul li a {
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
   text-decoration: none !important;
   font-family: dense;
   display: block;
@@ -3066,8 +3087,8 @@ nav.menu ul li:not(.gitter) a:after {
   text-align: right;
   color: #eee;
   padding-top: 5px;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
 }
 
 nav.menu ul li:not(.gitter) a:hover:after {
@@ -3392,6 +3413,14 @@ header.header .title {
   text-decoration: none !important;
 }
 
+header.header .logo:focus,
+header.header .title:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
 header.header .logo {
   line-height: 90%;
   font-size: 60px;
@@ -3548,6 +3577,13 @@ header.header .title {
   background: transparent;
 }
 
+.users .info p:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .users .info p label {
   width: 20%;
 }
@@ -3632,6 +3668,13 @@ header.header .title {
   counter-reset: step;
 }
 
+.tutorial:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .tutorial p.sig {
   padding: 10px 0 0 0 !important;
 }
@@ -3645,8 +3688,8 @@ header.header .title {
   counter-increment: step;
   border-top: solid 1px white;
   padding: 5px 0 7px 0;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
   zoom: 1;
   display: table;
   width: 100%;
@@ -3677,6 +3720,13 @@ header.header .title {
   border: none;
   background: transparent;
   list-style: none;
+}
+
+.pattern:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
 }
 
 .pattern li {
@@ -3940,8 +3990,8 @@ header.header .title {
   background-color: none;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2040%2040%22%20enable-background%3D%22new%200%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%20stroke%3D%22pink%22%20stroke-linecap%3D%22round%22%20stroke-width%3D%221px%22%3E%0A%3Cline%20x1%3D%2226.7%22%20y1%3D%2225.6%22%20x2%3D%2223.4%22%20y2%3D%2228.3%22/%3E%0A%3Cline%20x1%3D%2229%22%20y1%3D%2228.4%22%20x2%3D%2231.2%22%20y2%3D%2224.7%22/%3E%0A%3Cline%20x1%3D%2215.9%22%20y1%3D%2224.7%22%20x2%3D%2219.5%22%20y2%3D%2227%22/%3E%0A%3Cline%20x1%3D%2217.4%22%20y1%3D%2217.9%22%20x2%3D%2216.4%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2225.9%22%20y1%3D%2229.7%22%20x2%3D%2227.6%22%20y2%3D%2233.6%22/%3E%0A%3Cline%20x1%3D%2234.4%22%20y1%3D%2225.4%22%20x2%3D%2237.7%22%20y2%3D%2228.1%22/%3E%0A%3Cline%20x1%3D%2234.5%22%20y1%3D%2229.9%22%20x2%3D%2230.6%22%20y2%3D%2232.2%22/%3E%0A%3Cline%20x1%3D%2236.6%22%20y1%3D%2221.1%22%20x2%3D%2232.5%22%20y2%3D%2222%22/%3E%0A%3Cline%20x1%3D%2220.1%22%20y1%3D%2221.3%22%20x2%3D%2222.9%22%20y2%3D%2224.5%22/%3E%0A%3Cline%20x1%3D%2223.2%22%20y1%3D%2231.6%22%20x2%3D%2221.5%22%20y2%3D%2235.4%22/%3E%0A%3Cline%20x1%3D%2218.3%22%20y1%3D%2237.9%22%20x2%3D%2216.2%22%20y2%3D%2233.5%22/%3E%0A%3Cline%20x1%3D%2229.3%22%20y1%3D%2235.5%22%20x2%3D%2226%22%20y2%3D%2238.2%22/%3E%0A%3Cline%20x1%3D%2234.9%22%20y1%3D%2235.5%22%20x2%3D%2237.3%22%20y2%3D%2232%22/%3E%0A%3Cline%20x1%3D%2220.7%22%20y1%3D%2217.7%22%20x2%3D%2223.8%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%2227.6%22%20y1%3D%225.7%22%20x2%3D%2226.3%22%20y2%3D%229.8%22/%3E%0A%3Cline%20x1%3D%2233.1%22%20y1%3D%225.7%22%20x2%3D%2233%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2220.3%22%20y1%3D%228%22%20x2%3D%2223.9%22%20y2%3D%2211.8%22/%3E%0A%3Cline%20x1%3D%2216.4%22%20y1%3D%2214.7%22%20x2%3D%2220.3%22%20y2%3D%2212.8%22/%3E%0A%3Cline%20x1%3D%2215.8%22%20y1%3D%226.5%22%20x2%3D%2217.1%22%20y2%3D%2210.6%22/%3E%0A%3Cline%20x1%3D%2229.4%22%20y1%3D%229.1%22%20x2%3D%2233%22%20y2%3D%2211.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%22-1.4%22%20x2%3D%2238%22%20y2%3D%222%22/%3E%0A%3Cline%20x1%3D%2237.3%22%20y1%3D%224.9%22%20x2%3D%2235.3%22%20y2%3D%229%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%22-3.2%22%20x2%3D%2230.6%22%20y2%3D%221%22/%3E%0A%3Cline%20x1%3D%2219.8%22%20y1%3D%225.1%22%20x2%3D%2224.6%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%2228.3%22%20y1%3D%2213%22%20x2%3D%2228.9%22%20y2%3D%2217.2%22/%3E%0A%3Cline%20x1%3D%2228.6%22%20y1%3D%2221.7%22%20x2%3D%2225.4%22%20y2%3D%2218.8%22/%3E%0A%3Cline%20x1%3D%2233.6%22%20y1%3D%2215.1%22%20x2%3D%2232.3%22%20y2%3D%2219.1%22/%3E%0A%3Cline%20x1%3D%2237.7%22%20y1%3D%2217.8%22%20x2%3D%2236.8%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%222.3%22%20y1%3D%2231.9%22%20x2%3D%22-1.1%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%224%22%20y1%3D%2234.5%22%20x2%3D%226.3%22%20y2%3D%2230.9%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%2237.5%22%20x2%3D%222.9%22%20y2%3D%2241.5%22/%3E%0A%3Cline%20x1%3D%229.5%22%20y1%3D%2231.6%22%20x2%3D%2212.7%22%20y2%3D%2234.4%22/%3E%0A%3Cline%20x1%3D%229.8%22%20y1%3D%2236.7%22%20x2%3D%225.6%22%20y2%3D%2237.9%22/%3E%0A%3Cline%20x1%3D%2210.6%22%20y1%3D%2224.6%22%20x2%3D%2211.1%22%20y2%3D%2228.9%22/%3E%0A%3Cline%20x1%3D%224.6%22%20y1%3D%2214.8%22%20x2%3D%221.3%22%20y2%3D%2217.6%22/%3E%0A%3Cline%20x1%3D%226%22%20y1%3D%2218.4%22%20x2%3D%228.2%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%227.8%22%20y1%3D%221.7%22%20x2%3D%228.7%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%223.3%22%20y1%3D%2219.5%22%20x2%3D%225%22%20y2%3D%2223.4%22/%3E%0A%3Cline%20x1%3D%2211%22%20y1%3D%2215.2%22%20x2%3D%2214.3%22%20y2%3D%2217.9%22/%3E%0A%3Cline%20x1%3D%2211.5%22%20y1%3D%2220.2%22%20x2%3D%227.7%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2213.7%22%20y1%3D%2212.8%22%20x2%3D%229.6%22%20y2%3D%2211.4%22/%3E%0A%3Cline%20x1%3D%22-1.6%22%20y1%3D%2210.6%22%20x2%3D%221.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%221.1%22%20y1%3D%2221.9%22%20x2%3D%22-0.6%22%20y2%3D%2225.7%22/%3E%0A%3Cline%20x1%3D%226.7%22%20y1%3D%2225.7%22%20x2%3D%223.3%22%20y2%3D%2228.4%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%224.6%22%20x2%3D%226%22%20y2%3D%226.7%22/%3E%0A%3Cline%20x1%3D%226.6%22%20y1%3D%229.2%22%20x2%3D%222.5%22%20y2%3D%2210.4%22/%3E%0A%3Cline%20x1%3D%2213.2%22%20y1%3D%224.6%22%20x2%3D%2211.9%22%20y2%3D%228.7%22/%3E%0A%3Cline%20x1%3D%2218.6%22%20y1%3D%2229.4%22%20x2%3D%2214.5%22%20y2%3D%2230.8%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%222.6%22%20x2%3D%2222.8%22%20y2%3D%22-1.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%2238.6%22%20x2%3D%2238%22%20y2%3D%2242%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%2236.9%22%20x2%3D%2230.6%22%20y2%3D%2241%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%2241.3%22%20x2%3D%2213.6%22%20y2%3D%2237.3%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%2242.6%22%20x2%3D%2222.8%22%20y2%3D%2238.5%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%22-2.5%22%20x2%3D%222.9%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%221.3%22%20x2%3D%2213.6%22%20y2%3D%22-2.7%22/%3E%0A%3Cline%20x1%3D%2220.2%22%20y1%3D%223.2%22%20x2%3D%2216.6%22%20y2%3D%220.6%22/%3E%0A%3Cline%20x1%3D%2242.3%22%20y1%3D%2231.9%22%20x2%3D%2238.9%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%2238.4%22%20y1%3D%2210.6%22%20x2%3D%2241.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%2241.1%22%20y1%3D%2221.9%22%20x2%3D%2239.4%22%20y2%3D%2225.7%22/%3E%0A%3C/svg%3E");
   background-position: center center;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
