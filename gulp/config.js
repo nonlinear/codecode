@@ -40,7 +40,12 @@ var config = {
     dest: './dist/images'
   },
   js: {
-    src: ['./app/js/*.js'],
+    src: ['./bower_components/jquery/dist/jquery.js',
+          './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+          './bower_components/modernizr/modernizr.js',
+          './bower_components/detectizr/dist/detectizr.js',
+          './bower_components/chosen/chosen.jquery.js',
+          './app/js/*.js'],
     dest: './dist/js',
     title: 'main.js'
   },

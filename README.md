@@ -3,7 +3,6 @@ See [nonlinear.nyc/codecode](http://nonlinear.nyc/codecode)
 ### TODOs
 | Filename | line # | TODO
 |:------|:------:|:------
-| js/1-jquery.js | 3741 | Now that all calls to _data and _removeData have been replaced
 | js/3-modernizr.js | 56 | : make the prefixes more granular
 | js/3-modernizr.js | 223 | : Add flag for hasownprop ? didn't last time
 | js/3-modernizr.js | 342 | : add testDOMProps
