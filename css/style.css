@@ -1907,6 +1907,7 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
 @media screen and (max-width: 770px) {
   .col-md-4:not(:first-of-type),
   .col-md-6:not(:first-of-type),
+  .col-md-8:not(:first-of-type),
   .col-md-10:not(:first-of-type) {
     padding-top: 20px;
     margin-top: 20px;
@@ -3096,6 +3097,10 @@ nav.menu ul li:not(.gitter) a:hover:after {
   padding: 0;
 }
 
+.todo {
+  background: #ffe6e6;
+}
+
 header.header .dropdown .dropdown-toggle {
   text-decoration: none;
   color: black;
@@ -3146,27 +3151,6 @@ header.header .dropdown .dropdown-menu a {
   padding: 5px 10px;
   displaY: block;
   font-size: 25px;
-}
-
-a.off {
-  opacity: 0.4;
-  filter: "alpha(opacity=40)";
-  -khtml-opacity: 0.4;
-  -moz-opacity: 0.4;
-  padding-right: 20px !important;
-}
-
-a.off:before {
-  font-family: FontAwesome;
-  content: "";
-  font-size: 13px;
-  margin-top: 0px;
-  color: inherit;
-}
-
-a.off:before {
-  float: right;
-  margin-right: -15px;
 }
 
 .animate {
@@ -3471,6 +3455,7 @@ header.header .title {
 .typography .typography,
 .filters .filters,
 .forms .forms,
+.base .base,
 .responsive .responsive,
 .data .data,
 .frameworks .frameworks,
@@ -3490,6 +3475,7 @@ header.header .title {
 .typography .typography:after,
 .filters .filters:after,
 .forms .forms:after,
+.base .base:after,
 .responsive .responsive:after,
 .data .data:after,
 .frameworks .frameworks:after,
