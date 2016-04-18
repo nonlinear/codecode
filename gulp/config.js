@@ -40,7 +40,7 @@ var config = {
     dest: './dist/images'
   },
   js: {
-    src: ['./app/js/vendors/jquery.js', './app/js/vendors/bootstrap.js', './app/js/vendors/modernizr.js', './app/js/vendors/detectizr.js', './app/js/vendors/flexslider.js', './app/js/vendors/chosen.js', './app/js/scripts.js'],
+    src: ['./app/js/*.js'],
     dest: './dist/js',
     title: 'main.js'
   },
