@@ -2,9 +2,9 @@
   <content>
 <![CDATA[
 <label class="toggle">
-    <input type="${1:checkbox}" />
+    <input type="${1:checkbox}"  name="${3:groupname}" />
     <div class="box">
-        <div class="${1:checkbox}">
+        <div class="checkbox">
         </div>
         <div class="title">${2:label}</div>
     </div>
