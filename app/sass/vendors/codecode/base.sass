@@ -47,11 +47,15 @@ $gapx10: ($gap * 10)
       @warn "Unrecognized prefix: #{$prefix}"
 
 =transition($prop: all, $time: 300ms, $ease: ease-out)
-  -webkit-transition: $prop $time $ease
-  -moz-transition: $prop $time $ease
-  -ms-transition: $prop $time $ease
-  -o-transition: $prop $time $ease
-  transition: $prop $time $ease
+  @if $prop == disable
+    -moz-transition: none !important
+    -webkit-transition: none !important
+  @else
+    -webkit-transition: $prop $time $ease !important
+    -moz-transition: $prop $time $ease !important
+    -ms-transition: $prop $time $ease !important
+    -o-transition: $prop $time $ease !important
+    transition: $prop $time $ease !important
 
 =find($color: red)
   border: dashed 1px $color !important
@@ -123,11 +127,31 @@ $gapx10: ($gap * 10)
   @else if $type == select
     -moz-appearance: none
     -webkit-appearance: none
+  @else if $type == shadow
+    +shadow(normal, none)
+  @else if $type == outline
+    outline-width: 0
+    outline: none !important
+    outline-color: transparent
+    outline-style: none
+  @else if $type == shadow-text
+    +shadow(text, none)
+  @else if $type == number
+    &[type=number]::-webkit-inner-spin-button, &[type=number]::-webkit-outer-spin-button
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      margin: 0
   @else
     margin: 0px !important
     padding: 0px !important
     border: none
     background: transparent
+    &:focus
+      outline-width: 0
+      outline: none
+      outline-color: transparent
+      outline-style: none
 
 =clearfix
   zoom: 1
