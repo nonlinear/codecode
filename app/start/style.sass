@@ -51,6 +51,16 @@ $status-danger: #DB2B53
 $status-danger-font: white
 $status-danger-border: $status-danger
 
+// ('ㅅ')づ toggle variables
+
+$toggle_height: 20px
+$toggle_half: ($toggle_height / 2)
+$toggle_width: ($toggle_height * 2)
+$toggle_gap: 1px
+$toggle_bg: $color-bg
+$toggle_off: #999
+$toggle_on: #666
+
 // ('ㅅ')づ function variables
 
 $prefixes: webkit moz ms o spec
@@ -59,10 +69,12 @@ $icons_on: true
 
 // ('ㅅ')づ vendors import
 
-@import 'vendors/bootstrap'
-@import 'vendors/fontawesome'
-@import 'vendors/animate'
+@import './bower_components/bootstrap-sass/assets/stylesheets/bootstrap'
+@import './bower_components/font-awesome/scss/font-awesome'
+@import './bower_components/animatewithsass/animate.scss'
+@import './bower_components/bootstrap-chosen/bootstrap-chosen.scss'
 @import 'vendors/codecode'
+@import 'vendors/flexslider'
 
 // ('ㅅ')づ generated imports
 
@@ -71,6 +83,3 @@ $icons_on: true
 // ('ㅅ')づ project imports
 
 @import 'layout'
-
-
-
