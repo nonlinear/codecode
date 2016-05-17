@@ -9889,11 +9889,11 @@ html {
   font-size: 1em;
   line-height: 1.4; }
 
-\::-moz-selection {
+::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-\::selection {
+::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
@@ -10036,7 +10036,7 @@ textarea {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: black; }
 
-\:focus {
+:focus {
   outline-color: transparent;
   outline-style: none; }
 
