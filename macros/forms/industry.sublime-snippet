@@ -4,7 +4,7 @@
 <div class="select">
   <select class="chosen-select">
     <option>Industry</option>
-    {% for state in idustries %}
+    {% for industry in industries %}
       <option value="{{industry.name}}">{{industry.name}}</option>
     {% endfor %}
   </select>
