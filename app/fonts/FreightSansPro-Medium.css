@@ -1,10 +1,11 @@
 @font-face {
-    font-family: "false";
+    font-family: "FreightSansPro-Medium";
     src: url("FreightSansPro-Medium.eot");
     src: url("FreightSansPro-Medium.eot?#iefix") format("embedded-opentype"),
+         url("FreightSansPro-Medium.woff2") format("woff2"),
          url("FreightSansPro-Medium.woff") format("woff"),
          url("FreightSansPro-Medium.ttf") format("truetype"),
-         url("FreightSansPro-Medium.svg#false") format("svg");
-    font-weight: false;
-    font-style: false;
+         url("FreightSansPro-Medium.svg#FreightSansPro-Medium") format("svg");
+    font-weight: roman;
+    font-style: normal;
 }
