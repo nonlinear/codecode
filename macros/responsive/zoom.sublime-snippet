@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+]]>
+  </content>
+  <tabTrigger>zoom</tabTrigger>
+  <description>prevent zoom</description>
+</snippet>
