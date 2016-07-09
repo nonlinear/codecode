@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+wiggle
-]]>
-  </content>
-  <tabTrigger>wiggle</tabTrigger>
-  <description>wiggle SASS animation</description>
-</snippet>

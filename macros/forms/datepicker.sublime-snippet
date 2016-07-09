@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-{% include "partials/datepicker.html" %}
-]]>
-  </content>
-  <tabTrigger>datepicker</tabTrigger>
-  <description>datepicker</description>
-</snippet>

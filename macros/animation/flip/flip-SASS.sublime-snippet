@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+flip
-]]>
-  </content>
-  <tabTrigger>flip</tabTrigger>
-  <description>flip SASS animation</description>
-</snippet>

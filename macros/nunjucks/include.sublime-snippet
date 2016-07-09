@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-{% include "${2:partials}/${1:navigation}.html" %}
-]]>
-  </content>
-  <tabTrigger>include</tabTrigger>
-  <description>Nunjucks include</description>
-</snippet>

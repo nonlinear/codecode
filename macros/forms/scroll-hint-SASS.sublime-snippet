@@ -1,9 +1,0 @@
-<snippet>
-	<content>
-<![CDATA[
-+scroll-hint(${1:background color})
-]]>
-	</content>
-	<tabTrigger>scroll-hint</tabTrigger>
-	<description>scroll hint SASS rules</description>
-</snippet>

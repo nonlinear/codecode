@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+rotateOutUpRight
-]]>
-  </content>
-  <tabTrigger>rotateOutUpRight</tabTrigger>
-  <description>rotateOutUpRight SASS animation</description>
-</snippet>

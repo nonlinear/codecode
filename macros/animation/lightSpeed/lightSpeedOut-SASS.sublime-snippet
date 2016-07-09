@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+lightSpeedOut
-]]>
-  </content>
-  <tabTrigger>lightSpeedOut</tabTrigger>
-  <description>lightSpeedOut SASS animation</description>
-</snippet>

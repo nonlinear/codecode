@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+swing
-]]>
-  </content>
-  <tabTrigger>swing</tabTrigger>
-  <description>swing SASS animation</description>
-</snippet>

@@ -1,9 +1,0 @@
-<snippet>
-  <content>
-<![CDATA[
-+skew(${1:0})
-]]>
-  </content>
-  <tabTrigger>skew</tabTrigger>
-  <description>skew SASS transform</description>
-</snippet>
