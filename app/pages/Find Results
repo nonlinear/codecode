@@ -1,0 +1,270 @@
+Searching 21402 files for ".quote" (case sensitive)
+
+/Users/a206477717/Documents/codecode/site/app/sass/layout.sass:
+  103
+  104
+  105: .quote
+  106    @extend h1
+  107    +media($bp, min)
+  ...
+  148    border-top: solid 1px white
+  149
+  150: .row + .row, .quote h2, body.patterns h3
+  151    border-top: solid 1px $color-divider
+  152    margin-top: $gap
+
+/Users/a206477717/Documents/codecode/site/bower_components/bootstrap/Gruntfile.js:
+   12    grunt.util.linefeed = '\n';
+   13
+   14:   RegExp.quote = function (string) {
+   15      return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
+   16    };
+
+/Users/a206477717/Documents/codecode/site/bower_components/bootstrap/grunt/change-version.js:
+   14
+   15  // Blame TC39... https://github.com/benjamingr/RegExp.escape/issues/37
+   16: RegExp.quote = function (string) {
+   17    return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
+   18  };
+   19: RegExp.quoteReplacement = function (string) {
+   20    return string.replace(/[$]/g, '$$');
+   21  };
+   ..
+   54
+   55  function replaceRecursively(directory, excludedDirectories, allowedExtensions, original, replacement) {
+   56:   original = new RegExp(RegExp.quote(original), 'g');
+   57:   replacement = RegExp.quoteReplacement(replacement);
+   58    var updateFile = !DRY_RUN ? (function (filepath) {
+   59        if (allowedExtensions.has(path.parse(filepath).ext)) {
+
+/Users/a206477717/Documents/codecode/site/node_modules/.bin/jsesc:
+   51  			// Process options
+   52  			if (/^(?:-s|--single-quotes)$/.test(string)) {
+   53: 				options.quotes = 'single';
+   54  				return;
+   55  			}
+   56  			if (/^(?:-d|--double-quotes)$/.test(string)) {
+   57: 				options.quotes = 'double';
+   58  				return;
+   59  			}
+
+/Users/a206477717/Documents/codecode/site/node_modules/babel-core/browser.js:
+ 5902    });
+ 5903
+ 5904:   if (this.format.quotes === "single") {
+ 5905      // remove double quotes
+ 5906      val = val.slice(1, -1);
+ ....
+ 52659  function nodeStr(str, options) {
+ 52660      isString.assert(str);
+ 52661:     switch (options.quote) {
+ 52662      case "auto":
+ 52663          var double = JSON.stringify(str);
+
+/Users/a206477717/Documents/codecode/site/node_modules/babel-core/lib/generation/generators/types.js:
+  194    });
+  195
+  196:   if (this.format.quotes === "single") {
+  197      // remove double quotes
+  198      val = val.slice(1, -1);
+
+/Users/a206477717/Documents/codecode/site/node_modules/es6-promise/dist/test/browserify.js:
+ 8681      function ascii(f, object, processed, indent) {
+ 8682          if (typeof object === "string") {
+ 8683:             var qs = f.quoteStrings;
+ 8684              var quote = typeof qs !== "boolean" || qs;
+ 8685              return processed || quote ? '"' + object + '"' : object;
+
+/Users/a206477717/Documents/codecode/site/node_modules/fontfacegen/lib/helpers.js:
+   43
+   44  module.exports.has = has;
+   45: module.exports.quote = quote;
+   46  module.exports.merge = merge;
+   47  module.exports.trim = trim;
+
+/Users/a206477717/Documents/codecode/site/node_modules/fontfacegen/lib/ttf2eot.js:
+    1  'use strict';
+    2
+    3: var quote = require('./helpers.js').quote;
+    4  var trim = require('./helpers.js').trim;
+    5  var execSync = require('child_process').execSync;
+
+/Users/a206477717/Documents/codecode/site/node_modules/fontfacegen/lib/ttf2svg.js:
+    2
+    3  var execSync = require('child_process').execSync;
+    4: var quote = require('./helpers.js').quote;
+    5  var trim = require('./helpers.js').trim;
+    6  var isLinux = require('./helpers.js').isLinux();
+
+/Users/a206477717/Documents/codecode/site/node_modules/jscs/jscs-browser.js:
+ 30832    });
+ 30833
+ 30834:   if (this.format.quotes === "single") {
+ 30835      // remove double quotes
+ 30836      val = val.slice(1, -1);
+ .....
+ 126232  function nodeStr(str, options) {
+ 126233      isString.assert(str);
+ 126234:     switch (options.quote) {
+ 126235      case "auto":
+ 126236          var double = JSON.stringify(str);
+
+/Users/a206477717/Documents/codecode/site/node_modules/jsesc/jsesc.js:
+  101  		var json = options && options.json;
+  102  		if (json) {
+  103: 			defaults.quotes = 'double';
+  104  			defaults.wrap = true;
+  105  		}
+  106  		options = extend(defaults, options);
+  107: 		if (options.quotes != 'single' && options.quotes != 'double') {
+  108: 			options.quotes = 'single';
+  109  		}
+  110: 		var quote = options.quotes == 'double' ? '"' : '\'';
+  111  		var compact = options.compact;
+  112  		var indent = options.indent;
+
+/Users/a206477717/Documents/codecode/site/node_modules/jsesc/bin/jsesc:
+   51  			// Process options
+   52  			if (/^(?:-s|--single-quotes)$/.test(string)) {
+   53: 				options.quotes = 'single';
+   54  				return;
+   55  			}
+   56  			if (/^(?:-d|--double-quotes)$/.test(string)) {
+   57: 				options.quotes = 'double';
+   58  				return;
+   59  			}
+
+/Users/a206477717/Documents/codecode/site/node_modules/jshint/dist/jshint-rhino.js:
+ 15381            startChar: token.startChar,
+ 15382            value: token.value,
+ 15383:           quote: token.quote
+ 15384          }, checks, function() { return true; });
+ 15385
+ .....
+ 17973      // If quotmark is set to 'single' warn about all double-quotes.
+ 17974
+ 17975:     if (quotmark === "single" && data.quote !== "'") {
+ 17976        code = "W109";
+ 17977      }
+ .....
+ 17979      // If quotmark is set to 'double' warn about all single-quotes.
+ 17980
+ 17981:     if (quotmark === "double" && data.quote !== "\"") {
+ 17982        code = "W108";
+ 17983      }
+ .....
+ 17988      if (quotmark === true) {
+ 17989        if (!linter.getCache("quotmark")) {
+ 17990:         linter.setCache("quotmark", data.quote);
+ 17991        }
+ 17992
+ 17993:       if (linter.getCache("quotmark") !== data.quote) {
+ 17994          code = "W110";
+ 17995        }
+
+/Users/a206477717/Documents/codecode/site/node_modules/jshint/dist/jshint.js:
+ 15379            startChar: token.startChar,
+ 15380            value: token.value,
+ 15381:           quote: token.quote
+ 15382          }, checks, function() { return true; });
+ 15383
+ .....
+ 17971      // If quotmark is set to 'single' warn about all double-quotes.
+ 17972
+ 17973:     if (quotmark === "single" && data.quote !== "'") {
+ 17974        code = "W109";
+ 17975      }
+ .....
+ 17977      // If quotmark is set to 'double' warn about all single-quotes.
+ 17978
+ 17979:     if (quotmark === "double" && data.quote !== "\"") {
+ 17980        code = "W108";
+ 17981      }
+ .....
+ 17986      if (quotmark === true) {
+ 17987        if (!linter.getCache("quotmark")) {
+ 17988:         linter.setCache("quotmark", data.quote);
+ 17989        }
+ 17990
+ 17991:       if (linter.getCache("quotmark") !== data.quote) {
+ 17992          code = "W110";
+ 17993        }
+
+/Users/a206477717/Documents/codecode/site/node_modules/jshint/src/lex.js:
+ 1724            startChar: token.startChar,
+ 1725            value: token.value,
+ 1726:           quote: token.quote
+ 1727          }, checks, function() { return true; });
+ 1728
+
+/Users/a206477717/Documents/codecode/site/node_modules/jshint/src/style.js:
+   66      // If quotmark is set to 'single' warn about all double-quotes.
+   67
+   68:     if (quotmark === "single" && data.quote !== "'") {
+   69        code = "W109";
+   70      }
+   ..
+   72      // If quotmark is set to 'double' warn about all single-quotes.
+   73
+   74:     if (quotmark === "double" && data.quote !== "\"") {
+   75        code = "W108";
+   76      }
+   ..
+   81      if (quotmark === true) {
+   82        if (!linter.getCache("quotmark")) {
+   83:         linter.setCache("quotmark", data.quote);
+   84        }
+   85
+   86:       if (linter.getCache("quotmark") !== data.quote) {
+   87          code = "W110";
+   88        }
+
+/Users/a206477717/Documents/codecode/site/node_modules/node-gyp/gyp/pylib/gyp/xcode_ninja.py:
+   36    for gyp_name in [main_gyp, sources_gyp]:
+   37      name = os.path.splitext(os.path.basename(gyp_name))[0] + '.xcodeproj'
+   38:     name = xml.sax.saxutils.quoteattr("group:" + name)
+   39      output_string += '  <FileRef location = %s></FileRef>\n' % name
+   40    output_string += '</Workspace>\n'
+
+/Users/a206477717/Documents/codecode/site/node_modules/node-sass/src/libsass/src/sass_values.cpp:
+   34    const char* ADDCALL sass_string_get_value(const union Sass_Value* v) { return v->string.value; }
+   35    void ADDCALL sass_string_set_value(union Sass_Value* v, char* value) { v->string.value = value; }
+   36:   bool ADDCALL sass_string_is_quoted(const union Sass_Value* v) { return v->string.quoted; }
+   37:   void ADDCALL sass_string_set_quoted(union Sass_Value* v, bool quoted) { v->string.quoted = quoted; }
+   38
+   39    // Getters and setters for Sass_Boolean
+   ..
+  113      union Sass_Value* v = (Sass_Value*) calloc(1, sizeof(Sass_Value));
+  114      if (v == 0) return 0;
+  115:     v->string.quoted = false;
+  116      v->string.tag = SASS_STRING;
+  117      v->string.value = val ? sass_copy_c_string(val) : 0;
+  ...
+  124      union Sass_Value* v = (Sass_Value*) calloc(1, sizeof(Sass_Value));
+  125      if (v == 0) return 0;
+  126:     v->string.quoted = true;
+  127      v->string.tag = SASS_STRING;
+  128      v->string.value = val ? sass_copy_c_string(val) : 0;
+
+/Users/a206477717/Documents/codecode/site/node_modules/postcss-value-parser/lib/stringify.js:
+   10          return value;
+   11      } else if (type === 'string') {
+   12:         buf = node.quote || '';
+   13          return buf + value + (node.unclosed ? '' : buf);
+   14      } else if (type === 'comment') {
+
+/Users/a206477717/Documents/codecode/site/node_modules/recast/lib/printer.js:
+ 1743  function nodeStr(str, options) {
+ 1744      isString.assert(str);
+ 1745:     switch (options.quote) {
+ 1746      case "auto":
+ 1747          var double = JSON.stringify(str);
+
+/Users/a206477717/Documents/codecode/site/node_modules/weinre/web/client/UglifyJS/process.js:
+ 1238                                          }
+ 1239                                          var key = p[0], val = make(p[1]);
+ 1240:                                         if (beautify && beautify.quote_keys) {
+ 1241                                                  key = make_string(key);
+ 1242                                          } else if ((typeof key == "number" || !beautify && +key + "" == key)
+
+48 matches across 22 files
