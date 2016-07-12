@@ -113,8 +113,12 @@
 </div>
 <div class="col-md-4">
   <h2>Add your own font</h2>
-
-    <h3>Basic</h3>
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+  <li><a href="#advanced" data-toggle="tab">Advanced</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="basic">
   <ol class="tutorial">
    <li>Have your font file (find cool and free ones at <a href="http://www.dafont.com" target="_blank">dafont</a>)</li>
    <li>Generate webfont at <a href="http://www.fontsquirrel.com/tools/webfont-generator">fontsquirrel</a></li>
@@ -122,9 +126,8 @@
    <li>type <p class="code macro SASS">font-face</p> on your SASS file
     <p class="sig">variable should match filename</p></li>
   </ol>
-
-
-    <h3>Advanced</h3>
+  </div>
+  <div class="tab-pane fade" id="advanced">
     <ol class="tutorial">
        <li>Install <a href="http://brew.sh" target="_blank">Homebrew</a> and dependencies: <p class="code terminal">brew install fontforge ttfautohint ttf2eot batik</p></li>
       <li>Add a <p class="code file">*.ttf</p> or  <p class="code file">*.otf</p> font on <p class="code folder">app/fontgen</p></li>
@@ -136,12 +139,12 @@
         <p class="sig">add this declaration before you call <span class="code SASS">font-family</span> for it to work</p></li>
        <li>on <p class="code file">app/sass/style.sass</p>, use font filename as variable for either <p class="code SASS">$font-text</p> or <p class="code SASS">$font-title</p></li>
     </ol>
-
-
+  </div>
+</div>
 
 </div>
 <div class="col-md-4">
-  <h2>typography snippets</h2>
+  <h2>typography Macros</h2>
   <p class="code macro SASS">fontface</p>
   <p class="sig">adds any font from <span class="code folder">app/fonts</span> as <span class="code SASS">font-family</span></p>
   <hr>
