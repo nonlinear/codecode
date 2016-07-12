@@ -10,6 +10,7 @@
     "detectizr": "2.2.0",
     "chosen": "~1.5.1",
     "bootstrap-chosen": "~1.0.1",
-    "d3": "3.5.17"
+    "d3": "3.5.17",
+    "bootstrap": "v4.0.0-alpha.2"
   }
 }

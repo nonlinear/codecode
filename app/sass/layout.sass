@@ -97,7 +97,7 @@ h3.title
   &.variable
     +stamp($icon: $fa-var-asterisk, $size: 12px, $padding: 10px, $spacing: 10px, $color: darken(yellow, 15%))
     font-style: italic
-  &.macro
+  &.snippet
     +radius(normal, 20px)
     +shadow(normal, 1px 1px 0px rgba(0, 0, 0, 0.2))
 
@@ -198,15 +198,15 @@ nav.menu
 
 
 
-.Macros, collapse
+.snippet, collapse
   +clearfix
 
-.snippet
-  font-family: $font-mono
-  background-color: lighten(yellow, 30%)
-  font-size: 20px
-  .mini &, &.mini
-    font-size: 18px
+// .snippet
+//   font-family: $font-mono
+//   background-color: lighten(yellow, 30%)
+//   font-size: 20px
+//   .mini &, &.mini
+//     font-size: 18px
 
 
 .object
