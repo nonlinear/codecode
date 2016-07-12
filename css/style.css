@@ -36,8 +36,7 @@ strong {
   font-weight: bold;
 }
 
-h1,
-.quote {
+h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -56,7 +55,8 @@ hr {
 }
 
 input,
-select {
+select,
+textarea {
   color: inherit;
   font: inherit;
   margin: 0;
@@ -79,6 +79,10 @@ input {
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
+}
+
+textarea {
+  overflow: auto;
 }
 
 table {
@@ -126,12 +130,14 @@ td {
 
   p,
   h2,
+  .quote,
   h3 {
     orphans: 3;
     widows: 3;
   }
 
   h2,
+  .quote,
   h3 {
     page-break-after: avoid;
   }
@@ -170,7 +176,8 @@ body {
 }
 
 input,
-select {
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -205,11 +212,10 @@ hr {
 }
 
 h1,
-.quote,
 h2,
+.quote,
 h3,
 h4,
-.nav li a,
 .soon:before {
   font-family: inherit;
   font-weight: 500;
@@ -218,26 +224,25 @@ h4,
 }
 
 h1,
-.quote,
 h2,
+.quote,
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h4,
-.nav li a,
 .soon:before {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-h1,
-.quote {
+h1 {
   font-size: 36px;
 }
 
-h2 {
+h2,
+.quote {
   font-size: 30px;
 }
 
@@ -246,7 +251,6 @@ h3 {
 }
 
 h4,
-.nav li a,
 .soon:before {
   font-size: 18px;
 }
@@ -448,16 +452,6 @@ input[type="checkbox"]:focus {
   width: 100%;
 }
 
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-
-.fade.in {
-  opacity: 1;
-}
-
 .dropdown {
   position: relative;
 }
@@ -508,134 +502,6 @@ input[type="checkbox"]:focus {
   position: relative;
   display: table;
   border-collapse: separate;
-}
-
-.nav {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.nav:before,
-.nav:after {
-  content: " ";
-  display: table;
-}
-
-.nav:after {
-  clear: both;
-}
-
-.nav > li {
-  position: relative;
-  display: block;
-}
-
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #ddd;
-}
-
-.nav-tabs > li {
-  float: left;
-  margin-bottom: -1px;
-}
-
-.nav-tabs > li > a {
-  margin-right: 2px;
-  line-height: 1.42857;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
-}
-
-.nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #ddd;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #555555;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
-  cursor: default;
-}
-
-.nav-justified,
-.nav-tabs.nav-justified {
-  width: 100%;
-}
-
-.nav-justified > li,
-.nav-tabs.nav-justified > li {
-  float: none;
-}
-
-.nav-justified > li > a,
-.nav-tabs.nav-justified > li > a {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-@media (min-width: 768px) {
-  .nav-justified > li,
-  .nav-tabs.nav-justified > li {
-    display: table-cell;
-    width: 1%;
-  }
-
-  .nav-justified > li > a,
-  .nav-tabs.nav-justified > li > a {
-    margin-bottom: 0;
-  }
-}
-
-.nav-tabs.nav-justified {
-  border-bottom: 0;
-}
-
-.nav-tabs.nav-justified > li > a {
-  margin-right: 0;
-  border-radius: 4px;
-}
-
-.nav-tabs.nav-justified > .active > a,
-.nav-tabs.nav-justified > .active > a:hover,
-.nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #ddd;
-}
-
-@media (min-width: 768px) {
-  .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
-  }
-
-  .nav-tabs.nav-justified > .active > a,
-  .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
-  }
-}
-
-.tab-content > .tab-pane {
-  display: none;
-}
-
-.tab-content > .active {
-  display: block;
 }
 
 .popover {
@@ -1791,7 +1657,8 @@ svg:not(:root) {
 }
 
 input,
-select {
+select,
+textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
@@ -1809,6 +1676,11 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
 }
 
 table {
@@ -1848,6 +1720,10 @@ hr {
 img,
 svg {
   vertical-align: middle;
+}
+
+textarea {
+  resize: vertical;
 }
 
 @media print {
@@ -1894,7 +1770,8 @@ svg {
     widows: 3;
   }
 
-  h2 {
+  h2,
+  .quote {
     orphans: 3;
     widows: 3;
     page-break-after: avoid;
@@ -1916,11 +1793,10 @@ svg {
 }
 
 h1,
-.quote,
 h2,
+.quote,
 h3,
 h4,
-.nav li a,
 .soon:before {
   font-family: dense;
   color: black;
@@ -1935,7 +1811,8 @@ body {
 
 html,
 input,
-select {
+select,
+textarea {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: black;
 }
@@ -1971,11 +1848,10 @@ a:not(.btn):hover {
 }
 
 h1,
-.quote,
 h2,
+.quote,
 h3,
 h4,
-.nav li a,
 .soon:before {
   font-weight: normal;
 }
@@ -2070,6 +1946,7 @@ h4,
 }
 
 input,
+textarea,
 .select,
 html.touch .chosen-container {
   width: 100%;
@@ -2093,7 +1970,8 @@ html.touch .chosen-container {
   color: black;
 }
 
-input {
+input,
+textarea {
   padding: 7px;
 }
 
@@ -2112,7 +1990,8 @@ textarea:-ms-input-placeholder {
   color: gray;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -2157,9 +2036,14 @@ html.touch .chosen-container .chosen-single:focus {
 }
 
 input,
+textarea,
 .select,
 html.touch .chosen-container {
   margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
 }
 
 select {
@@ -2189,95 +2073,6 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
 
 .dropdown-menu {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.tab-content {
-  padding-top: 10px;
-}
-
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-  background-color: #eee;
-  border-color: white;
-  border-bottom: solid 1px #eee;
-}
-
-.nav {
-  margin: 0px !important;
-  padding: 0px !important;
-  border: none;
-  background: transparent;
-  list-style: none;
-  border-bottom: solid 1px white;
-  zoom: 1;
-  vertical-align: bottom;
-}
-
-.nav:focus {
-  outline-width: 0;
-  outline: none;
-  outline-color: transparent;
-  outline-style: none;
-}
-
-.nav:before,
-.nav:after {
-  display: table;
-  content: "";
-}
-
-.nav:after {
-  clear: both;
-}
-
-.nav li {
-  display: inline-block;
-  vertical-align: bottom;
-  width: 150px;
-  border-bottom: solid 1px white;
-}
-
-.nav li:not(:first-of-type) {
-  padding-left: 5px;
-}
-
-.nav li a {
-  display: block;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 3px;
-  background-clip: padding-box;
-  text-align: center;
-  margin: 0;
-  padding: 10px 0;
-  -webkit-transition: all 300ms ease-out !important;
-  transition: all 300ms ease-out !important;
-  border: solid 1px white !important;
-  text-decoration: none !important;
-  color: dense;
-  border-bottom: none !important;
-  background-color: #eee !important;
-}
-
-.nav li.active a,
-.nav li a:hover {
-  padding: 15px 0;
-  color: dense !important;
-}
-
-.nav li.active a {
-  background-color: white;
-  -webkit-transform: translate(0px, 1px);
-  transform: translate(0px, 1px);
 }
 
 .btn {
@@ -2849,11 +2644,10 @@ body {
 
 .title,
 h1,
-.quote,
 h2,
+.quote,
 h3,
 h4,
-.nav li a,
 .soon:before {
   text-transform: uppercase;
 }
@@ -3082,7 +2876,7 @@ h3.title {
   margin-left: -19px;
 }
 
-.code.macro {
+.code.snippet {
   border-radius: 20px;
   background-clip: padding-box;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -3225,6 +3019,20 @@ nav.menu ul li:not(.gitter) a:after {
 nav.menu ul li:not(.gitter) a:hover:after {
   color: gray;
   padding: 0;
+}
+
+.snippet {
+  zoom: 1;
+}
+
+.snippet:before,
+.snippet:after {
+  display: table;
+  content: "";
+}
+
+.snippet:after {
+  clear: both;
 }
 
 .todo {
@@ -4121,13 +3929,6 @@ header.header .title {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2040%2040%22%20enable-background%3D%22new%200%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%20stroke%3D%22pink%22%20stroke-linecap%3D%22round%22%20stroke-width%3D%221px%22%3E%0A%3Cline%20x1%3D%2226.7%22%20y1%3D%2225.6%22%20x2%3D%2223.4%22%20y2%3D%2228.3%22/%3E%0A%3Cline%20x1%3D%2229%22%20y1%3D%2228.4%22%20x2%3D%2231.2%22%20y2%3D%2224.7%22/%3E%0A%3Cline%20x1%3D%2215.9%22%20y1%3D%2224.7%22%20x2%3D%2219.5%22%20y2%3D%2227%22/%3E%0A%3Cline%20x1%3D%2217.4%22%20y1%3D%2217.9%22%20x2%3D%2216.4%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2225.9%22%20y1%3D%2229.7%22%20x2%3D%2227.6%22%20y2%3D%2233.6%22/%3E%0A%3Cline%20x1%3D%2234.4%22%20y1%3D%2225.4%22%20x2%3D%2237.7%22%20y2%3D%2228.1%22/%3E%0A%3Cline%20x1%3D%2234.5%22%20y1%3D%2229.9%22%20x2%3D%2230.6%22%20y2%3D%2232.2%22/%3E%0A%3Cline%20x1%3D%2236.6%22%20y1%3D%2221.1%22%20x2%3D%2232.5%22%20y2%3D%2222%22/%3E%0A%3Cline%20x1%3D%2220.1%22%20y1%3D%2221.3%22%20x2%3D%2222.9%22%20y2%3D%2224.5%22/%3E%0A%3Cline%20x1%3D%2223.2%22%20y1%3D%2231.6%22%20x2%3D%2221.5%22%20y2%3D%2235.4%22/%3E%0A%3Cline%20x1%3D%2218.3%22%20y1%3D%2237.9%22%20x2%3D%2216.2%22%20y2%3D%2233.5%22/%3E%0A%3Cline%20x1%3D%2229.3%22%20y1%3D%2235.5%22%20x2%3D%2226%22%20y2%3D%2238.2%22/%3E%0A%3Cline%20x1%3D%2234.9%22%20y1%3D%2235.5%22%20x2%3D%2237.3%22%20y2%3D%2232%22/%3E%0A%3Cline%20x1%3D%2220.7%22%20y1%3D%2217.7%22%20x2%3D%2223.8%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%2227.6%22%20y1%3D%225.7%22%20x2%3D%2226.3%22%20y2%3D%229.8%22/%3E%0A%3Cline%20x1%3D%2233.1%22%20y1%3D%225.7%22%20x2%3D%2233%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2220.3%22%20y1%3D%228%22%20x2%3D%2223.9%22%20y2%3D%2211.8%22/%3E%0A%3Cline%20x1%3D%2216.4%22%20y1%3D%2214.7%22%20x2%3D%2220.3%22%20y2%3D%2212.8%22/%3E%0A%3Cline%20x1%3D%2215.8%22%20y1%3D%226.5%22%20x2%3D%2217.1%22%20y2%3D%2210.6%22/%3E%0A%3Cline%20x1%3D%2229.4%22%20y1%3D%229.1%22%20x2%3D%2233%22%20y2%3D%2211.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%22-1.4%22%20x2%3D%2238%22%20y2%3D%222%22/%3E%0A%3Cline%20x1%3D%2237.3%22%20y1%3D%224.9%22%20x2%3D%2235.3%22%20y2%3D%229%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%22-3.2%22%20x2%3D%2230.6%22%20y2%3D%221%22/%3E%0A%3Cline%20x1%3D%2219.8%22%20y1%3D%225.1%22%20x2%3D%2224.6%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%2228.3%22%20y1%3D%2213%22%20x2%3D%2228.9%22%20y2%3D%2217.2%22/%3E%0A%3Cline%20x1%3D%2228.6%22%20y1%3D%2221.7%22%20x2%3D%2225.4%22%20y2%3D%2218.8%22/%3E%0A%3Cline%20x1%3D%2233.6%22%20y1%3D%2215.1%22%20x2%3D%2232.3%22%20y2%3D%2219.1%22/%3E%0A%3Cline%20x1%3D%2237.7%22%20y1%3D%2217.8%22%20x2%3D%2236.8%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%222.3%22%20y1%3D%2231.9%22%20x2%3D%22-1.1%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%224%22%20y1%3D%2234.5%22%20x2%3D%226.3%22%20y2%3D%2230.9%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%2237.5%22%20x2%3D%222.9%22%20y2%3D%2241.5%22/%3E%0A%3Cline%20x1%3D%229.5%22%20y1%3D%2231.6%22%20x2%3D%2212.7%22%20y2%3D%2234.4%22/%3E%0A%3Cline%20x1%3D%229.8%22%20y1%3D%2236.7%22%20x2%3D%225.6%22%20y2%3D%2237.9%22/%3E%0A%3Cline%20x1%3D%2210.6%22%20y1%3D%2224.6%22%20x2%3D%2211.1%22%20y2%3D%2228.9%22/%3E%0A%3Cline%20x1%3D%224.6%22%20y1%3D%2214.8%22%20x2%3D%221.3%22%20y2%3D%2217.6%22/%3E%0A%3Cline%20x1%3D%226%22%20y1%3D%2218.4%22%20x2%3D%228.2%22%20y2%3D%2214.7%22/%3E%0A%3Cline%20x1%3D%227.8%22%20y1%3D%221.7%22%20x2%3D%228.7%22%20y2%3D%226.2%22/%3E%0A%3Cline%20x1%3D%223.3%22%20y1%3D%2219.5%22%20x2%3D%225%22%20y2%3D%2223.4%22/%3E%0A%3Cline%20x1%3D%2211%22%20y1%3D%2215.2%22%20x2%3D%2214.3%22%20y2%3D%2217.9%22/%3E%0A%3Cline%20x1%3D%2211.5%22%20y1%3D%2220.2%22%20x2%3D%227.7%22%20y2%3D%2222.1%22/%3E%0A%3Cline%20x1%3D%2213.7%22%20y1%3D%2212.8%22%20x2%3D%229.6%22%20y2%3D%2211.4%22/%3E%0A%3Cline%20x1%3D%22-1.6%22%20y1%3D%2210.6%22%20x2%3D%221.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%221.1%22%20y1%3D%2221.9%22%20x2%3D%22-0.6%22%20y2%3D%2225.7%22/%3E%0A%3Cline%20x1%3D%226.7%22%20y1%3D%2225.7%22%20x2%3D%223.3%22%20y2%3D%2228.4%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%224.6%22%20x2%3D%226%22%20y2%3D%226.7%22/%3E%0A%3Cline%20x1%3D%226.6%22%20y1%3D%229.2%22%20x2%3D%222.5%22%20y2%3D%2210.4%22/%3E%0A%3Cline%20x1%3D%2213.2%22%20y1%3D%224.6%22%20x2%3D%2211.9%22%20y2%3D%228.7%22/%3E%0A%3Cline%20x1%3D%2218.6%22%20y1%3D%2229.4%22%20x2%3D%2214.5%22%20y2%3D%2230.8%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%222.6%22%20x2%3D%2222.8%22%20y2%3D%22-1.5%22/%3E%0A%3Cline%20x1%3D%2235.4%22%20y1%3D%2238.6%22%20x2%3D%2238%22%20y2%3D%2242%22/%3E%0A%3Cline%20x1%3D%2231.8%22%20y1%3D%2236.9%22%20x2%3D%2230.6%22%20y2%3D%2241%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%2241.3%22%20x2%3D%2213.6%22%20y2%3D%2237.3%22/%3E%0A%3Cline%20x1%3D%2226%22%20y1%3D%2242.6%22%20x2%3D%2222.8%22%20y2%3D%2238.5%22/%3E%0A%3Cline%20x1%3D%221.3%22%20y1%3D%22-2.5%22%20x2%3D%222.9%22%20y2%3D%221.5%22/%3E%0A%3Cline%20x1%3D%2212.3%22%20y1%3D%221.3%22%20x2%3D%2213.6%22%20y2%3D%22-2.7%22/%3E%0A%3Cline%20x1%3D%2220.2%22%20y1%3D%223.2%22%20x2%3D%2216.6%22%20y2%3D%220.6%22/%3E%0A%3Cline%20x1%3D%2242.3%22%20y1%3D%2231.9%22%20x2%3D%2238.9%22%20y2%3D%2234.5%22/%3E%0A%3Cline%20x1%3D%2238.4%22%20y1%3D%2210.6%22%20x2%3D%2241.4%22%20y2%3D%2213.6%22/%3E%0A%3Cline%20x1%3D%2241.1%22%20y1%3D%2221.9%22%20x2%3D%2239.4%22%20y2%3D%2225.7%22/%3E%0A%3C/svg%3E");
 }
 
-p.code.script {
-  display: block !important;
-}
-
-a.mini {
+body {
   font-size: 90%;
-  text-decoration: underline;
-  color: #666;
-  padding-left: 10px;
 }
