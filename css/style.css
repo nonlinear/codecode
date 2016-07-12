@@ -638,6 +638,19 @@ input[type="checkbox"]:focus {
   display: block;
 }
 
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
 .popover {
   position: absolute;
   top: 0;
@@ -2278,6 +2291,12 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
   background-color: white;
   -webkit-transform: translate(0px, 1px);
   transform: translate(0px, 1px);
+}
+
+.alert {
+  border-radius: 0;
+  background-clip: padding-box;
+  padding: 10px;
 }
 
 .btn {
