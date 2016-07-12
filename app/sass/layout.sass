@@ -102,8 +102,13 @@ h3.title
     +shadow(normal, 1px 1px 0px rgba(0, 0, 0, 0.2))
 
 
+.nav li
+  width: 49%
+  a.active
+    +find(red)
+
 .quote
-  @extend h1
+  @extend h2
   +media($bp, min)
     text-align: right
 
