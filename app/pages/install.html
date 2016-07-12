@@ -5,6 +5,8 @@
 
 {% block content %}
 <div class="col-md-8">
+  {% import "macros/alert.html" as alert %}
+  {{ alert.alert(class="danger", text="aaa", close="false") }}
  <h2>Installation</h2>
  <ol class="tutorial">
    <li>Go to where you want your project to be in terminal, and type
