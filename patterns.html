@@ -91,14 +91,19 @@
     </header>
     <div class="row">
       <div class="col-md-2 quote">
-     scalable graphic patterns
-      </div>
-      <div class="col-md-10 content">
-        <div class="row">
-          
+       scalable graphic patterns
+       <a href="#" class="btn btn-snippet" data-toggle="modal" data-target="#snippetinfo">
+        <span>
+  Simplify your code with Sublime Text Snippets
+        </span>
+      </a>
+     </div>
+     <div class="col-md-10 content">
+      <div class="row">
+        
 <div class="row">
   <div class="col-md-4">
-    <p class="code macro SASS">pattern</p>
+    <p class="code snippet SASS">pattern</p>
     <p class="sig">variables are respectively:
       <span class="code variable">$pattern</span> (see below)
       <span class="code variable">$size</span> (in px)
@@ -112,7 +117,7 @@
     <p class="sig">patterns are an extension of <a href="http://buseca.github.io/patternbolt/">patternbolt</a> project... You can get the stand-alone SASS file <a href="https://github.com/nonlinear/codecode/blob/master/app/sass/vendors/codecode/patterns.sass">here</a>.</p>
   </div>
   <div class="col-md-4">
-    <p class="code macro SASS">knockout</p>
+    <p class="code snippet SASS">knockout</p>
     <p class="sig">Applies pattern effects on text</p>
     <p class="testpattern">OH NOES!</p>
 
@@ -255,12 +260,12 @@
   </ul>
 </div>
 
-        </div>
       </div>
     </div>
-    <nav class="menu footer row">
-      <div class="col-md-2 social">
-        
+  </div>
+  <nav class="menu footer row">
+    <div class="col-md-2 social">
+      
 <p>Made by Nicholas Frota, standing on the shoulder of Open Source giants.</p>
 <a href="mailto:info@nicholasfrota.com">
   <i class="fa fa-envelope"></i>
@@ -281,32 +286,92 @@
   <i class="fa fa-linkedin"></i>
 </a>
 
-      </div>
-      <div class="col-md-10">
-        <ul>
-          <li><a class="on home" href="index.html">home</a>
-        </li><li><a class="on install" href="install.html">install</a>
-        </li><li><a class="on base" href="base.html">base</a>
-        </li><li><a class="on partials" href="partials.html">partials</a>
-        </li><li><a class="on symbols" href="symbols.html">symbols</a>
-        </li><li><a class="on animation" href="animation.html">animation</a>
-        </li><li><a class="on patterns" href="patterns.html">patterns</a>
-        </li><li><a class="on typography" href="typography.html">typography</a>
-        </li><li><a class="on forms" href="forms.html">forms</a>
-        </li><li><a class="on responsive" href="responsive.html">responsive</a>
-        </li><li><a class="on filters" href="filters.html">filters</a>
-        </li><li><a class="on data" href="data.html">data</a>
-        </li><li><a class="on frameworks" href="frameworks.html">frameworks</a>
-        </li><li><a class="on social" href="social.html">social</a>
-        </li><li><a class="on upcoming" href="upcoming.html">upcoming</a>
-        </li>
-        <li class="gitter">
-          <a href="https://gitter.im/nonlinear/codecode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
-        </li>
-      </ul>
     </div>
-  </nav>
+    <div class="col-md-10">
+      <ul>
+        <li><a class="on home" href="index.html">home</a>
+      </li><li><a class="on install" href="install.html">install</a>
+      </li><li><a class="on base" href="base.html">base</a>
+      </li><li><a class="on partials" href="partials.html">partials</a>
+      </li><li><a class="on symbols" href="symbols.html">symbols</a>
+      </li><li><a class="on animation" href="animation.html">animation</a>
+      </li><li><a class="on patterns" href="patterns.html">patterns</a>
+      </li><li><a class="on typography" href="typography.html">typography</a>
+      </li><li><a class="on forms" href="forms.html">forms</a>
+      </li><li><a class="on responsive" href="responsive.html">responsive</a>
+      </li><li><a class="on filters" href="filters.html">filters</a>
+      </li><li><a class="on data" href="data.html">data</a>
+      </li><li><a class="on frameworks" href="frameworks.html">frameworks</a>
+      </li><li><a class="on social" href="social.html">social</a>
+      </li><li><a class="on upcoming" href="upcoming.html">upcoming</a>
+      </li>
+      <li class="gitter">
+        <a href="https://gitter.im/nonlinear/codecode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </div>
-<script src="js/main.js"></script>
+
+<div id="snippetinfo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="snippetinfoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="st2">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2>Snippets on Sublime Text 2</h2>
+            <a href="#st3" class="instead" data-toggle="tab">I use Sublime Text 3</a>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+               <h3>Install snippets</h3>
+               <p>copy code below and paste it on terminal.</p>
+               <textarea class="code">cd
+cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+git clone https://github.com/nonlinear/codecode-snippets.git</textarea>
+              </div>
+              <div class="col-md-6">
+                <h3>Update Snippets</h3>
+                <p>copy code below and paste it on terminal.</p>
+                <textarea class="code">cd
+cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/codecode-snippets
+git pull</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="st3">
+           <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2>Snippets on Sublime Text 3</h2>
+            <a href="#st2" class="instead" data-toggle="tab">I use Sublime Text 2</a>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Install snippets</h3>
+                <p>copy code below and paste it on terminal.</p>
+               <textarea class="code">cd
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+git clone https://github.com/nonlinear/codecode-snippets.git</textarea>
+              </div>
+              <div class="col-md-6">
+                <h3>Update Snippets</h3>
+                <p>copy code below and paste it on terminal.</p>
+                <textarea class="code">cd
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/codecode-snippets
+git pull</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

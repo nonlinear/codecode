@@ -54,6 +54,7 @@ hr {
   height: 0;
 }
 
+button,
 input,
 select,
 textarea {
@@ -62,8 +63,18 @@ textarea {
   margin: 0;
 }
 
+button {
+  overflow: visible;
+}
+
+button,
 select {
   text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner,
@@ -153,6 +164,10 @@ td {
   content: "\e109";
 }
 
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
 * {
   box-sizing: border-box;
 }
@@ -176,6 +191,7 @@ body {
 }
 
 input,
+button,
 select,
 textarea {
   font-family: inherit;
@@ -452,6 +468,16 @@ input[type="checkbox"]:focus {
   width: 100%;
 }
 
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
 .dropdown {
   position: relative;
 }
@@ -502,6 +528,202 @@ input[type="checkbox"]:focus {
   position: relative;
   display: table;
   border-collapse: separate;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header:before,
+.modal-header:after {
+  content: " ";
+  display: table;
+}
+
+.modal-header:after {
+  clear: both;
+}
+
+.modal-header .close {
+  margin-top: -2px;
+}
+
+.modal-title {
+  margin: 0;
+  line-height: 1.42857;
+}
+
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-sm {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
 }
 
 .popover {
@@ -955,6 +1177,54 @@ input[type="checkbox"]:focus {
     transform: perspective(400px) scale(1);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes flipInX {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
   }
 }
 
@@ -1656,6 +1926,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+button,
 input,
 select,
 textarea {
@@ -1664,12 +1935,19 @@ textarea {
   vertical-align: baseline;
 }
 
+button,
 input {
   line-height: normal;
 }
 
+button,
 select {
   text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner,
@@ -1836,12 +2114,14 @@ a:not(.btn):hover {
 .soon li,
 .legend td:nth-of-type(2),
 .menu .social p,
+#snippetinfo .instead,
 .users .info p {
   font-size: 90%;
   padding: 5px 0;
   color: #333;
 }
 
+button,
 .btn {
   -webkit-transition: color 300ms ease-out !important;
   transition: color 300ms ease-out !important;
@@ -2073,6 +2353,10 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
 
 .dropdown-menu {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  padding-top: 10px;
 }
 
 .btn {
@@ -3302,6 +3586,106 @@ header.header .dropdown .dropdown-menu a {
     -webkit-animation: octocat-wave 560ms ease-in-out;
     animation: octocat-wave 560ms ease-in-out;
   }
+}
+
+.modal-content {
+  border-radius: 2px;
+  background-clip: padding-box;
+  border: solid 1px #999EA5;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-content:hover {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  border-color: gray;
+}
+
+#snippetinfo .tab-content {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none;
+  background: transparent;
+}
+
+#snippetinfo .tab-content:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+#snippetinfo h2,
+#snippetinfo h3 {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none;
+  background: transparent;
+}
+
+#snippetinfo h2:focus,
+#snippetinfo h3:focus {
+  outline-width: 0;
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+#snippetinfo .instead {
+  text-decoration: underline;
+}
+
+#snippetinfo textarea.code {
+  height: 120px;
+}
+
+#snippetinfo .col-md-6:nth-of-type(2) textarea.code {
+  height: 90px;
+}
+
+textarea.code {
+  border: none;
+}
+
+.btn-snippet {
+  height: 140px;
+  width: 140px;
+  z-index: 2000;
+  border-radius: 50%;
+  background-clip: padding-box;
+  white-space: normal;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 0;
+  margin: 0;
+  margin: 30px 0 !important;
+}
+
+.btn-snippet:hover span {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.btn-snippet span {
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
+  padding: 25px 20px;
+  displaY: block;
+  font-size: 25px;
+  line-height: 100%;
 }
 
 header.header {
