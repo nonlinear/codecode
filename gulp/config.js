@@ -14,6 +14,10 @@ var config = {
     html: ['./dist/**/*.html'],
     ignore: [/.chosen/, /.popover/, /.calendar/]
   },
+  inlineCss: {
+    src: './dist/*-mail.html',
+    dest: './dist/'
+  },
   nunjucks: {
     src: './app/pages/**/*.*',
     dest: './dist',
