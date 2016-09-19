@@ -6,38 +6,15 @@
 {% block content %}
 
 
-<div class="col-md-8">
+<div class="col-md-4">
   <h2>Semantic UI<a href="http://semantic-ui.com" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
-  <p>Although codecode lacks LESS native, you can switch from default bootstrap to Semantic UI in easy steps:</p>
-<div class="row">
-  <div class="col-md-6">
-      <h3>Deleting Bootstrap</h3>
+  <p>Codecode uses a <a href="https://github.com/doabit/semantic-ui-sass" target="_blank">SASS port of Semantic UI</a>.</p>
   <ol class="tutorial">
-    <li>open <p class="code file">app/sass/style.sass</p></li>
-    <li>delete lines :72 and :75 and save</li>
-    <li>open <p class="code file">gulp/config.js</p></li>
-    <li>delete line :46 and save</li>
+  <li>To switch from bootstrap to Semantic UI, run <p class="code terminal">gulp semantic</p></li>
+  <li>To switch back to bootstrap, run <p class="code terminal">gulp bootstrap</p></li>
   </ol>
-  </div>
-  <div class="col-md-6">
-     <h3>Adding Semantic UI</h3>
-  <ol class="tutorial">
-    <li>open <p class="code file">app/templates/layout.html</p></li>
-    <li>in the line above <p class="code">
-      &#60;link rel="stylesheet" href="css/style.css"&#62;
-    </p> add <p class="code">
-      &#60;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css"&#62;
-    </p></li>
-    <li>in the line below <p class="code">
-      &#60;script src="js/main.js"&#62;&#60;/script&#62;
-    </p> add <p class="code">
-      &#60;script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"&#62;&#60;/script&#62;
-    </p></li>
-
-  </ol>
-  </div>
-</div>
-
+  <hr>
+  <p class="sig">Major thanks to <a href="https://www.npmjs.com/package/gulp-inject" target="_blank">gulp-inject</a></p>
 </div>
 <div class="col-md-4">
  <h2>Wordpress Themes<a href="https://wordpress.org" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>

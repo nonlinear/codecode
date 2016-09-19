@@ -45,11 +45,13 @@ var config = {
   },
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
+          // inject:framework
           './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+
+          // endinject
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',
           './bower_components/chosen/chosen.jquery.js',
-          './bower_components/d3/d3.js',
           './app/js/*.js'],
     dest: './dist/js',
     title: 'main.js'

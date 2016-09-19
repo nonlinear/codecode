@@ -23,6 +23,8 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.4.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-inline-css": "^3.1.0",
     "gulp-jscs": "^3.0.2",
     "gulp-jshint": "^1.12.0",
     "gulp-load-plugins": "^1.1.0",
@@ -45,7 +47,6 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4",
     "svg2png": "^2.0.0",
-    "ttf2woff2": "^2.0.3",
-    "gulp-inline-css": "^3.1.0"
+    "ttf2woff2": "^2.0.3"
   }
 }
