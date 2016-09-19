@@ -14,6 +14,6 @@
   {"name": "data", "link": "data", "status": "on"},
   {"name": "frameworks", "link": "frameworks", "status": "on"},
   {"name": "social", "link": "social", "status": "on"},
-  {"name": "upcoming", "link": "upcoming", "status": "on"}
+  {"name": "extensions", "link": "extensions", "status": "on"}
   ]
 }
