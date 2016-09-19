@@ -12,7 +12,7 @@ var config = {
     src: './dist/css/style.css',
     dest: './dist/css',
     html: ['./dist/**/*.html'],
-    ignore: [/.chosen/, /.popover/, /.calendar/]
+    ignore: [/.chosen/, /.popover/, /.calendar/, /.modal/]
   },
   inlineCss: {
     src: './dist/*-mail.html',
