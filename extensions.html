@@ -5,7 +5,7 @@
   <title>CodeCode/</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="upcoming">
+<body class="extensions">
   <div class="container">
     <header class="header">
       <a href="http://github.com/nonlinear/codecode" class="github-corner">
@@ -22,7 +22,7 @@
       <div class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           <h1 class="logo">CodeCode/</h1>
-          <h2 class="title">upcoming</h2>
+          <h2 class="title">extensions</h2>
         </a>
         <ul class="dropdown-menu">
           
@@ -83,7 +83,7 @@
           </li>
           
           <li>
-            <a class="on" href="upcoming.html">upcoming</a>
+            <a class="on" href="extensions.html">extensions</a>
           </li>
           
         </ul>
@@ -91,7 +91,7 @@
     </header>
     <div class="row">
       <div class="col-md-2 quote">
-       cool links to integrate
+       adapting codecode to your needs
        <a href="#" class="btn btn-snippet" data-toggle="modal" data-target="#snippetinfo">
         <span>
   Simplify your code with Sublime Text Snippets
@@ -101,41 +101,84 @@
      <div class="col-md-10 content">
       <div class="row">
         
+
+
 <div class="col-md-4">
-<ul class="soon">
-  <li><a target="_blank" href="http://callmecavs.github.io/jump.js/">Jump.js</a></li>
-  <li><a target="_blank" href="http://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping">smartcrop.js</a></li>
-  <li><a target="_blank" href="http://una.im/lomo/#=%81">Lomography</a></li>
-  <li><a target="_blank" href="http://thenewcode.com/975/Little-Big-Using-CSS-fit-content">CSS fit-content</a></li>
-  <li><a target="_blank" href="https://medium.com/@mwichary/system-shock-6b1dc6d6596f#.5v3oyuenv">System shock</a></li>
-  <li><a target="_blank" href="http://franklinta.com/2014/11/30/image-diffing-using-css/">Image diffing using CSS</a></li>
-  <li><a target="_blank" href="http://corpuscss.com/?utm_source=sidebar">Corpus</a></li>
-  <li><a target="_blank" href="http://simplaio.github.io/rucksack/">Rucksack</a></li>
-</ul>
+  <h2>Semantic UI<a href="https://getbootstrap.com" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+  <p>Although codecode lacks LESS native, you can switch from default bootstrap to Semantic UI in easy steps:</p>
+  <h3>Deleting Bootstrap</h3>
+  <ol class="tutorial">
+    <li>open <p class="code file">app/sass/style.sass</p></li>
+    <li>delete lines :72 and :75 and save</li>
+    <li>open <p class="code file">gulp/config.js</p></li>
+    <li>delete line :46 and save</li>
+  </ol>
+  <h3>Adding Semantic UI</h3>
+  <ol class="tutorial">
+    <li>open <p class="code file">app/templates/layout.html</p></li>
+    <li>in the line above <p class="code">
+      &#60;link rel="stylesheet" href="css/style.css"&#62;
+    </p> add <p class="code">
+      &#60;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css"&#62;
+    </p></li>
+    <li>in the line below <p class="code">
+      &#60;script src="js/main.js"&#62;&#60;/script&#62;
+    </p> add <p class="code">
+      &#60;script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"&#62;&#60;/script&#62;
+    </p></li>
+
+  </ol>
 </div>
 <div class="col-md-4">
-<ul class="soon">
-  <li><a target="_blank" href="https://css-tricks.com/prefetching-preloading-prebrowsing/">Prefetching, preloading, prebrowsing</a></li>
-  <li><a target="_blank" href="http://www.bramstein.com/writing/preload-hints-for-web-fonts.html">Preload Hints For Web Fonts - Bram Stein</a></li>
-  <li><a target="_blank" href="http://iamvdo.me/en/blog/advanced-css-filters">Advanced CSS filters</a></li>
-  <li><a target="_blank" href="https://unsplash.it/">Unsplash It</a></li>
-  <li><a target="_blank" href="http://www.w3schools.com/cssref/css_colornames.asp">CSS Color Names</a></li>
-  <li><a target="_blank" href="https://github.com/riccardoscalco/crayon">Crayon</a></li>
-  <li><a target="_blank" href="http://www.sitepoint.com/12-little-known-css-facts-the-sequel/">12 Little-Known CSS Facts</a></li>
-  <li><a target="_blank" href="http://www.sitepoint.com/accessible-footnotes-css/">Accessible Footnotes</a></li>
-  </ul>
+ <h2>Wordpress Themes<a href="https://wordpress.org" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+ Soon
 </div>
 <div class="col-md-4">
-<ul class="soon">
-  <li><a target="_blank" href="http://blog.gospodarets.com/css-scroll-snap/">Native CSS Scroll Snap Points</a></li>
-  <li><a target="_blank" href="https://css-tricks.com/using-pinterest-data-attributes-and-meta-tags/?utm_source=dlvr.it&utm_medium=twitter">Using Pinterest Data Attributes and Meta Tags</a></li>
-  <li><a target="_blank" href="http://webdesign.tutsplus.com/tutorials/a-simple-mixin-alternative-to-standard-css-grids--webdesign-16958">A Simple Mixin Alternative to Standard CSS Grids</a></li>
-  <li><a target="_blank" href="http://dancort.es/web-design/2015/05/17/how-to-make-carousel-only-html-css-no-javascript.html#target-item-3">How to make a carousel using only HTML and CSS</a></li>
-  <li><a target="_blank" href="http://blogs.adobe.com/dreamweaver/2015/04/an-introduction-to-graphical-effects-in-css.html#">An Introduction To Graphical Effects in CSS</a></li>
-  <li><a target="_blank" href="http://codepen.io/noahblon/blog/coloring-svgs-in-css-background-images">Coloring SVGs in CSS Background Images</a></li>
-  <li><a href="http://colourgarden.net/avalanche/">Avalanche - Responsive, Sass-based, BEM-syntax CSS grid system</a></li>
-</ul>
+  <h2>Family SCSS snippets<a href="https://lukyvj.github.io/family.scss/" target="_blank" class="btn external"><i class="fa fa-link"></i></a></h2>
+  <p class="code snippet HTML">family</p>
+  <p>select and style specific item objects, visit <a href="https://lukyvj.github.io/family.scss/" target="_blank">family.scss</a> to learn what each does.</p>
+  <div class="scroll">
+    <p class="code variable">after-first</p>
+    <p class="code variable">all-but-first-last</p>
+    <p class="code variable">all-but</p>
+    <p class="code variable">at-least</p>
+    <p class="code variable">at-most</p>
+    <p class="code variable">between</p>
+    <p class="code variable">even-between</p>
+    <p class="code variable">even</p>
+    <p class="code variable">every</p>
+    <p class="code variable">first-child</p>
+    <p class="code variable">first-last</p>
+    <p class="code variable">first-of</p>
+    <p class="code variable">first</p>
+    <p class="code variable">from-end</p>
+    <p class="code variable">from-first-last</p>
+    <p class="code variable">in-between</p>
+    <p class="code variable">last-child</p>
+    <p class="code variable">last-of</p>
+    <p class="code variable">last</p>
+    <p class="code variable">middle</p>
+    <p class="code variable">n-between</p>
+    <p class="code variable">not-unique</p>
+    <p class="code variable">odd-between</p>
+    <p class="code variable">odd</p>
+    <p class="code variable">unique</p>
+  </div>
+  <hr>
+  <h2>External Snippets</h2>
+  <ol class="tutorial">
+    <li>
+<!--       <hr>
+  <p class="sig">Not a bootstrap user? <a href="">Snippets for the Semantic UI framework</a> (thanks <a href="https://twitter.com/mtcarlso">@mtcarlso</a>)</p> -->
+  Sublime Semantic UI<a target="_blank" class="btn external" href="https://github.com/idleberg/sublime-semantic-ui"><i class="fa fa-link"></i></a>
+</li>
+<li>
+  Icon Fonts<a target="_blank" class="btn external" href="https://packagecontrol.io/packages/Icon%20Fonts"><i class="fa fa-link"></i></a>
+</li>
+</ol>
 </div>
+
+
 
 
       </div>
@@ -181,7 +224,7 @@
       </li><li><a class="on data" href="data.html">data</a>
       </li><li><a class="on frameworks" href="frameworks.html">frameworks</a>
       </li><li><a class="on social" href="social.html">social</a>
-      </li><li><a class="on upcoming" href="upcoming.html">upcoming</a>
+      </li><li><a class="on extensions" href="extensions.html">extensions</a>
       </li>
       <li class="gitter">
         <a href="https://gitter.im/nonlinear/codecode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
