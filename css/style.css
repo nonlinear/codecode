@@ -4553,3 +4553,12 @@ body {
     opacity: 0;
   }
 }
+
+.tutorial .sig {
+  color: #666666;
+}
+
+.tutorial .sig .code {
+  padding: 3px;
+  color: #666666;
+}
