@@ -5,9 +5,9 @@ runSequence = require('run-sequence'),
 config = require('../config');
 
 
-gulp.task('semanticcss', function () {
+gulp.task('no-frameworkcss', function () {
 gulp.src(config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/semanticcss.txt']), {
+  .pipe(inject(gulp.src(['./inject/blank.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -18,9 +18,9 @@ gulp.src(config.frameworkSass.src)
   .pipe(gulp.dest(config.frameworkSass.dest));
 });
 
-gulp.task('semanticjs', function () {
+gulp.task('no-frameworkjs', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/semanticjs.txt']), {
+  .pipe(inject(gulp.src(['./inject/blank.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -32,10 +32,10 @@ gulp.src(config.frameworkJs.src)
 });
 
 
-gulp.task('semantic', function(callback) {
+gulp.task('no-framework', function(callback) {
   runSequence(
-    ['semanticcss'],
-    ['semanticjs'],
+    ['no-frameworkcss'],
+    ['no-frameworkjs'],
     callback
     );
 });

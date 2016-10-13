@@ -8,6 +8,14 @@ var config = {
     src: ['./app/**/*.+(js|html|sass|scss)', '!./app/sass/vendors/**/*.*', '!./app/js/vendors/**/*.*'],
     dest: './'
   },
+    frameworkSass: {
+    src: './app/sass/vendors/framework.sass',
+    dest: './app/sass/vendors/'
+  },
+      frameworkJs: {
+    src: './gulp/config.js',
+    dest: './gulp/'
+  },
   uncss: {
     src: './dist/css/style.css',
     dest: './dist/css',
@@ -46,8 +54,9 @@ var config = {
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
           // inject:framework
+          
           './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-
+          
           // endinject
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',

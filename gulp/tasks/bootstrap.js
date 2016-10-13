@@ -6,8 +6,8 @@ config = require('../config');
 
 
 gulp.task('bootcss', function () {
-gulp.src('./app/sass/style.sass')
-  .pipe(inject(gulp.src(['./inject/bootstrap-css.txt']), {
+gulp.src(config.frameworkSass.src)
+  .pipe(inject(gulp.src(['./inject/bootcss.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -15,12 +15,12 @@ gulp.src('./app/sass/style.sass')
       return file.contents.toString('utf8')
     }
   }))
-  .pipe(gulp.dest('./app/sass/'));
+  .pipe(gulp.dest(config.frameworkSass.dest));
 });
 
 gulp.task('bootjs', function () {
-gulp.src('./gulp/config.js')
-  .pipe(inject(gulp.src(['./inject/bootstrap-js.txt']), {
+gulp.src(config.frameworkJs.src)
+  .pipe(inject(gulp.src(['./inject/bootjs.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -28,7 +28,7 @@ gulp.src('./gulp/config.js')
       return file.contents.toString('utf8')
     }
   }))
-  .pipe(gulp.dest('./gulp/'));
+  .pipe(gulp.dest(config.frameworkJs.dest));
 });
 
 
