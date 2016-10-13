@@ -1,7 +1,11 @@
 var config = {
+  main: {
+        src: './app/',
+        dest: './dist/'
+},
   sass: {
-    src: './app/sass/style.sass',
-    dest: './dist/css',
+    src: 'sass/style.sass',
+    dest: 'css',
     error: 'Error Running SASS'
   },
   todo: {
@@ -54,9 +58,7 @@ var config = {
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
           // inject:framework
-          
           './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-          
           // endinject
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',

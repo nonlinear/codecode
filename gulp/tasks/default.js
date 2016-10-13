@@ -8,7 +8,7 @@ gulp.task('default', function(callback) {
     'clean',
     // ['svgSprite', 'lint:js'],
     ['imagemin'],
-    ['svgfile', 'font', 'js', 'todo', 'json'],
+    ['svgfile', 'font', 'js', 'json'],
     ['readme', 'sass', 'nunjucks'],
     ['browserSync', 'watch'],
     callback
