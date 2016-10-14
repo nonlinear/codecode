@@ -4,8 +4,8 @@
     src: url("dense.eot?#iefix") format("embedded-opentype"),
          url("dense.woff2") format("woff2"),
          url("dense.woff") format("woff"),
-         url("dense.ttf") format("truetype"),
+         url("dense.ttf") format("ttf"),
          url("dense.svg#Dense-Regular") format("svg");
-    font-weight: 300;
     font-style: normal;
+    font-weight: 300;
 }
