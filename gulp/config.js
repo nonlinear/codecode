@@ -1,12 +1,18 @@
 var config = {
   main: {
         src: './app/',
+        // inject:root
         dest: './dist/'
+        // endinject
 },
   sass: {
     src: 'sass/style.sass',
     dest: 'css',
     error: 'Error Running SASS'
+  },
+      root: {
+    src: './gulp/config.js',
+    dest: './gulp/'
   },
     frameworkSass: {
     src: 'sass/vendors/framework.sass',
