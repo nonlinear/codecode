@@ -122,7 +122,6 @@ input, textarea
   &:focus
     outline: none
 .select
-  +stamp($icon: $fa-var-angle-down, $position: right, $padding: 10px, $nudge: 7px, $color: $color-link-hover)
   select, .chosen-single
     -webkit-appearance: none
     border: none
@@ -145,5 +144,7 @@ input, textarea, .select
 textarea
   height: 150px
 
+// inject:fa.select
+  +stamp($icon: $fa-var-angle-down, $position: right, $padding: 10px, $nudge: 7px, $color: $color-link-hover)
 select
-  +stamp($icon: $fa-var-check, $position: right)
+  +stamp($icon: $fa-var-check, $position: right)// endinject
