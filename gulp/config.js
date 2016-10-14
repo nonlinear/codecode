@@ -50,6 +50,11 @@ var config = {
           // inject:framework
           './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
           // endinject
+          // inject:flexslider
+          
+          './app/js/flexslider.js',
+          
+          // endinject
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',
           './bower_components/chosen/chosen.jquery.js',

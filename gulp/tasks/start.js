@@ -6,35 +6,35 @@ config = require('../config');
 
 gulp.task('start1', function(callback){
   del([
-    './app/fonts/dense.*',
-    './app/fontgen/dense.*',
-    './app/pages',
-    './app/templates/layout.html',
-    './app/data/categories.json',
-    './app/templates/partials/*.*',
-    '!./app/templates/partials/datepicker.html',
-    './app/sass/project',
-    './app/sass/style.sass'
+    config.main.src + 'fonts/dense.*',
+    config.main.src + 'fontgen/dense.*',
+    config.main.src + 'pages',
+    config.main.src + 'templates/layout.html',
+    config.main.src + 'data/categories.json',
+    config.main.src + 'templates/partials/*.*',
+    '!' + config.main.src + 'templates/partials/datepicker.html',
+    config.main.src + 'sass/project',
+    config.main.src + 'sass/style.sass'
     ], callback);
 });
 gulp.task('start2', function(){
-  return gulp.src('app/start/index.html')
-  .pipe(gulp.dest('./app/pages/'))
+  return gulp.src(config.main.src + 'start/index.html')
+  .pipe(gulp.dest(config.main.src + 'pages/'))
 });
 gulp.task('start3', function(){
-  return gulp.src('app/start/layout.html')
-  .pipe(gulp.dest('./app/templates'))
+  return gulp.src(config.main.src + 'start/layout.html')
+  .pipe(gulp.dest(config.main.src + 'templates'))
 });
 gulp.task('start4', function(){
-  return gulp.src('app/start/layout.sass')
-  .pipe(gulp.dest('./app/sass'))
+  return gulp.src(config.main.src + 'start/layout.sass')
+  .pipe(gulp.dest(config.main.src + 'sass'))
 });
 gulp.task('start5', function(){
-  return gulp.src('app/start/style.sass')
-  .pipe(gulp.dest('./app/sass'))
+  return gulp.src(config.main.src + 'start/style.sass')
+  .pipe(gulp.dest(config.main.src + 'sass'))
 });
 gulp.task('start6', function(callback){
-  del(['./app/start'], callback);
+  del([config.main.src + 'start'], callback);
 });
 gulp.task('start7', function(callback){
   del(['./gulp/tasks/start.js'], callback);
@@ -45,6 +45,10 @@ gulp.task('start', function(callback) {
   runSequence(
     ['start1'],
     ['start2', 'start3', 'start4', 'start5'],
+    ['no-fa'],
+    ['no-animate'],
+    ['no-loaders'],
+    ['no-flexslider'],
     ['start6', 'start7'],
     callback
     );
