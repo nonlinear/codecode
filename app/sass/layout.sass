@@ -360,13 +360,19 @@ a.off
   .instead
     @extend .sig
     text-decoration: underline
-  textarea.code
-    height: 120px
-  .col-md-6:nth-of-type(2) textarea.code
-      height: 90px
+.clipboard
+    p.sig
+        margin-bottom: 0
+    .code
+        height: 120px
+        border: solid 1px #ccc
+        +shadow(normal, none)
+    .btn
+        font-size: 24px
+        display: block
+        margin-right: 0 !important
 
-textarea.code
-  border: none
+
 
 .btn-snippet
   height: 140px

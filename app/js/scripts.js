@@ -9,6 +9,10 @@ for (var selector in config) {
   $(selector).chosen(config[selector]);
 }
 
+// inject:clipboard
+new Clipboard('[data-clipboard-demo]');
+// endinject
+
 $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
