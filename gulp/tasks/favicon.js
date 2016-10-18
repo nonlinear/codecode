@@ -27,14 +27,14 @@ gulp.task('favicon1', function(done) {
       desktopBrowser: {},
       windows: {
         pictureAspect: 'noChange',
-        backgroundColor: '#da532c',
+        backgroundColor: config.favicon.windowsBackgroundColor,
         onConflict: 'override'
       },
       androidChrome: {
         pictureAspect: 'noChange',
-        themeColor: '#ffffff',
+        themeColor: config.favicon.androidChromeThemeColor,
         manifest: {
-          name: 'yourName',
+          name: config.favicon.name,
           display: 'browser',
           orientation: 'notSet',
           onConflict: 'override'
@@ -43,7 +43,7 @@ gulp.task('favicon1', function(done) {
       safariPinnedTab: {
         pictureAspect: 'blackAndWhite',
         threshold: 53.90625,
-        themeColor: '#5bbad5'
+        themeColor: config.favicon.safariPinnedTabThemeColor
       }
     },
     settings: {

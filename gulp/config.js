@@ -10,6 +10,12 @@ var config = {
     dest: 'css',
     error: 'Error Running SASS'
   },
+   favicon: {
+    windowsBackgroundColor: '#eeeeee',
+    androidChromeThemeColor: '#eeeeee',
+    name: 'codecode/',
+    safariPinnedTabThemeColor: '#eeeeee'
+  },
       root: {
     src: './gulp/config.js',
     dest: './gulp/'
