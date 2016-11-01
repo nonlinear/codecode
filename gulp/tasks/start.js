@@ -49,6 +49,7 @@ gulp.task('start', function(callback) {
     ['no-fa'],
     ['no-animate'],
     ['no-loaders'],
+    ['no-chosen'],
     ['no-clipboard'],
     ['start6', 'start7'],
     callback

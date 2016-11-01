@@ -31,11 +31,25 @@ gulp.src(config.frameworkJs.src)
   .pipe(gulp.dest(config.frameworkJs.dest));
 });
 
+gulp.task('chosenvar', function () {
+gulp.src(config.main.src + config.frameworkJs.var)
+  .pipe(inject(gulp.src([config.main.internal + 'inject/chosenjs.txt']), {
+    starttag: '// inject:chosen',
+    endtag: '// endinject',
+    transform: function (filePath, file) {
+      // return file contents as string
+      return file.contents.toString('utf8')
+    }
+  }))
+  .pipe(gulp.dest(config.frameworkJs.dest));
+});
+
 
 gulp.task('chosen', function(callback) {
   runSequence(
     ['chosencss'],
     ['chosenjs'],
+    ['chosenvar'],
     callback
     );
 });

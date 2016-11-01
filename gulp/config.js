@@ -27,6 +27,7 @@ var config = {
   },
       frameworkJs: {
     src: './gulp/config.js',
+    var: 'js/scripts.js',
     dest: './gulp/'
   },
   uncss: {
@@ -66,7 +67,19 @@ var config = {
           './bower_components/detectizr/dist/detectizr.js',
           // inject:chosen
           
+          
+          
+          
+          
+          
+          
           './bower_components/chosen/chosen.jquery.js',
+          
+          
+          
+          
+          
+          
           
           // endinject
           './app/js/*.js'],
