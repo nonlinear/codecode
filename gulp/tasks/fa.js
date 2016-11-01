@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('fa1', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/fa.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/fa.txt']), {
     starttag: '// inject:fa',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -20,7 +20,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('fa2', function () {
 gulp.src(config.main.src + 'sass/vendors/global/forms.sass')
-  .pipe(inject(gulp.src(['./inject/fa2.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/fa2.txt']), {
     starttag: '// inject:fa',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -41,7 +41,7 @@ gulp.task('fa', function(callback) {
 
 gulp.task('no-fa1', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:fa',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -54,7 +54,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('no-fa2', function () {
 gulp.src(config.main.src + 'sass/vendors/global/forms.sass')
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:fa',
     endtag: '// endinject',
     transform: function (filePath, file) {

@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('semanticcss', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/semanticcss.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/semanticcss.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -20,7 +20,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('semanticjs', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/semanticjs.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/semanticjs.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {

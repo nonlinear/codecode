@@ -6,8 +6,8 @@ config = require('../config');
 
 
 gulp.task('index', function () {
-gulp.src('./inject/index.html')
-  .pipe(inject(gulp.src(['./inject/*.txt']), {
+gulp.src(config.main.internal + 'inject/index.html')
+  .pipe(inject(gulp.src([config.main.internal + 'inject/*.txt']), {
     starttag: '<!-- inject:{{ext}} -->',
     transform: function (filePath, file) {
       // return file contents as string

@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('loaders', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/loaders.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/loaders.txt']), {
     starttag: '// inject:loaders',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -20,7 +20,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('no-loaders', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:loaders',
     endtag: '// endinject',
     transform: function (filePath, file) {

@@ -9,7 +9,7 @@ config = require('../config');
 
 gulp.task('clipboard1', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/clipboard1.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/clipboard1.txt']), {
     starttag: '// inject:clipboard',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -22,7 +22,7 @@ gulp.src(config.frameworkJs.src)
 
 gulp.task('clipboard2', function () {
 gulp.src(config.main.src + 'js/scripts.js')
-  .pipe(inject(gulp.src(['./inject/clipboard2.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/clipboard2.txt']), {
     starttag: '// inject:clipboard',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -45,7 +45,7 @@ gulp.task('clipboard', function(callback) {
 
 gulp.task('no-clipboard1', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:clipboard',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -58,7 +58,7 @@ gulp.src(config.frameworkJs.src)
 
 gulp.task('no-clipboard2', function () {
 gulp.src(config.main.src + 'js/scripts.js')
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:clipboard',
     endtag: '// endinject',
     transform: function (filePath, file) {

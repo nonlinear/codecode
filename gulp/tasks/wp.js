@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('wp1', function () {
 gulp.src(config.root.src)
-  .pipe(inject(gulp.src(['./inject/wp.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/wp.txt']), {
     starttag: '// inject:root',
     endtag: '// endinject',
     transform: function (filePath, file) {

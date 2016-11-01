@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('bootcss', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/bootcss.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/bootcss.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -20,7 +20,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('bootjs', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/bootjs.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/bootjs.txt']), {
     starttag: '// inject:framework',
     endtag: '// endinject',
     transform: function (filePath, file) {

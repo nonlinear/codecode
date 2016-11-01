@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('flexslidercss', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/flexslidercss.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/flexslidercss.txt']), {
     starttag: '// inject:flexslider',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -20,7 +20,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('flexsliderjs', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/flexsliderjs.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/flexsliderjs.txt']), {
     starttag: '// inject:flexslider',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -44,7 +44,7 @@ gulp.task('flexslider', function(callback) {
 
 gulp.task('no-flexslidercss', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:flexslider',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -57,7 +57,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('no-flexsliderjs', function () {
 gulp.src(config.frameworkJs.src)
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:flexslider',
     endtag: '// endinject',
     transform: function (filePath, file) {

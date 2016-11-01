@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('root1', function () {
 gulp.src(config.root.src)
-  .pipe(inject(gulp.src(['./inject/root.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/root.txt']), {
     starttag: '// inject:root',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -29,7 +29,7 @@ gulp.task('root', function(callback) {
 
 gulp.task('no-root1', function () {
 gulp.src(config.root.src)
-  .pipe(inject(gulp.src(['./inject/no-root.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/no-root.txt']), {
     starttag: '// inject:root',
     endtag: '// endinject',
     transform: function (filePath, file) {

@@ -4,7 +4,7 @@ var config = {
         // inject:root
         dest: './dist/',
         // endinject
-        internal 'internal/'
+        internal: './internal/'
 },
   sass: {
     src: 'sass/style.sass',

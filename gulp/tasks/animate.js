@@ -7,7 +7,7 @@ config = require('../config');
 
 gulp.task('animate', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/animate.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/animate.txt']), {
     starttag: '// inject:animate',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -20,7 +20,7 @@ gulp.src(config.main.src + config.frameworkSass.src)
 
 gulp.task('no-animate', function () {
 gulp.src(config.main.src + config.frameworkSass.src)
-  .pipe(inject(gulp.src(['./inject/blank.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
     starttag: '// inject:animate',
     endtag: '// endinject',
     transform: function (filePath, file) {
