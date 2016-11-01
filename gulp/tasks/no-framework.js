@@ -32,10 +32,25 @@ gulp.src(config.frameworkJs.src)
 });
 
 
+gulp.task('no-frameworkvar', function () {
+gulp.src(config.main.src + config.frameworkJs.var)
+  .pipe(inject(gulp.src([config.main.internal + 'inject/blank.txt']), {
+    starttag: '// inject:framework',
+    endtag: '// endinject',
+    transform: function (filePath, file) {
+      // return file contents as string
+      return file.contents.toString('utf8')
+    }
+  }))
+  .pipe(gulp.dest(config.main.src + config.frameworkVar.dest));
+});
+
+
 gulp.task('no-framework', function(callback) {
   runSequence(
     ['no-frameworkcss'],
     ['no-frameworkjs'],
+    // ['no-frameworkvar'],
     callback
     );
 });

@@ -41,7 +41,7 @@ gulp.src(config.main.src + config.frameworkJs.var)
       return file.contents.toString('utf8')
     }
   }))
-  .pipe(gulp.dest(config.frameworkJs.dest));
+  .pipe(gulp.dest(config.main.src + config.frameworkVar.dest));
 });
 
 
@@ -49,7 +49,7 @@ gulp.task('no-chosen', function(callback) {
   runSequence(
     ['no-chosencss'],
     ['no-chosenjs'],
-    ['no-chosenvar'],
+    // ['no-chosenvar'],
     callback
     );
 });

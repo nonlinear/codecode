@@ -27,8 +27,12 @@ var config = {
   },
       frameworkJs: {
     src: './gulp/config.js',
-    var: 'js/scripts.js',
     dest: './gulp/'
+  },
+
+      frameworkVar: {
+    src: 'js/framework.js',
+    dest: 'js/'
   },
   uncss: {
     src: 'css/style.css',
@@ -59,6 +63,9 @@ var config = {
           './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
           // endinject
           // inject:flexslider
+          
+          
+          
           // endinject
           // inject:clipboard
           './bower_components/clipboard/dist/clipboard.js',
@@ -66,21 +73,7 @@ var config = {
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',
           // inject:chosen
-          
-          
-          
-          
-          
-          
-          
           './bower_components/chosen/chosen.jquery.js',
-          
-          
-          
-          
-          
-          
-          
           // endinject
           './app/js/*.js'],
     dest: 'js',

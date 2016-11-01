@@ -10,11 +10,10 @@ for (var selector in config) {
   $(selector).chosen(config[selector]);
 }
 // endinject
-
 // inject:clipboard
 new Clipboard('[data-clipboard-demo]');
 // endinject
-
+// inject:framework
 $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
@@ -30,7 +29,8 @@ $('body').on('click', function(e) {
     }
   });
 });
-
+// endinject
+// inject:flexslider
 $('.flexslider').flexslider({
     animation: "slide",
     slideshow: false,
@@ -49,4 +49,4 @@ $('.flexslider').flexslider({
         });
     }
 });
-
+// endinject

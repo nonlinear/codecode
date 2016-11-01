@@ -33,7 +33,7 @@ gulp.src(config.frameworkJs.src)
 
 gulp.task('chosenvar', function () {
 gulp.src(config.main.src + config.frameworkJs.var)
-  .pipe(inject(gulp.src([config.main.internal + 'inject/chosenjs.txt']), {
+  .pipe(inject(gulp.src([config.main.internal + 'inject/chosenvar.txt']), {
     starttag: '// inject:chosen',
     endtag: '// endinject',
     transform: function (filePath, file) {
@@ -41,7 +41,7 @@ gulp.src(config.main.src + config.frameworkJs.var)
       return file.contents.toString('utf8')
     }
   }))
-  .pipe(gulp.dest(config.frameworkJs.dest));
+  .pipe(gulp.dest(config.main.src + config.frameworkVar.dest));
 });
 
 
@@ -49,7 +49,7 @@ gulp.task('chosen', function(callback) {
   runSequence(
     ['chosencss'],
     ['chosenjs'],
-    ['chosenvar'],
+    // ['chosenvar'],
     callback
     );
 });
