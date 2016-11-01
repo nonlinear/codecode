@@ -58,14 +58,17 @@ var config = {
           './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
           // endinject
           // inject:flexslider
-          
           // endinject
           // inject:clipboard
           './bower_components/clipboard/dist/clipboard.js',
           // endinject
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',
+          // inject:chosen
+          
           './bower_components/chosen/chosen.jquery.js',
+          
+          // endinject
           './app/js/*.js'],
     dest: 'js',
     title: 'main.js'
