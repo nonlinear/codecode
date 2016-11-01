@@ -2,8 +2,9 @@ var config = {
   main: {
         src: './app/',
         // inject:root
-        dest: './dist/'
+        dest: './dist/',
         // endinject
+        internal 'internal/'
 },
   sass: {
     src: 'sass/style.sass',

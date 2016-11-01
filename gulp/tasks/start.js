@@ -18,23 +18,24 @@ gulp.task('start1', function(callback){
     ], callback);
 });
 gulp.task('start2', function(){
-  return gulp.src(config.main.src + 'start/index.html')
+  return gulp.src(config.main.src + config.main.internal + 'start/index.html')
   .pipe(gulp.dest(config.main.src + 'pages/'))
 });
 gulp.task('start3', function(){
-  return gulp.src(config.main.src + 'start/layout.html')
+  return gulp.src(config.main.src + config.main.internal + 'start/layout.html')
   .pipe(gulp.dest(config.main.src + 'templates'))
 });
 gulp.task('start4', function(){
-  return gulp.src(config.main.src + 'start/layout.sass')
+  return gulp.src(config.main.src + config.main.internal + 'start/layout.sass')
   .pipe(gulp.dest(config.main.src + 'sass'))
 });
 gulp.task('start5', function(){
-  return gulp.src(config.main.src + 'start/style.sass')
+  return gulp.src(config.main.src + config.main.internal + 'start/style.sass')
   .pipe(gulp.dest(config.main.src + 'sass'))
 });
 gulp.task('start6', function(callback){
-  del([config.main.src + 'start'], callback);
+  return gulp.src(config.main.src + config.main.internal + 'start/head.html')
+  .pipe(gulp.dest(config.main.src + 'templates/partials'))
 });
 gulp.task('start7', function(callback){
   del(['./gulp/tasks/start.js'], callback);
