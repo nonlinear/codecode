@@ -90,27 +90,37 @@ $screen-lg: 1200px
     @media screen and ($scope + -width: $device)
       @content
 
-// ('ㅅ')づ devices rules
+// sensible breakpoints
+// https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
 
-html:not(.mac) .visible-mac,
-html.mac .hidden-mac,
-html:not(.windows) .visible-windows,
-html.windows .hidden-windows,
-html:not(.linux) .visible-linux,
-html.linux .hidden-linux,
-html:not(.ios) .visible-ios,
-html.ios .hidden-ios,
-html:not(.android) .visible-android,
-html.android .hidden-android,
-html:not(.firefox) .visible-firefox,
-html.firefox .hidden-firefox,
-html:not(.chrome) .visible-chrome,
-html.chrome .hidden-chrome,
-html:not(.ie) .visible-ie,
-html.ie .hidden-ie,
-html:not(.safari) .visible-safari,
-html.safari .hidden-safari,
-html:not(.touch) .visible-touch,
-html.touch .hidden-touch, .hidden
-  display: none !important
+=for-phone-only
+  @media (max-width: 599px)
+    @content
 
+=for-tablet-portrait-up
+  @media (min-width: 600px)
+    @content
+
+=for-tablet-portrait-only
+  @media (min-width: 600px) and (max-width: 899px)
+    @content
+
+=for-tablet-landscape-up
+  @media (min-width: 900px)
+    @content
+
+=for-tablet-landscape-only
+  @media (min-width: 900px) and (max-width: 1199px)
+    @content
+
+=for-desktop-up
+  @media (min-width: 1200px)
+    @content
+
+=for-desktop-only
+  @media (min-width: 1200px) and (max-width: 1799px)
+    @content
+
+=for-big-desktop-up
+  @media (min-width: 1800px)
+    @content
