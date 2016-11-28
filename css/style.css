@@ -10058,28 +10058,6 @@ button, .button, .btn {
 h1, h2, .quote, h3, h4, .nav li a, .warning:before, .legend td.title, .legend th {
   font-weight: normal; }
 
-html:not(.mac) .visible-mac,
-html.mac .hidden-mac,
-html:not(.windows) .visible-windows,
-html.windows .hidden-windows,
-html:not(.linux) .visible-linux,
-html.linux .hidden-linux,
-html:not(.ios) .visible-ios,
-html.ios .hidden-ios,
-html:not(.android) .visible-android,
-html.android .hidden-android,
-html:not(.firefox) .visible-firefox,
-html.firefox .hidden-firefox,
-html:not(.chrome) .visible-chrome,
-html.chrome .hidden-chrome,
-html:not(.ie) .visible-ie,
-html.ie .hidden-ie,
-html:not(.safari) .visible-safari,
-html.safari .hidden-safari,
-html:not(.touch) .visible-touch,
-html.touch .hidden-touch, .hidden {
-  display: none !important; }
-
 .calendar {
   margin: 0 auto; }
   .calendar a {
@@ -10617,12 +10595,29 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
     .toggle:hover input + .box .checkbox:before {
       background-color: #999; }
 
-html.touch .show-touch,
-html.no-touch .hide-touch {
-  display: block; }
-
-html.touch .hide-touch, html.no-touch .show-touch {
-  display: none; }
+html:not(.mac) .visible-mac,
+html.mac .hidden-mac,
+html:not(.windows) .visible-windows,
+html.windows .hidden-windows,
+html:not(.linux) .visible-linux,
+html.linux .hidden-linux,
+html:not(.ios) .visible-ios,
+html.ios .hidden-ios,
+html:not(.android) .visible-android,
+html.android .hidden-android,
+html:not(.firefox) .visible-firefox,
+html.firefox .hidden-firefox,
+html:not(.chrome) .visible-chrome,
+html.chrome .hidden-chrome,
+html:not(.ie) .visible-ie,
+html.ie .hidden-ie,
+html:not(.safari) .visible-safari,
+html.safari .hidden-safari,
+html:not(.touch) .visible-touch,
+html.touch .hidden-touch, .hidden,
+html.touch .hide-touch,
+html.no-touch .show-touch {
+  display: none !important; }
 
 .chosen-container.chosen-container-active .chosen-single {
   border: none;
